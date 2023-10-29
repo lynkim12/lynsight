@@ -1,6 +1,4 @@
-body {
-    font-family: 'Pretendard';
-  }
+
   .menu {
     display: flex;
     flex-direction: row;
@@ -33,4 +31,67 @@ body {
     width: 60px;
     height: 24px;       
     flex-shrink: 0;
+  }
+  .contentslist {
+    padding : 80px 48px;
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contents {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    align-self: stretch;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    flex: 1 0 0;
+  }
+
+  .thumbnail {
+    width: 380px;
+    height: 240px;
+    border-radius: 18px;
+    background-color: #e5e5e5;
+  }
+
+  .contentsText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  }
+
+  .subtitle {
+    color: #51575E;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .title {
+    color: #131517;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .description {
+    color: #9AA0A7;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    
   }
