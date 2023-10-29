@@ -100,3 +100,10 @@
     line-height: 140%;
     
   }
+
+  .aboutContents {
+    padding: 120px 48px;
+    gap: 28px;
+    flex-direction: column;
+    display: flex;
+  }
