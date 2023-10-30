@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import './style.css';
 import Navigator from './Navigation';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route,  } from 'react-router-dom';
 import About from './About';
 import Writing from './Writing';
 import Works from './Works';

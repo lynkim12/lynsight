@@ -1,36 +1,33 @@
-import React from 'react';
+import { useState } from 'react';
 import './App.css';
 import './style.css';
 import logo from './logo.png';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { NavMenuItem } from './navMenuItem';
 
-export function Navigator() {
+
+function Navigator() {
+  const [activeNav, setState] = useState(1);
+  
   return (
     <div className='nav'>
-      <Link style={{textDecoration: 'none'}} to="/">
-        <img className='logo' src={logo} />
+      <Link to="/" onClick={() => setState(1)}>
+            <img className='logo' src={logo} />
       </Link>
       <div className='menu'>
-        <Link to="/" style={{textDecoration: 'none'}}>
-          <div className='slectedMenu'>
-            Works 
-          </div>
+        <Link to="/" onClick={() => setState(1)} style={{textDecoration: 'none'}}>
+          <NavMenuItem isSelected={activeNav === 1 } name='Works'/>
+        </Link>    
+        <Link to="/Writing" onClick={() => {setState(2)}} style={{textDecoration: 'none'}}>
+          <NavMenuItem isSelected={activeNav === 2 } name='Writing' />
         </Link>
-        <Link to="/Writing" style={{textDecoration: 'none'}}>
-          <div className='defaultMenu'>
-            Writing
-          </div>
-        </Link>
-        <Link to="/About/" style={{textDecoration: 'none'}}>
-          <div className='defaultMenu'>
-            About
-          </div>
+        <Link to="/About/" onClick={() => setState(3)} style={{textDecoration: 'none'}}>
+          <NavMenuItem isSelected={activeNav === 3 } name='About' />
         </Link>
       </div>
     </div>
-  
   );
 }
 
 export default Navigator;
+

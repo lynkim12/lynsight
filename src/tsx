@@ -1,0 +1,33 @@
+import React from 'react';
+
+export function navmenu() {
+type Option = { label: string; value: string };
+
+type Options = Option[];
+
+type SelectProps = {
+  label: string;
+  value: string;
+  options: Options;
+  onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+};
+
+const Select: React.FC<SelectProps> = ({
+  label,
+  value,
+  options,
+  onChange,
+}) => {
+  return (
+    <label>
+      {label}
+      <select value={value} onChange={onChange}>
+        {options.map((option) => (
+          <option value={option.value}>{option.label}</option>
+        ))}
+      </select>
+    </label>
+  );
+};
+};
+export default navmenu;
