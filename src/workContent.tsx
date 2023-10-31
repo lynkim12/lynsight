@@ -14,7 +14,7 @@ export function Content() {
                 New Ads Platform for Expert
             </div>
             <div className='description'>
-                Designing an entirely new advertising platform for Mid- to Large-scale Advertisers
+                Designing an entirely new advertising platform for mid- to large-scale advertisers
             </div>
         </div>
     </div>
