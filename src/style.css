@@ -37,7 +37,7 @@
     height: 24px;       
     flex-shrink: 0;
   }
-  .contentslist {
+  .workContentslist {
     padding : 80px 48px;
     gap: 100px;
     display: flex;
@@ -50,55 +50,65 @@
     align-self: stretch;
   }
 
-  .content {
+  .project {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 18px;
+    gap: 24px;
     flex: 1 0 0;
   }
 
-  .thumbnail {
+  .projectThumbnail {
     width: 100%;
     aspect-ratio: 100/64 auto;
     border-radius: 18px;
     background-color: #e5e5e5;
+    flex-shrink: 0;
   }
 
-  .contentsText {
+  .projectContents {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 22px;
     align-self: stretch;
   }
 
-  .subtitle {
+  .projectSubtitle {
     color: #51575E;
     font-family: Pretendard;
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
 
-  .title {
+  .projectTitle {
     color: #131517;
     font-family: Pretendard;
     font-size: 28px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: normal;
   }
   
-  .description {
+  .projectDescription {
     color: #9AA0A7;
     font-family: Pretendard;
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 140%;
     
+  }
+
+  .projectPeriod {
+    color: #51575E;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
 
   .aboutContents {
