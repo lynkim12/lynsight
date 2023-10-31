@@ -1,4 +1,4 @@
-import React from "react"
+import './style.css';
 
 export function AboutList (props: {
     companyTitle: string;
@@ -8,18 +8,8 @@ export function AboutList (props: {
 }
 ) {
     return (
-        <div style={{
-            gap : "60px",
-            paddingTop : "100px",
-            paddingBottom : "100px",
-            flexDirection: "row",
-            display: "flex",
-        }}>
-            <div style={{
-                gap : "6px",
-                flexDirection: "column",
-                width :"240px"
-                }}>
+        <div className="aboutExperienceList">
+            <div className="aboutExperienceListTitle">
                 <div style ={{
                     color: "#131517",
                     fontFamily: "Pretendard",

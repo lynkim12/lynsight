@@ -9,16 +9,14 @@ function About() {
       <>
       <Navigator />
       <div className='aboutContents'>
-        <div className='aboutTitle'>
-          Product Designer <br/> Lyn kim
-        </div>
+        <div className='aboutTitle'>Product Designer <br/> Lyn kim</div>
         <div className='aboutDescription'>
           Currently, I joined Karrot korea as a product designer contributing to the development of an advertising platform for small-sized business. I am responsible for advertiser's experience of creating ads and analyzing performance. We also have the goal to help for small-sized businesses to achieve the success through Karrot advertising.
         </div>
       </div>
       <div className='aboutContents'>
         <div className='aboutTitle'>Experience</div>
-          <div className='aboutDescription'>
+          <div className='aboutDescription' style={{marginBottom : "100px"}}>
             I have skills about UX/UI Design, Growth hacking, Product/Project Managing through various responsibilities and roles.
           </div>
           <div>
@@ -68,10 +66,10 @@ function About() {
         </div>
         <div className='aboutContents' style={{backgroundColor: "#F4F5F8"}}>
         <div className='aboutTitle'>Contact</div>
-        <div style={{flexDirection: 'column', rowGap:'10px'}}>
-          <a href='mailto:lynkim12@gmail.com'>lynkim12@gmail.com</a>
-          <a href='https://www.linkedin.com/in/lyn-k-a0078316b/'>LinkedIn</a>
-          <a href='https://brunch.co.kr/@lynkim'>Brunch</a>
+        <div className='aboutContactList'>
+          <a href='mailto:lynkim12@gmail.com' target='_blank' className='aboutContactListItem'><div>lynkim12@gmail.com</div></a>
+          <a href='https://www.linkedin.com/in/lyn-k-a0078316b/' target='_blank' className='aboutContactListItem'><div className='aboutContactListItem'>LinkedIn</div></a>
+          <a href='https://brunch.co.kr/@lynkim' target='_blank' className='aboutContactListItem'><div>Brunch</div></a>
         </div>
         </div>
       </>
