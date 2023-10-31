@@ -1,56 +1,79 @@
 import React from 'react';
 import Navigator from './Navigation';
+import { AboutList } from './AboutList';
+import { Divider } from '@mui/material';
+import './style.css';
 
 function About() {
     return (
       <>
       <Navigator />
-      <div className='aboutContents'
-      >
-        <div style={{
-            color: "#131517",
-            fontFamily: "Pretendard",
-            fontSize: "54px",
-            fontStyle: "normal",
-            fontWeight: "700",
-            lineHeight: "151.8%",
-        }}>
-            Product Designer <br/>
-            Lyn kim
+      <div className='aboutContents'>
+        <div className='aboutTitle'>
+          Product Designer <br/> Lyn kim
         </div>
-        <div style={{
-            color: "#3A3E44",
-            fontFamily: "Pretendard",
-            fontSize: "24px",
-            fontStyle: "normal",
-            fontWeight: '400',
-            lineHeight: "151.8%",
-        }}>
-            Currently, I joined Karrot korea as a product designer contributing to the development of an advertising platform for small-sized business. I am responsible for advertiser's experience of creating ads and analyzing performance. We also have the goal to help for small-sized businesses to achieve the success through Karrot advertising.
+        <div className='aboutDescription'>
+          Currently, I joined Karrot korea as a product designer contributing to the development of an advertising platform for small-sized business. I am responsible for advertiser's experience of creating ads and analyzing performance. We also have the goal to help for small-sized businesses to achieve the success through Karrot advertising.
         </div>
       </div>
       <div className='aboutContents'>
-        <div style={{
-          color: "#131517",
-          fontFamily: "Pretendard",
-          fontSize: "54px",
-          fontStyle: "normal",
-          fontWeight: "700",
-          lineHeight: "151.8%",
-        }}>
-          Experience
+        <div className='aboutTitle'>Experience</div>
+          <div className='aboutDescription'>
+            I have skills about UX/UI Design, Growth hacking, Product/Project Managing through various responsibilities and roles.
+          </div>
+          <div>
+            <Divider className = 'divider1'/>
+            <AboutList 
+              companyTitle = 'Karrot'
+              experience = 'I designed and launched a new advertisements platform for mid- to large-scale Advertisers.'
+              perieod ='2021.10. - Present'
+              location='Seoul, Republic of Korea'
+            />
+            <Divider className = 'divider1'/>
+            <AboutList 
+              companyTitle = 'Bookcovery'
+              experience = 'As a co-founder, I planned the book-browsing service and managed project to release the service to the PC & mobile web environment. also I designed UXUI of the service so that it can be used on PC and mobile. I implemented marketing strategy so that it collected 20,000 active users per a month.'
+              perieod ='2020.12 - 2021.08'
+              location='Seoul, Republic of Korea'
+            />
+            <Divider className = 'divider1'/>
+            <AboutList 
+              companyTitle = 'Styleshare'
+              experience = 'As a product manager of growth team, I managed growth team to improve the activity and retention of the product. I improved the open rate of push messages and the retention of users by more than doubling the number of users who have agreed to receive marketing information.'
+              perieod ='2020.06 - 2020.12'
+              location='Seoul, Republic of Korea'
+            />
+            <Divider className = 'divider1'/>
+            <AboutList 
+              companyTitle = 'Minding'
+              experience = 'As a product manager of growth team, I managed growth team to improve the activity and retention of the product. I improved the open rate of push messages and the retention of users by more than doubling the number of users who have agreed to receive marketing information.'
+              perieod ='2018.07 - 2020.01'
+              location='Seoul, Republic of Korea'
+            />
+            <Divider className = 'divider1'/>
+            <AboutList 
+              companyTitle = 'Seoul Nat’l Univ. & Samsung AI-UX Study Project'
+              experience = 'In cooperation with Samsung, we conducted a UX improvement project for Delight Shop using IoT. Based on user journey analysis and user interviews, we have developed an artificial intelligence guide system that allows to enjoy the store experience.'
+              perieod ='2018.04 - 2018.06'
+              location='Seoul, Republic of Korea'
+            />
+            <Divider className = 'divider1'/>
+            <AboutList 
+              companyTitle = 'Salone del Mobile Milano Exhibition'
+              experience = 'The exhibition was held under the theme of “Seoul”. The lighting that expresses the light of Seoul is made of resin and the traditional Korean cloth, kagi cloth.'
+              perieod ='2018.04'
+              location='Milan, Italy'
+            />
+          </div>
         </div>
-        <div style={{
-          color: "#3A3E44",
-          fontFamily: "Pretendard",
-          fontSize: "24px",
-          fontStyle: "normal",
-          fontWeight: '400',
-          lineHeight: "151.8%",
-        }}>
-          I have skills about UX/UI Design, Growth hacking, Product/Project Managing through various responsibilities and roles.
+        <div className='aboutContents' style={{backgroundColor: "#F4F5F8"}}>
+        <div className='aboutTitle'>Contact</div>
+        <div style={{flexDirection: 'column', rowGap:'10px'}}>
+          <a href='mailto:lynkim12@gmail.com'>lynkim12@gmail.com</a>
+          <a href='https://www.linkedin.com/in/lyn-k-a0078316b/'>LinkedIn</a>
+          <a href='https://brunch.co.kr/@lynkim'>Brunch</a>
         </div>
-      </div>
+        </div>
       </>
     )
 }

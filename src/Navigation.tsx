@@ -24,7 +24,6 @@ function Navigator() {
         <Link to="/About/" onClick={() => setActiveNav(3)} style={{textDecoration: 'none'}}>
           <NavMenuItem isSelected={activeNav === 3 } name='About' />
         </Link> 
-       
       </div>
     </div>
   );

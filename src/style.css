@@ -107,3 +107,28 @@
     flex-direction: column;
     display: flex;
   }
+
+  .aboutTitle {
+    color: #131517;
+    font-family: Pretendard;
+    font-size :54px;
+    font-style : normal;
+    font-weight: 700;
+    line-height: 151.8%;
+  }
+
+  .aboutDescription {
+    color: #3A3E44;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 151.8%;
+  }
+
+  .divider1 {
+    color : #E6E9ED;
+    stroke-width: 1px;
+    height: 0px;
+    align-self: stretch;
+  }
