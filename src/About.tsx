@@ -8,9 +8,9 @@ function About() {
     return (
       <>
       <Navigator />
-      <div className='aboutContents'>
-        <div className='aboutTitle'>Product Designer <br/> Lyn kim</div>
-        <div className='aboutDescription'>
+      <div className='aboutContents' style={{backgroundColor : "#000"}}>
+        <div className='aboutIntro' >Product Designer <br/> Lyn kim*</div>
+        <div className='aboutDescription'  style={{color : "#fff"}}>
           Currently, I joined Karrot korea as a product designer contributing to the development of an advertising platform for small-sized business. I am responsible for advertiser's experience of creating ads and analyzing performance. We also have the goal to help for small-sized businesses to achieve the success through Karrot advertising.
         </div>
       </div>
