@@ -1,6 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
 
-
   .menu {
     display: flex;
     flex-direction: row;
@@ -32,6 +31,11 @@
     font-family: 'Pretendard';
     font-weight: 700;
     text-decoration-line: none;
+  }
+  .companyLogo {
+    width: 80px;
+    height: 80px;       
+    flex-shrink: 0;
   }
 
   .logo {
@@ -78,7 +82,6 @@
 
   .projectSubtitle {
     color: #131517;
-    font-family: Pretendard;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -112,7 +115,7 @@
     font-weight: 600;
     line-height: normal;
   }
-
+ 
   .aboutContents {
     padding: 120px 48px;
     gap: 28px;
@@ -137,24 +140,62 @@
     line-height: 151.8%;
   }
 
+  .aboutIntroSection {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    padding-right: 48px;
+    padding-left: 48px;
+    gap: 28px;
+    flex-direction: column;
+    display: flex;
+  }
   .aboutIntro {
-    color: #fff;
-    font-family: inktrap;
-    font-size :86px;
+    color: #131517;
+    font-family: Pridi, pretendard;
+    font-weight: 500;
+    font-size :110px;
     line-height: 140%;
   }
 
+  .aboutIntroDescription {
+    color : #131517; 
+    font-family : Pridi, pretendard;
+    font-weight : 300;
+    font-size : 22px;
+    font-style: normal;
+    line-height: 151.8%;
+    width: 640px;
+
+  }
   @font-face {
-    font-family: "inktrap";
+    font-family: "inktrapBold";
+    src: url("./font/AnyConv.com__PPNeueMachina-InktrapUltrabold.woff") format('woff');
+  }
+
+  @font-face {
+    font-family: "inktrapRegular";
     src: url("./font/AnyConv.com__PPNeueMachina-InktrapRegular.woff") format('woff');
   }
 
+  @font-face {
+    font-family: "trapRegular";
+    src: url("./font/Trap-Regular.otf") format('woff');
+  }
+  @font-face {
+    font-family: "trapMedium";
+    src: url("./font/Trap-Medium.otf") format('woff');
+  }
+  @font-face {
+    font-family: "trapBold";
+    src: url("./font/Trap-Bold.otf") format('woff');
+  }
+
   .aboutDescription {
-    color: #3A3E44;
+    color: #131517;
     font-family: Pretendard;
     font-size: 24px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 151.8%;
   }
 
@@ -165,6 +206,14 @@
     align-self: stretch;
   }
 
+  .dividerDash {
+    color : #E6E9ED;
+    stroke-width: 1px;
+    border-style: dashed;
+    height: 1px;
+    align-self: stretch;
+  }
+
   .aboutContactList {
     flex-direction: column;
     display: flex;
@@ -172,7 +221,7 @@
   }
   
   .aboutContactListItem {
-    color: #3A3E44;
+    color: #131517;
     font-family: Pretendard;
     font-size: 20px;
     font-style: normal;
@@ -189,5 +238,5 @@
   }
 
   .decorateFont {
-    font-family: Inktrap;
+    font-family: Pridi;
   }
