@@ -245,3 +245,12 @@
     display: flex;
     gap: 6px;
   }
+
+  .center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    flex-flow: column;
+  }
