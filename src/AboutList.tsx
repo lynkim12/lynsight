@@ -1,4 +1,5 @@
 import './style.css';
+import React from 'react';
 
 export function AboutList (props: {
     companyTitle: string;

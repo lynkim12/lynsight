@@ -1,15 +1,15 @@
 import React from 'react';
 import Navigator from './Navigation';
+import './style.css'
 import { Waiting } from './Waiting';
 
-function Writing() {
+function Work1() {
     return (
       <>
-      <Navigator />
+      <Navigator/>
       <Waiting/>
       </>
     )
 }
 
-export default Writing;
-
+export default Work1;

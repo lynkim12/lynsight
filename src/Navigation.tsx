@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import './style.css';
-import logo from './logo.png';
+import logo from './image/logo.png';
 import { Link } from 'react-router-dom';
 import { NavMenuItem } from './navMenuItem';
+import React from 'react';
 
 
 function Navigator() {
@@ -21,7 +22,7 @@ function Navigator() {
         <Link to="/Writing" onClick={() => setActiveNav(2)} style={{textDecoration: 'none'}}>
           <NavMenuItem isSelected={activeNav === 2 } name='Writing' />
         </Link>
-        <Link to="/About/" onClick={() => setActiveNav(3)} style={{textDecoration: 'none'}}>
+        <Link to="/About" onClick={() => setActiveNav(3)} style={{textDecoration: 'none'}}>
           <NavMenuItem isSelected={activeNav === 3 } name='About' />
         </Link> 
       </div>
