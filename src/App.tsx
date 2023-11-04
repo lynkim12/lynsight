@@ -17,13 +17,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Works />}>
-            
-            <Route path="2" element={<Work1 />}></Route>
-            <Route path="3" element={<Work1 />}></Route>
-            <Route path="4" element={<Work1 />}></Route>
-            <Route path="5" element={<Work1 />}></Route>
-          </Route>
+          <Route path="/" element={<Works />}></Route>
           <Route path="Work1" element={<Work1 />}></Route>   
           <Route path="/Writing/*" element={<Writing />}></Route>
           <Route path="/About/*" element={<About />}></Route>

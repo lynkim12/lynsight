@@ -7,7 +7,7 @@ import thumbnail3 from './image/thumbnail3.png';
 
 function Works() {
     return (
-      <>
+      <div >
       <Navigator/>
       <div className='workContentslist'>
         <div className='contents'>
@@ -21,7 +21,7 @@ function Works() {
             <Content projectPage={"Work1"} thumbnail={thumbnail3} projectTitle={'Store UX/UI Design'} projectDescription={'Mobile store tap UX/UI design on Styleshare to maximize store tap using rates and purchase amout.'} projectSubtitle={'Styleshare'} period={'2020.10 - 2020.12'}/>
          </div>
       </div>
-      </>
+      </div>
     )
 }
 
