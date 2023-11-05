@@ -329,7 +329,7 @@
   .fadeIn {
     animation-name: fadeIn;
     animation-duration: 1s;
-    offset: 600;
+    offset: 10;
   }
 
 
@@ -353,33 +353,27 @@
   }
 
 
-  @keyframes headShake {
+  @keyframes flow {
     0% {
-      transform: translateX(0);
-    }
-  
-    6.5% {
-      transform: translateX(-6px) rotateY(-9deg);
-    }
-  
-    18.5% {
-      transform: translateX(5px) rotateY(7deg);
-    }
-  
-    31.5% {
-      transform: translateX(-3px) rotateY(-5deg);
-    }
-  
-    43.5% {
-      transform: translateX(2px) rotateY(3deg);
+      transform: translate3d(0);
     }
   
     50% {
-      transform: translateX(0);
+      transform: translate3d(16px, -12px, 0);
+    }
+  
+    100% {
+      transform: translate3d(0);
     }
   }
   
-
+  .flow {
+    animation-timing-function: ease-in-out;
+    animation-name: flow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    offset: 10;
+  }
 
   @keyframes shake {
     from,
