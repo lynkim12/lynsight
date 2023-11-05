@@ -23,6 +23,36 @@
   src: url("./font/Trap-Bold.otf") format('woff');
 }
 
+@font-face {
+  font-family: "PridiBold";
+  src: url("./font/Pridi-Bold.ttf") format('woff');
+}
+
+@font-face {
+  font-family: "PridiSemibold";
+  src: url("./font/Pridi-SemiBold.ttf") format('woff');
+}
+
+@font-face {
+  font-family: "PridiMedium";
+  src: url("./font/Pridi-Medium.ttf") format('woff');
+}
+
+
+@font-face {
+  font-family: "PridiRegular";
+  src: url("./font/Pridi-Regular.ttf") format('woff');
+}
+
+@font-face {
+  font-family: "PridiLight";
+  src: url("./font/Pridi-Light.ttf") format('woff');
+}
+
+@font-face {
+  font-family: "PridiExtraLight";
+  src: url("./font/Pridi-ExtraLight.ttf") format('woff');
+}
 
   .menu {
     display: flex;
@@ -163,50 +193,60 @@
     display: flex;
   }
 
-  .aboutTitle {
-    color: #131517;
-    font-family: Pretendard;
-    font-size :54px;
-    font-style : normal;
-    font-weight: 700;
-    line-height: 151.8%;
-  }
 
   .aboutIntroSection {
     padding-bottom: 120px;
     padding-top: 120px;
     padding-right: 48px;
     padding-left: 48px;
-    gap: 28px;
+    gap: 40px;
     flex-direction: column;
     display: flex;
   }
   .aboutIntro {
     color: #131517;
-    font-family: Pridi, pretendard;
-    font-weight: 500;
+    font-family:  
+      /* PridiMedium, */
+      Montserrat, pretendard;
     font-size :100px;
     line-height: 140%;
+    font-weight: 600;
+    letter-spacing: -1.0px;
+    
   }
 
   .aboutIntroDescription {
-    color : #131517; 
-    font-family : Pridi, pretendard;
-    font-weight : 300;
-    font-size : 22px;
+    color: #222429;
+    font-family : 
+      /* PridiExtraLight,  */
+      Montserrat, pretendard;
+    font-size : 24px;
     font-style: normal;
-    line-height: 151.8%;
-    width: 640px;
-
+    line-height: 161.8%;
+    /* width: 680px; */
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    margin: 0px 100px;
   }
   
-  .aboutDescription {
+  .aboutTitle {
     color: #131517;
-    font-family: Pretendard;
+    font-family: Montserrat;
+    font-size :54px;
+    font-style : normal;
+    line-height: 151.8%;
+    font-weight: 700;
+  }
+
+  .aboutDescription {
+    color: #222429;
+    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 151.8%;
+    letter-spacing: -0.px;
+
   }
 
   .divider1 {
@@ -224,22 +264,24 @@
   }
 
   .aboutContactList {
+    color: #222429;
     flex-direction: column;
     display: flex;
-    gap : 12px;
+    gap : 10px;
   }
   
   .aboutContactListItem {
-    color: #131517;
+    color: #222429;
     font-family: Pretendard;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     text-decoration: none;
   }
 
   .aboutExperienceListTitle {
+    color: #222429;
     flex-direction: column;
     width : 240px;
     display: flex;
@@ -253,4 +295,116 @@
     text-align: center;
     min-height: 100vh;
     flex-flow: column;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    offset: 600;
+  }
+
+
+  @keyframes zoomIn2 {
+    from {
+
+      opacity: 0;
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+  
+    70% {
+      transform: none;
+      opacity: 1;
+    }
+  }
+  
+  .zoomIn {
+    animation-name: zoomIn2;
+    animation-duration: 1s;
+    offset: 10;
+  }
+
+
+  @keyframes headShake {
+    0% {
+      transform: translateX(0);
+    }
+  
+    6.5% {
+      transform: translateX(-6px) rotateY(-9deg);
+    }
+  
+    18.5% {
+      transform: translateX(5px) rotateY(7deg);
+    }
+  
+    31.5% {
+      transform: translateX(-3px) rotateY(-5deg);
+    }
+  
+    43.5% {
+      transform: translateX(2px) rotateY(3deg);
+    }
+  
+    50% {
+      transform: translateX(0);
+    }
+  }
+  
+
+
+  @keyframes shake {
+    from,
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+  
+  .aboutContactListItem:hover {
+    animation-timing-function: ease-in-out;
+    animation-name: shake;
+    animation-duration: 1s;
   }

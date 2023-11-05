@@ -13,7 +13,7 @@ export function AboutList (props: {
             <div className="aboutExperienceListTitle">
                 <div style ={{
                     color: "#131517",
-                    fontFamily: "Pretendard",
+                    fontFamily: "Montserrat",
                     fontSize: "24px",
                     fontStyle: "normal",
                     fontWeight: "700",
