@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import './style.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -10,16 +10,18 @@ import WorkPage from './WorkPage';
 
 
 function App() {
+  const [activeNav, setActiveNav] = useState(1);
+  
   return (
     <>
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Works />}></Route>
-          <Route path="Work1" element={<Work1 />}></Route>   
-          <Route path="WorkPage" element={<WorkPage />}></Route> 
-          <Route path="/Writing/*" element={<Writing />}></Route>
-          <Route path="/About/*" element={<About />}></Route>
+          <Route path="/" element={<Works activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
+          <Route path="Work1" element={<Work1  activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>   
+          <Route path="WorkPage" element={<WorkPage activeNav={activeNav} setActiveNav={setActiveNav}/>}></Route> 
+          <Route path="/Writing/*" element={<Writing activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
+          <Route path="/About/*" element={<About activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

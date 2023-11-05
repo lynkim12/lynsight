@@ -71,12 +71,32 @@
     z-index: 1;
   }
 
+  .Menu {
+    color: #222429;
+    font-size: 15px;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    text-decoration-line: none;
+    text-decoration: none;
+  }
+
+  .Menu:hover {
+    color: #222429;
+    font-size: 15px;
+    font-family: 'Pretendard';
+    font-weight: 700;
+    text-decoration-line: none;
+    text-decoration: none;
+  }
+
+
   .defaultMenu {
     color: #222429;
     font-size: 15px;
     font-family: 'Pretendard';
     font-weight: 500;
     text-decoration-line: none;
+    text-decoration: none;
   }
 
   .slectedMenu {
@@ -85,6 +105,7 @@
     font-family: 'Pretendard';
     font-weight: 700;
     text-decoration-line: none;
+    text-decoration: none;
   }
   .companyLogo {
     width: 80px;

@@ -1,7 +1,6 @@
 import './App.css';
 import './style.css';
 import {AnimationOnScroll} from 'react-animation-on-scroll';
-import work1chart1 from './image/work1chart1.png';
 
 export function WorkTextSection(props: {
     title: string; 

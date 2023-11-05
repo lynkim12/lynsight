@@ -5,12 +5,16 @@ import './style.css';
 import { Footer } from './Footer';
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { Dispatch, SetStateAction } from 'react';
 
-function About() {
+function About(props: {
+  activeNav: number, 
+  setActiveNav: Dispatch<SetStateAction<number>>,
+}) {
     return (
       <>
       <div>
-      <Navigator />
+      <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav}/>
         <div>
           <div className='aboutIntroSection fadeIn' 
                 style={{

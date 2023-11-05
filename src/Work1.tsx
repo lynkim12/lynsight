@@ -6,11 +6,15 @@ import work1image1 from './image/work1image1.jpg';
 import { WorkTextSection } from './WorkTextSection';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import work1chart1 from './image/work1chart1.png';
+import { Dispatch, SetStateAction } from 'react';
 
-function Work1() {
+function Work1(props: {
+  activeNav: number, 
+  setActiveNav: Dispatch<SetStateAction<number>>,
+}) {
     return (
       <>
-      <Navigator/>
+      <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav} />
       <div className='fadeIn'>
         <WorkTitle 
           title={'New Ads Platform for Expert '} 

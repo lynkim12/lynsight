@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, SetStateAction, Dispatch } from 'react';
 import './App.css';
 import './style.css';
 import logo from './image/logo.png';
@@ -7,23 +7,26 @@ import { NavMenuItem } from './navMenuItem';
 import React from 'react';
 
 
-function Navigator() {
-  const [activeNav, setActiveNav] = useState(1);
+function Navigator(props: {
+  activeNav: number, 
+  setActiveNav: Dispatch<SetStateAction<number>>,
+}) {
+
   
   return (
     <div className='nav'>
-      <Link to="/" onClick={() => setActiveNav(1)}>
+      <Link to="/" onClick={() => props.setActiveNav(1)}>
             <img className='logo' src={logo} />
       </Link>
       <div className='menu'>
-        <Link to="/" onClick={() => setActiveNav(1)}  style={{textDecoration: 'none'}}>
-          <NavMenuItem isSelected={activeNav === 1 } name='Works'/>
+        <Link to="/" onClick={() => props.setActiveNav(1)} style={{textDecoration: 'none'}}>
+          <NavMenuItem isSelected={props.activeNav === 1 } name='Works' />
+        </Link>  
+        <Link to="/Writing" onClick={() => props.setActiveNav(2)} style={{textDecoration: 'none'}}>
+          <NavMenuItem isSelected={props.activeNav === 2 } name='Writing' />
         </Link>
-        <Link to="/Writing" onClick={() => setActiveNav(2)} style={{textDecoration: 'none'}}>
-          <NavMenuItem isSelected={activeNav === 2 } name='Writing' />
-        </Link>
-        <Link to="/About" onClick={() => setActiveNav(3)} style={{textDecoration: 'none'}}>
-          <NavMenuItem isSelected={activeNav === 3 } name='About' />
+        <Link to="/About" onClick={() => props.setActiveNav(3)} style={{textDecoration: 'none'}}>
+          <NavMenuItem isSelected={props.activeNav === 3 } name='About' />
         </Link> 
       </div>
     </div>
