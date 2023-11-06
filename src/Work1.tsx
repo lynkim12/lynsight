@@ -28,7 +28,8 @@ function Work1(props: {
       < WorkTextSection 
         title={'Overview'} 
         description={'As our product grew, various advertisers began to use it. As a result, the need to develop a platform suited to a variety of advertisers.'} />
-      <div style={{ backgroundColor: "#000", padding: "100px 48px", display: "flex", flexDirection: "column", gap:"150px" }}>
+      <div style={{backgroundColor: "#000", display: "flex" }}>
+        <div style={{ backgroundColor: "#000", margin:"auto", maxWidth:"1400px", alignContent: "center", padding: "100px 48px", display: "flex", flexDirection: "column", gap:"150px" }}>
             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10}>    
             <div style={{ display: "flex", flexDirection: "row", gap:"40px"}}>
                 <div style={{ display: "flex", flexDirection: "column", gap:"18px" }}>
@@ -57,11 +58,13 @@ function Work1(props: {
                 </div>
             </div>
             </AnimationOnScroll>
+            
             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10}>
             <div style={{textAlign:"center", alignItems:"center", display:'flex', justifyContent:"center"}}>
                 <img src={work1chart1}/>
             </div>
             </AnimationOnScroll>
+        </div>
         </div>
         < WorkTextSection title={'Goal'} description={'As our product grew, various advertisers began to use it. As a result, the need to develop a platform suited to a variety of advertisers.'} />
       <Waiting/>

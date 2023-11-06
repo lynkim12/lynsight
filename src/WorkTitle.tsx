@@ -10,7 +10,7 @@ export function WorkTitle(props: {
     period : string;
 }) {
     return (
-        <div style={{padding: "80px 48px", display: "flex", flexDirection:"column", gap: "72px"}}>
+        <div style={{margin: "auto", maxWidth: "1400px", alignContent: "center", padding: "80px 48px", display: "flex", flexDirection:"column", gap: "72px"}}>
             <div style={{display: "flex", flexDirection:"column", gap: "14px"}}>
                 <div 
                     style = {{
