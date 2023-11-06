@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import './style.css';
+import './font.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './About';
 import Writing from './Writing';

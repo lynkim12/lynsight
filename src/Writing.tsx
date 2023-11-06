@@ -1,6 +1,8 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import Navigator from './Navigation';
 import { Waiting } from './Waiting';
+import './font.css';
+import './style.css';
 
 function Writing(props: {
   activeNav: number, 

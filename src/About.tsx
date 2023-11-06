@@ -1,11 +1,13 @@
 import Navigator from './Navigation';
 import { AboutList } from './AboutList';
-import { Divider } from '@mui/material';
+import { Divider, Hidden } from '@mui/material';
 import './style.css';
+import './font.css';
 import { Footer } from './Footer';
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Dispatch, SetStateAction } from 'react';
+import wavedivider from './image/wavedivider.png'
 
 function About(props: {
   activeNav: number, 
@@ -28,6 +30,8 @@ function About(props: {
               Currently, I joined Karrot(Daangn) as a product designer contributing to the development of an advertising platform for small-sized business. I am responsible for advertiser's experience of creating ads and analyzing performance. We also have a goal to help for small-sized businesses to achieve the success through Karrot advertising.
           </div>
         </div>
+        <div className='dividerWave'></div>
+        <div style={{display: 'flex', overflow: "hidden", height: "9px",  justifyContent : "center",  margin: " 0px 48px"}}><img src={wavedivider} style={{height: "9px", display : "flex", alignSelf: "stretch", textAlign:"center"}}/></div>
      </div>
       <div className='aboutContents'>
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10} style={{gap: "28px", flexDirection: "column", display: "flex"}}>

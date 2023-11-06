@@ -1,5 +1,6 @@
 import './App.css';
 import './style.css';
+import './font.css';
 import {AnimationOnScroll} from 'react-animation-on-scroll';
 
 export function WorkTextSection(props: {

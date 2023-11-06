@@ -1,0 +1,65 @@
+
+@font-face {
+    font-family: "inktrapBold";
+    src: url("./font/AnyConv.com__PPNeueMachina-InktrapUltrabold.woff") format('woff');
+  }
+  
+  @font-face {
+    font-family: "inktrapRegular";
+    src: url("./font/AnyConv.com__PPNeueMachina-InktrapRegular.woff") format('woff');
+  }
+  
+  @font-face {
+    font-family: "trapRegular";
+    src: url("./font/Trap-Regular.otf") format('woff');
+  }
+  @font-face {
+    font-family: "trapMedium";
+    src: url("./font/Trap-Medium.otf") format('woff');
+  }
+  @font-face {
+    font-family: "trapBold";
+    src: url("./font/Trap-Bold.otf") format('woff');
+  }
+  
+  @font-face {
+    font-family: "PridiBold";
+    src: url("./font/Pridi-Bold.ttf") format('woff');
+  }
+  
+  @font-face {
+    font-family: "PridiSemibold";
+    src: url("./font/Pridi-SemiBold.ttf") format('woff');
+  }
+  
+  @font-face {
+    font-family: "PridiMedium";
+    src: url("./font/Pridi-Medium.ttf") format('woff');
+  }
+  
+  
+  @font-face {
+    font-family: "PridiRegular";
+    src: url("./font/Pridi-Regular.ttf") format('woff');
+  }
+  
+  @font-face {
+    font-family: "PridiLight";
+    src: url("./font/Pridi-Light.ttf") format('woff');
+  }
+  
+  @font-face {
+    font-family: "PridiExtraLight";
+    src: url("./font/Pridi-ExtraLight.ttf") format('woff');
+  }
+
+  @font-face {
+    font-family: "MontserratItalic";
+    src: url("./font/Montserrat-Italic-VariableFont_wght.ttf") format('woff');
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src: url("./font/Montserrat-VariableFont_wght.ttf") format('woff');
+  }
+  

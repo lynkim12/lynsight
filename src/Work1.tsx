@@ -1,5 +1,6 @@
 import Navigator from './Navigation';
-import './style.css'
+import './style.css';
+import './font.css';
 import { Waiting } from './Waiting';
 import {WorkTitle} from './WorkTitle';
 import work1image1 from './image/work1image1.jpg';

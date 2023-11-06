@@ -1,5 +1,6 @@
 import './App.css';
 import './style.css';
+import './font.css';
 
 export function WorkTitle(props: {
     title: string; 
