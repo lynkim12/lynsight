@@ -8,6 +8,7 @@ import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Dispatch, SetStateAction } from 'react';
 import wavedivider from './image/wavedivider.png'
+import waiting from './image/waiting.png';
 
 function About(props: {
   activeNav: number, 
@@ -29,6 +30,7 @@ function About(props: {
             <div className='aboutIntroDescription'>
               Currently, I joined Karrot(Daangn) as a product designer contributing to the development of an advertising platform for small-sized business. I am responsible for advertiser's experience of creating ads and analyzing performance. We also have a goal to help for small-sized businesses to achieve the success through Karrot advertising.
           </div>
+          <img src={ waiting } className={"flow"} style={{width: "480px", aspectRatio: "auto",  marginTop:"40px"}}/>
         </div>
         <div className='dividerWave'></div>
         <div style={{display: 'flex', overflow: "hidden", height: "9px",  justifyContent : "center",  margin: " 0px 48px"}}><img src={wavedivider} style={{height: "9px", display : "flex", alignSelf: "stretch", textAlign:"center"}}/></div>
