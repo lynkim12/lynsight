@@ -180,11 +180,12 @@
     color: #131517;
     font-family:  
       /* PridiMedium, */
+      Handlee, 
       Montserrat, pretendard;
     font-size :100px;
     line-height: 140%;
     font-weight: 600;
-    letter-spacing: -1.0px;
+    /* letter-spacing: -1.0px; */
     max-width: 1400px;
     
   }
@@ -193,6 +194,7 @@
     color: #222429;
     font-family : 
       /* PridiExtraLight,  */
+      /* Handlee,  */
       Montserrat, pretendard;
     font-size : 24px;
     font-style: normal;
@@ -215,7 +217,8 @@
 
   .aboutDescription {
     color: #222429;
-    font-family: Pretendard;
+    font-family: Montserrat, Pretendard;
+    letter-spacing: -0.5px;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;

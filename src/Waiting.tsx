@@ -7,7 +7,7 @@ export function Waiting() {
       <>
       <div className='center-screen fadeIn' >
       <img src={waiting} className={"flow"} style={{width: "480px", aspectRatio: "auto", marginBottom: "28px"}}/>
-      <div style ={{fontFamily:"Montserrat", fontWeight:"600", fontSize: "24px", color: "#131517"}}>
+      <div style ={{fontFamily: "Handlee", fontSize: "28px", color: "#131517"}}>
         Waiting for update
       </div>
       </div>
