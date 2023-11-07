@@ -60,8 +60,8 @@
   }
 
   .logo {
-    width: 60px;
-    height: 24px;       
+    width: 64px;
+    height: auto;       
     flex-shrink: 0;
   }
   .workContentslist {
@@ -245,19 +245,32 @@
     color: #222429;
     flex-direction: column;
     display: flex;
-    gap : 10px;
+    gap : 12px;
   }
   
   .aboutContactListItem {
     color: #222429;
-    font-family: Pretendard;
-    font-size: 18px;
+    font-family: Montserrat;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
     text-decoration: none;
+    letter-spacing: -0.2px;
+
   }
 
+
+  .aboutContactListItem:hover {
+    animation-timing-function: ease-in-out;
+    animation-name: shake;
+    animation-duration: 1s;
+    text-underline-offset: 4px;
+    text-decoration: underline;
+
+  }
+
+  
   .aboutExperienceListTitle {
     color: #222429;
     flex-direction: column;
@@ -393,12 +406,6 @@
     animation-iteration-count: infinite;
     offset: 10;
     animation-timing-function:linear;
-  }
-
-  .aboutContactListItem:hover {
-    animation-timing-function: ease-in-out;
-    animation-name: shake;
-    animation-duration: 1s;
   }
 
   .nurmericIndex {

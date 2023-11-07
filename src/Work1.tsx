@@ -8,6 +8,7 @@ import { WorkTextSection } from './WorkTextSection';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import work1chart1 from './image/work1chart1.png';
 import { Dispatch, SetStateAction } from 'react';
+import wavedivider from './image/wavedivider.png'
 
 function Work1(props: {
   activeNav: number, 
@@ -66,12 +67,16 @@ function Work1(props: {
             </AnimationOnScroll>
         </div>
         </div>
-        <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10}>
+        <AnimationOnScroll animateIn="animate__fadeInUp"  animateOnce={true} offset={10}>
         < WorkTextSection title={'Goal'} description={'As our product grew, various advertisers began to use it. As a result, the need to develop a platform suited to a variety of advertisers.'} />
-          <div style={{fontFamily: "Handlee", fontSize: "48px", color: "#131517", display:"flex", margin:"auto", padding: "0px 48px", maxWidth:"1400px", justifyContent:"center", textAlign:"center", alignContent:"center"}}>
-            Powerful MVP with essential features for expert
-          </div>
         </AnimationOnScroll>
+          <AnimationOnScroll animateIn="zoomIn" offset={200}>
+            <div style={{fontFamily: "Handlee", fontSize: "52px", color: "#131517", display:"flex", margin:"auto", padding: "0px 48px", maxWidth:"1400px", justifyContent:"center", textAlign:"center", alignContent:"center"}}>
+              Powerful MVP with essential features for expert
+            </div>
+          </AnimationOnScroll> 
+
+          <div  style={{maxWidth: "1400px", display: 'flex', overflow: "hidden", height: "9px",  justifyContent : "center",  margin:"auto",padding: " 0px 48px"}}><img src={wavedivider} className={"wave"} style={{height: "9px", display : "flex", alignSelf: "stretch", textAlign:"center"}}/></div>
       <Waiting/>
       </>
     )
