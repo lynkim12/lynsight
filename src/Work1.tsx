@@ -71,8 +71,9 @@ function Work1(props: {
         < WorkTextSection title={'Goal'} description={'As our product grew, various advertisers began to use it. As a result, the need to develop a platform suited to a variety of advertisers.'} />
         </AnimationOnScroll>
           <AnimationOnScroll animateIn="zoomIn" offset={200}>
-            <div style={{fontFamily: "Handlee", fontSize: "52px", color: "#131517", display:"flex", margin:"auto", padding: "0px 48px", maxWidth:"1400px", justifyContent:"center", textAlign:"center", alignContent:"center"}}>
-              Powerful MVP with essential features for expert
+            <div style={{
+              fontFamily: "Handlee", fontSize: "80px", fontWeight:"600", color: "#353C46",  display:"flex", margin:"auto", padding: "0px 48px", maxWidth:"1400px", justifyContent:"center", textAlign:"center", alignContent:"center"
+              }}>Powerful MVP <br/> with essential features for expert
             </div>
           </AnimationOnScroll> 
 

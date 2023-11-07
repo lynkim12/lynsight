@@ -1,5 +1,10 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
 
+::selection {
+  background: #E4C8DB;
+  color: #8B3E66;
+}
+
   .menu {
     display: flex;
     flex-direction: row;
@@ -166,6 +171,15 @@
   }
 
 
+  .aboutIntroCircle1 {
+    width: 893px;
+    height: 222px;
+    transform: rotate(-7.025deg);
+    flex-shrink: 0;
+    border-radius: 893px;
+    border: 1px dashed #CED3D8;
+  }
+  
   .aboutIntroSection {
     padding-bottom: 120px;
     padding-top: 120px;
@@ -187,6 +201,7 @@
     font-weight: 600;
     /* letter-spacing: -1.0px; */
     max-width: 1400px;
+    z-index: 1;
     
   }
 
@@ -425,3 +440,4 @@
     font-weight: 600;
     line-height: 135%;
   }
+

@@ -1,0 +1,21 @@
+@keyframes moveCircle1 {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+      transform: translateX(1200px);
+    }
+ 
+    100% {
+        transform: translateX(0px);
+    }
+  }
+
+  .moveCircle1 {
+    animation-name: moveCircle1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    offset: 10;
+  }

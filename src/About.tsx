@@ -9,6 +9,9 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Dispatch, SetStateAction } from 'react';
 import wavedivider from './image/wavedivider.png'
 import waiting from './image/waiting.png';
+import circle from './image/circle.png';
+import image1 from './image/@.png';
+import './animation.css';
 
 function About(props: {
   activeNav: number, 
@@ -27,9 +30,12 @@ function About(props: {
                   textAlign: "center",
                   flexFlow: "column"}}>
             <div className='aboutIntro'>Product Designer <br/> Lyn Kim</div>
+            <img src={circle}  style={{position: "absolute", top:"120px" , maxWidth: "913px", margin : "48px",  justifyContent : "center", }}/>
+            <img src={image1} style={{position: "absolute", width:"44px", top:"369px", left: "90px"}}/>
             <div className='aboutIntroDescription'>
               Currently, I joined Karrot(Daangn) as a product designer contributing to the development of an advertising platform for small-sized business. I am responsible for advertiser's experience of creating ads and analyzing performance. We also have a goal to help for small-sized businesses to achieve the success through Karrot advertising.
-          </div>
+            </div>
+            
           <img src={ waiting } className={"flow"} style={{width: "480px", aspectRatio: "auto",  marginTop:"40px"}}/>
         </div>
         <div className='dividerWave'></div>
