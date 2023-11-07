@@ -33,8 +33,8 @@ function About(props: {
           <img src={ waiting } className={"flow"} style={{width: "480px", aspectRatio: "auto",  marginTop:"40px"}}/>
         </div>
         <div className='dividerWave'></div>
-        <div style={{display: 'flex', overflow: "hidden", height: "9px",  justifyContent : "center",  margin: " 0px 48px"}}><img src={wavedivider} style={{height: "9px", display : "flex", alignSelf: "stretch", textAlign:"center"}}/></div>
-     </div>
+          <div  style={{maxWidth: "1400px", display: 'flex', overflow: "hidden", height: "9px",  justifyContent : "center",  margin:"auto",padding: " 0px 48px"}}><img src={wavedivider} className={"wave"} style={{height: "9px", display : "flex", alignSelf: "stretch", textAlign:"center"}}/></div>
+        </div>
       <div className='aboutContents'>
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10} style={{gap: "28px", flexDirection: "column", display: "flex"}}>
           <div className='aboutTitle'>Experience</div>

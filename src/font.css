@@ -62,4 +62,11 @@
     font-family: "Montserrat";
     src: url("./font/Montserrat-VariableFont_wght.ttf") format('woff');
   }
+
+  @font-face {
+    font-family: "Handlee";
+    src: url("./font/Handlee-Regular.ttf") format('woff');
+  }
+
+
   

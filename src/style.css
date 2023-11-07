@@ -372,6 +372,26 @@
     }
   }
   
+
+  @keyframes wave {
+    from,
+    to {
+      transform: translate3d(-122px, 0, 0);
+    }
+  
+    100% {
+      transform: translate3d(20px, 0, 0);
+    }
+  }
+  
+  .wave {
+    animation-name: wave;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    offset: 10;
+    animation-timing-function:linear;
+  }
+
   .aboutContactListItem:hover {
     animation-timing-function: ease-in-out;
     animation-name: shake;
