@@ -11,6 +11,8 @@ import wavedivider from './image/wavedivider.png'
 import waiting from './image/waiting.png';
 import circle from './image/circle.png';
 import image1 from './image/@.png';
+import image2 from './image/*.png';
+import image3 from './image/shooting.png';
 import './animation.css';
 
 function About(props: {
@@ -30,8 +32,13 @@ function About(props: {
                   textAlign: "center",
                   flexFlow: "column"}}>
             <div className='aboutIntro'>Product Designer <br/> Lyn Kim</div>
-            <img src={circle}  style={{position: "absolute", top:"120px" , maxWidth: "913px", margin : "48px",  justifyContent : "center", }}/>
-            <img src={image1} style={{position: "absolute", width:"44px", top:"369px", left: "90px"}}/>
+            <img src={circle} style={{position: "absolute", top:"120px",  maxWidth: "913px", margin : "48px",  justifyContent : "center", }}/>
+            <div style={{ position: "absolute", top:"120px", margin : "48px",  }}>
+              <img src={image1} className='moveCircle1' style={{ width:"32px", left:"-410px", top: "-80px", position: "absolute", justifyContent : "center",}}/>
+              <img src={image2} className='tilt' style={{ width:"24px", left:"-236px", top: "40px", position: "absolute", justifyContent : "center",}}/>
+              <img src={image2} className='twinkle' style={{ width:"30px", left:"236px", top: "220px", position: "absolute", justifyContent : "center",}}/>
+              <img src={image3} className='shooting' style={{ width:"34px", left:"426px", top: "0px", position: "absolute", justifyContent : "center",}}/>
+            </div>
             <div className='aboutIntroDescription'>
               Currently, I joined Karrot(Daangn) as a product designer contributing to the development of an advertising platform for small-sized business. I am responsible for advertiser's experience of creating ads and analyzing performance. We also have a goal to help for small-sized businesses to achieve the success through Karrot advertising.
             </div>

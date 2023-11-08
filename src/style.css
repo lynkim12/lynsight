@@ -160,6 +160,8 @@
     gap: 28px;
     flex-direction: column;
     display: flex;
+    margin: auto;
+    max-width: 1400px;
   }
 
   .aboutExperienceList {
@@ -198,7 +200,7 @@
       Montserrat, pretendard;
     font-size :100px;
     line-height: 140%;
-    font-weight: 600;
+    /* font-weight: 600; */
     /* letter-spacing: -1.0px; */
     max-width: 1400px;
     z-index: 1;
@@ -228,6 +230,8 @@
     font-style : normal;
     line-height: 151.8%;
     font-weight: 700;
+    
+
   }
 
   .aboutDescription {
@@ -279,6 +283,7 @@
   .aboutContactListItem:hover {
     animation-timing-function: ease-in-out;
     animation-name: shake;
+    animation-iteration-count: infinite;
     animation-duration: 1s;
     text-underline-offset: 4px;
     text-decoration: underline;

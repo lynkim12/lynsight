@@ -1,21 +1,100 @@
 @keyframes moveCircle1 {
     0% {
-        transform: translateX(0px);
-    }
-
-    50% {
-      transform: translateX(1200px);
+        offset-distance: 0%;
+        transform: rotate(2turn);
     }
  
     100% {
-        transform: translateX(0px);
+        offset-distance: 100%;
     }
   }
 
   .moveCircle1 {
     animation-name: moveCircle1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    offset: path('M4.17663 338.984C-10.0715 285.809 24.3079 224.831 91.7994 169.2C159.253 113.6 259.627 63.4805 376.937 32.0475C494.247 0.614409 606.233 -6.16833 692.45 8.2561C778.715 22.6886 838.977 58.3068 853.225 111.482C867.474 164.656 833.094 225.634 765.603 281.265C698.149 336.865 597.774 386.985 480.465 418.418C363.155 449.851 251.169 456.634 164.952 442.209C78.6869 427.777 18.4248 392.158 4.17663 338.984Z') auto;
+  }
+
+  @keyframes tilt {
+    50% {
+        transform: rotate(12.025deg);
+    }
+
+    0%, 100% {
+        transform: rotate(0deg);
+    }    
+  }
+
+  .tilt {
+    animation-name: tilt;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    offset: 10;
+  }
+
+  @keyframes twinkle {
+    50% {
+        transform: rotate(1turn);
+    }
+    
+    30%, 70% {
+        opacity: 0%;
+    }  
+
+    0%, 100% {
+        opacity: 100%;
+        
+    }    
+  }
+
+  .twinkle {
+    animation-name: twinkle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes shooting {
+    0% {
+        transform:translate3d(0px, 0px,0);
+        opacity: 0%;
+    }
+
+    30% {
+        transform:translate3d(0px, 0px,0);
+        opacity: 0%;
+    }
+
+    40% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    60% {
+        opacity: 0%;
+        transform: translate3d(-60px, 60px,0);
+    }
+
+    80%{
+        opacity: 0%;
+        transform: translate3d(-60px, 60px,0);
+    }
+
+    100% {
+        transform: translate3d(-60px, 60px,0);
+        opacity: 0%;
+    }
+  }
+
+
+  .shooting {
+    animation-name: shooting;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
