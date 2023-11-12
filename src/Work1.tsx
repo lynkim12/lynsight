@@ -37,7 +37,6 @@ function Work1(props: {
                     <div className='nurmericIndex'>1</div>
                     <div style={{
                         color: "#F4F5F8",
-                        fontFamily: "Pretendard",
                         fontSize: "20px",
                         fontStyle: "normal",
                         fontWeight: "600",
@@ -49,7 +48,6 @@ function Work1(props: {
                     <div className='nurmericIndex'>2</div>
                     <div style={{
                         color: "#F4F5F8",
-                        fontFamily: "Pretendard",
                         fontSize: "20px",
                         fontStyle: "normal",
                         fontWeight: "600",

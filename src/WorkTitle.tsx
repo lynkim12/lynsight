@@ -15,7 +15,6 @@ export function WorkTitle(props: {
                 <div 
                     style = {{
                         color: "#131517",
-                        fontFamily: "Montserrat, Pretendard",
                         fontSize: "54px",
                         fontStyle: "normal",
                         fontWeight: "700",
@@ -24,7 +23,6 @@ export function WorkTitle(props: {
                     }}>{props.title}</div>
                 <div style = {{
                         color: "#51575E",
-                        fontFamily: "Pretendard",
                         fontSize: "20px",
                         fontStyle: "normal",
                         fontWeight: "400",
@@ -35,14 +33,12 @@ export function WorkTitle(props: {
                 <div style={{display: "flex", flexDirection:"column", gap: "8px"}}>
                     <div style = {{
                             color: "#131517",
-                            fontFamily: "Pretendard",
                             fontSize: "16px",
                             fontStyle: "normal",
                             fontWeight: "700"
                     }}>Team</div> 
                     <div style = {{
                             color: "#51575E",
-                            fontFamily: "Pretendard",
                             fontSize: "16px",
                             fontStyle: "normal",
                             fontWeight: "400",
@@ -52,14 +48,12 @@ export function WorkTitle(props: {
                 <div style={{display: "flex", flexDirection:"column", gap: "8px"}}>
                     <div style = {{
                             color: "#131517",
-                            fontFamily: "Pretendard",
                             fontSize: "16px",
                             fontStyle: "normal",
                             fontWeight: "700"
                     }}>Role</div> 
                     <div style = {{
                             color: "#51575E",
-                            fontFamily: "Pretendard",
                             fontSize: "16px",
                             fontStyle: "normal",
                             fontWeight: "400",
@@ -69,14 +63,12 @@ export function WorkTitle(props: {
                 <div style={{display: "flex", flexDirection:"column", gap: "8px"}}>
                     <div style = {{
                             color: "#131517",
-                            fontFamily: "Pretendard",
                             fontSize: "16px",
                             fontStyle: "normal",
                             fontWeight: "700"
                     }}>Peroid</div> 
                     <div style = {{
                             color: "#51575E",
-                            fontFamily: "Pretendard",
                             fontSize: "16px",
                             fontStyle: "normal",
                             fontWeight: "400",

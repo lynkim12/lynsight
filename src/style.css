@@ -1,4 +1,4 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+/* @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"); */
 
 ::selection {
   background: #E4C8DB;
@@ -25,7 +25,6 @@
   .Menu {
     color: #222429;
     font-size: 15px;
-    font-family: 'Pretendard';
     font-weight: 500;
     text-decoration-line: none;
     text-decoration: none;
@@ -34,7 +33,6 @@
   .Menu:hover {
     color: #222429;
     font-size: 15px;
-    font-family: 'Pretendard';
     font-weight: 700;
     text-decoration-line: none;
     text-decoration: none;
@@ -44,7 +42,6 @@
   .defaultMenu {
     color: #222429;
     font-size: 15px;
-    font-family: 'Pretendard';
     font-weight: 500;
     text-decoration-line: none;
     text-decoration: none;
@@ -53,7 +50,6 @@
   .slectedMenu {
     color: #222429;
     font-size: 15px;
-    font-family: 'Pretendard';
     font-weight: 700;
     text-decoration-line: none;
     text-decoration: none;
@@ -65,7 +61,7 @@
   }
 
   .logo {
-    width: 64px;
+    width: 72px;
     height: auto;       
     flex-shrink: 0;
   }
@@ -129,7 +125,6 @@
 
   .projectTitle {
     color: #131517;
-    font-family: Pretendard;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -138,7 +133,6 @@
   
   .projectDescription {
     color: #9AA0A7;
-    font-family: Pretendard;
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
@@ -148,7 +142,6 @@
 
   .projectPeriod {
     color: #51575E;
-    font-family: Pretendard;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -183,7 +176,7 @@
   }
   
   .aboutIntroSection {
-    padding-bottom: 120px;
+    padding-bottom: 180px;
     padding-top: 120px;
     padding-right: 48px;
     padding-left: 48px;
@@ -196,8 +189,7 @@
     color: #131517;
     font-family:  
       /* PridiMedium, */
-      Handlee, 
-      Montserrat, pretendard;
+      Pacifico, -apple-system, BlinkMacSystemFont, sans-serif ;
     font-size :100px;
     line-height: 140%;
     /* font-weight: 600; */
@@ -212,7 +204,7 @@
     font-family : 
       /* PridiExtraLight,  */
       /* Handlee,  */
-      Montserrat, pretendard;
+      Montserrat, -apple-system, BlinkMacSystemFont, sans-serif;
     font-size : 24px;
     font-style: normal;
     line-height: 161.8%;
@@ -225,7 +217,7 @@
   
   .aboutTitle {
     color: #131517;
-    font-family: Montserrat;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, sans-serif;
     font-size :54px;
     font-style : normal;
     line-height: 151.8%;
@@ -236,7 +228,7 @@
 
   .aboutDescription {
     color: #222429;
-    font-family: Montserrat, Pretendard;
+    font-family: Montserrat,-apple-system, BlinkMacSystemFont, sans-serif;
     letter-spacing: -0.5px;
     font-size: 24px;
     font-style: normal;
@@ -269,7 +261,7 @@
   
   .aboutContactListItem {
     color: #222429;
-    font-family: Montserrat;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -439,7 +431,6 @@
     border: 0.5px solid #FFF;
     color: #F7F8FA;
     text-align: center;
-    font-family: pretendard;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;

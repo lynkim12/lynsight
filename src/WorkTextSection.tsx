@@ -14,7 +14,6 @@ export function WorkTextSection(props: {
                 <div
                     style={{
                         color: "#131517",
-                        fontFamily: "Pretendard",
                         fontSize: "24px",
                         fontStyle: "normal",
                         fontWeight: "700",
@@ -22,7 +21,6 @@ export function WorkTextSection(props: {
                     }}>{props.title}</div>
                 <div style={{
                     color: "#3A3E44",
-                    fontFamily: "Pretendard",
                     fontSize: "24px",
                     fontStyle: "normal",
                     fontWeight: "400",

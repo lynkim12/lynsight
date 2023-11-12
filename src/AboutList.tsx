@@ -23,7 +23,6 @@ export function AboutList (props: {
                 </div>
                 <div style ={{
                     color: "#767D85",
-                    fontFamily: "Pretendard",
                     fontSize: "16px",
                     fontStyle: "normal",
                     fontWeight: "400",
@@ -33,7 +32,6 @@ export function AboutList (props: {
             </div>
             <div style ={{
                     color: "#3A3E44",
-                    fontFamily: "Pretendard",
                     fontSize: "20px",
                     fontStyle: "normal",
                     fontWeight: "400",
@@ -43,7 +41,6 @@ export function AboutList (props: {
             </div>
             <div style ={{
                     color: "#131517",
-                    fontFamily: "Pretendard",
                     fontSize: "18px",
                     fontStyle: "normal",
                     fontWeight: "700",
