@@ -8,7 +8,6 @@ import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Dispatch, SetStateAction } from 'react';
 import wavedivider from './image/wavedivider.png'
-import waiting from './image/waiting.png';
 import circle from './image/circle.png';
 import image1 from './image/@.png';
 import image2 from './image/*.png';
@@ -34,7 +33,7 @@ function About(props: {
             <div className='aboutIntro'>Product Designer <br/> Lyn Kim</div>
             <img src={circle} style={{position: "absolute", top:"120px",  maxWidth: "913px", margin : "48px",  justifyContent : "center", }}/>
             <div style={{ position: "absolute", top:"120px", margin : "48px",  }}>
-              <img src={image1} className='moveCircle1' style={{ width:"32px", left:"-410px", top: "60px", position: "absolute", justifyContent : "center",}}/>
+              <img src={image1} className='moveCircle1' style={{ width:"30px", left:"-410px", top: "60px", position: "absolute", justifyContent : "center",}}/>
               <img src={image2} className='tilt' style={{ width:"24px", left:"-236px", top: "40px", position: "absolute", justifyContent : "center",}}/>
               <img src={image2} className='twinkle' style={{ width:"30px", left:"236px", top: "220px", position: "absolute", justifyContent : "center",}}/>
               <img src={image3} className='shooting' style={{ width:"34px", left:"426px", top: "0px", position: "absolute", justifyContent : "center",}}/>
@@ -59,7 +58,7 @@ function About(props: {
             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10}>
               <AboutList 
                 companyTitle = 'Karrot'
-                experience = 'I designed and launched a new advertisements platform for mid- to large-scale Advertisers.'
+                experience = 'As a product designer in the advertisement team, I have responsibility of the UX design for lots of small-sized business owner to do marketing their business more easily. Also I designed and launched a new advertisements platform for mid- to large-scale Advertisers. '
                 perieod ='2021.10. - Present'
                 location='Seoul, Republic of Korea'
               />
@@ -68,7 +67,7 @@ function About(props: {
             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10}>
               <AboutList 
                 companyTitle = 'Bookcovery'
-                experience = 'As a co-founder, I planned the book-browsing service and managed project to release the service to the PC & mobile web environment. also I designed UXUI of the service so that it can be used on PC and mobile. I implemented marketing strategy so that it collected 20,000 active users per a month.'
+                experience = 'As a founder, I planned the book-browsing service and managed project to release the service to the PC & mobile web environment. also I designed UXUI of the service so that it can be used on PC and mobile. I implemented marketing strategy so that it collected 20,000 active users per a month.'
                 perieod ='2020.12 - 2021.08'
                 location='Seoul, Republic of Korea'
               />
@@ -86,7 +85,7 @@ function About(props: {
             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10}>
               <AboutList 
                 companyTitle = 'Minding'
-                experience = 'As a product manager of growth team, I managed growth team to improve the activity and retention of the product. I improved the open rate of push messages and the retention of users by more than doubling the number of users who have agreed to receive marketing information.'
+                experience = 'I joined the team as a UX/UI designer. We planned and launched a mind health care service named Minding.'
                 perieod ='2018.07 - 2020.01'
                 location='Seoul, Republic of Korea'
               />

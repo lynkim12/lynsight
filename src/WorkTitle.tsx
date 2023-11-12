@@ -12,14 +12,14 @@ export function WorkTitle(props: {
     return (
         <div style={{margin: "auto", maxWidth: "1400px", alignContent: "center", padding: "80px 48px", display: "flex", flexDirection:"column", gap: "72px"}}>
             <div style={{display: "flex", flexDirection:"column", gap: "14px"}}>
-                <div 
+                <div
                     style = {{
                         color: "#131517",
                         fontSize: "54px",
                         fontStyle: "normal",
                         fontWeight: "700",
                         lineHeight: "normal",
-                        letterSpacing : "-1px"
+                        letterSpacing : "-0.5px"
                     }}>{props.title}</div>
                 <div style = {{
                         color: "#51575E",

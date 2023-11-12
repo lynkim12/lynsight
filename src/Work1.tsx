@@ -17,18 +17,20 @@ function Work1(props: {
     return (
       <>
       <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav} />
-      <div className='fadeIn'>
+      <div className='fadeIn '>
         <WorkTitle 
-          title={'New Ads Platform for Expert '} 
-          description={'Designing an entirely new advertising platform for Mid- to Large-scale Advertisers'} 
+          title={'New Ads Platform for Experts'} 
+          description={'An entirely new advertising platform for Mid- to Large-scale Advertisers'} 
           team={'Karrot(Daangn)'} 
-          role={'User Research, Service Planning, UXUI Design - Contribution 80%'} 
+          role={'User Research, Service Planning, UXUI Design'} 
           period={'2022.01. - 2022.08.'}/>
       </div>
+      <div style = {{maxHeight :"900px",overflow:"hidden"  }}>
       <img style = {{ width:"100%", aspectRatio: "auto" }} src={work1image1}/>
+      </div>
       < WorkTextSection 
         title={'Overview'} 
-        description={'As our product grew, various advertisers began to use it. As a result, the need to develop a platform suited to a variety of advertisers.'} />
+        description={'As the karrot advertisement platform grews continuously, various advertisers began to use it. As a result, the need to develop the platform suited to a variety of advertisers.'} />
       <div style={{backgroundColor: "#000", display: "flex" }}>
         <div style={{ backgroundColor: "#000", margin:"auto", maxWidth:"1400px", alignContent: "center", padding: "100px 48px", display: "flex", flexDirection: "column", gap:"150px" }}>
             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10}>    
@@ -63,19 +65,19 @@ function Work1(props: {
                 <img src={work1chart1}/>
             </div>
             </AnimationOnScroll>
+          </div>
         </div>
-        </div>
-        <AnimationOnScroll animateIn="animate__fadeInUp"  animateOnce={true} offset={10}>
         < WorkTextSection title={'Goal'} description={'As our product grew, various advertisers began to use it. As a result, the need to develop a platform suited to a variety of advertisers.'} />
-        </AnimationOnScroll>
           <AnimationOnScroll animateIn="zoomIn" offset={200}>
             <div style={{
-              fontFamily: "Handlee", fontSize: "80px", fontWeight:"600", color: "#353C46",  display:"flex", margin:"auto", padding: "0px 48px", maxWidth:"1400px", justifyContent:"center", textAlign:"center", alignContent:"center"
-              }}>Powerful MVP <br/> with essential features for expert
+              fontFamily: "Montserrat", fontSize: "68px", fontWeight:"600", color: "#353C46",  display:"flex", margin:"auto", padding: "0px 48px", maxWidth:"1400px", justifyContent:"center", textAlign:"center", alignContent:"center"
+              }}>Powerful MVP <br/> with essential features for experts
             </div>
           </AnimationOnScroll> 
-
-          <div  style={{maxWidth: "1400px", display: 'flex', overflow: "hidden", height: "9px",  justifyContent : "center",  margin:"auto",padding: " 0px 48px"}}><img src={wavedivider} className={"wave"} style={{height: "9px", display : "flex", alignSelf: "stretch", textAlign:"center"}}/></div>
+        < WorkTextSection title={'User Needs'} description={'In order to create an MVP that reflects the needs of advertisers, we find out the needs of target users throungh In-depth interviews.'} />
+          
+          
+      <div  style={{maxWidth: "1400px", display: 'flex', overflow: "hidden", height: "9px",  justifyContent : "center",  margin:"auto",padding: " 0px 48px"}}><img src={wavedivider} className={"wave"} style={{height: "9px", display : "flex", alignSelf: "stretch", textAlign:"center"}}/></div>
       <Waiting/>
       </>
     )

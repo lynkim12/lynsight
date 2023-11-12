@@ -26,7 +26,7 @@ export function Content (props: {
                 {props.projectSubtitle}
             </div>
             <div style={{display : "flex", flexDirection : "column",gap:"10px"}}>
-                <div className='projectTitle'>
+                <div className="projectTitle">
                     {props.projectTitle}
                 </div>
                 <div className='projectDescription'>

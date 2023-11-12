@@ -130,6 +130,12 @@
     font-weight: 700;
     line-height: normal;
   }
+
+  .projectTitleHover {
+    text-underline-offset: 3.5px;
+    text-decoration: underline 2.5px;
+
+  }
   
   .projectDescription {
     color: #9AA0A7;
