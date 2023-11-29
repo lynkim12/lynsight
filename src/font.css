@@ -1,5 +1,10 @@
 
 @font-face {
+  font-family:"Shrikhand";
+  src: url("./font/Shrikhand-Regular.ttf") format('woff');
+}
+
+@font-face {
     font-family: "inktrapBold";
     src: url("./font/AnyConv.com__PPNeueMachina-InktrapUltrabold.woff") format('woff');
   }

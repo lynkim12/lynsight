@@ -20,6 +20,8 @@
     position: sticky;
     top: 0;
     z-index: 1;
+    background: linear-gradient(180deg, #FFF 0% , rgba(255, 255, 255, 0.00) 100%);
+    backdrop-filter: blur(3px);
   }
 
   .Menu {
@@ -61,7 +63,7 @@
   }
 
   .logo {
-    width: 72px;
+    width: 90px;
     height: auto;       
     flex-shrink: 0;
   }
@@ -195,7 +197,7 @@
     color: #131517;
     font-family:  
       /* PridiMedium, */
-      Pacifico, -apple-system, BlinkMacSystemFont, sans-serif ;
+      Shrikhand, Pacifico, -apple-system, BlinkMacSystemFont, sans-serif ;
     font-size :100px;
     line-height: 140%;
     /* font-weight: 600; */
