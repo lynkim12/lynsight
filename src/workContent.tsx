@@ -18,9 +18,9 @@ export function Content (props: {
 
   return (
     <div  onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
+        <div className = 'projectNewBadge'>updated</div>
         <Link to={props.projectPage} className='project' style={{textDecoration: 'none'}} >
         <Thumbnail thumbnail={props.thumbnail} isHovered={isHovering}/>
-        
         <div className='projectContents'>
             <div className='projectSubtitle'>
                 {props.projectSubtitle}

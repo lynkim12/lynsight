@@ -19,7 +19,7 @@
     align-items: center; 
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 3;
     /* background: linear-gradient(180deg, #FFF 0% , rgba(255, 255, 255, 0.00) 100%); */
     backdrop-filter: blur(3px);
   }
@@ -67,6 +67,7 @@
     height: auto;       
     flex-shrink: 0;
   }
+
   .workContentslist {
     margin : auto;
     padding: 80px 48px;
@@ -76,8 +77,8 @@
     max-width: 1400px;
     justify-content: center;
     align-content: center;
-
   }
+
   .contents {
     display: flex;
     align-items: flex-start;
@@ -156,6 +157,25 @@
     line-height: normal;
   }
  
+  .projectNewBadge {
+    display: inline-flex;
+    padding: 6px 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #EB5757 0%, #6A27F9 100%);
+    color: var(--white, #FFF);
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    z-index: 2;
+    position: relative;
+    top: 14px;
+    left: 14px;
+  }
+
   .aboutContents {
     padding: 120px 48px;
     gap: 28px;

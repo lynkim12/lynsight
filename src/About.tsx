@@ -30,7 +30,7 @@ function About(props: {
                   alignItems: "center",
                   textAlign: "center",
                   flexFlow: "column"}}>
-            <div className='aboutIntro'>Prod uct Designer <br/> Lyn Kim</div>
+            <div className='aboutIntro'>Product Designer <br/> Lyn Kim</div>
             <img src={circle} style={{position: "absolute", top:"140px",  maxWidth: "913px", margin : "48px",  justifyContent : "center", }}/>
             <div style={{ position: "absolute", top:"120px", margin : "48px",  }}>
               <img src={image1} className='moveCircle1' style={{ width:"30px", left:"-410px", top: "44px", position: "absolute", justifyContent : "center",}}/>
