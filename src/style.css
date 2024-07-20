@@ -156,7 +156,12 @@
     font-weight: 600;
     line-height: normal;
   }
- 
+  
+  .projectContentsAll {
+    position: relative;
+
+  }
+
   .projectNewBadge {
     display: inline-flex;
     padding: 6px 8px;
@@ -171,8 +176,8 @@
     font-weight: 600;
     line-height: normal;
     z-index: 2;
-    position: relative;
-    top: 14px;
+    position: absolute;
+    top: -8px;
     left: 14px;
   }
 

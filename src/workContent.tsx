@@ -13,12 +13,13 @@ export function Content (props: {
     projectSubtitle : string;
     period : string;
     projectPage : string;
+    badge? : string;
 }) {
     const [isHovering, setIsHovering] = useState(false);
 
   return (
-    <div  onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
-        <div className = 'projectNewBadge'>updated</div>
+    <div className='projectContentsAll' onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
+        {props.badge && <div className = 'projectNewBadge'>{props.badge}</div>}
         <Link to={props.projectPage} className='project' style={{textDecoration: 'none'}} >
         <Thumbnail thumbnail={props.thumbnail} isHovered={isHovering}/>
         <div className='projectContents'>
