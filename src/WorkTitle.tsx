@@ -15,11 +15,12 @@ export function WorkTitle(props: {
                 <div
                     style = {{
                         color: "#131517",
+                        fontFamily: "Montserrat",
                         fontSize: "54px",
                         fontStyle: "normal",
                         fontWeight: "700",
                         lineHeight: "normal",
-                        letterSpacing : "-0.5px"
+                        letterSpacing : "-1px"
                     }}>{props.title}</div>
                 <div style = {{
                         color: "#51575E",

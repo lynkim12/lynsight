@@ -2,10 +2,10 @@ import './style.css';
 import React from 'react';
 
 export function AboutList (props: {
-    companyTitle: string;
-    experience: string;
-    perieod: string;
-    location: string;
+    companyTitle: React.ReactNode;
+    experience: React.ReactNode;
+    perieod: React.ReactNode;
+    location: React.ReactNode;
 }
 ) {
     return (

@@ -21,7 +21,7 @@ export function WorkTextSection(props: {
                     }}>{props.title}</div>
                 <div style={{
                     color: "#3A3E44",
-                    fontSize: "24px",
+                    fontSize: "20px",
                     fontStyle: "normal",
                     fontWeight: "400",
                     lineHeight: "151.8%",

@@ -14,6 +14,7 @@ import image2 from './image/*.png';
 import image3 from './image/shooting.png';
 import './animation.css';
 
+
 function About(props: {
   activeNav: number, 
   setActiveNav: Dispatch<SetStateAction<number>>,
@@ -57,8 +58,8 @@ function About(props: {
           <div>
             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10}>
               <AboutList 
-                companyTitle = 'Karrot'
-                experience = 'As a product designer in the advertisement team, I have responsibility of the UX design for lots of small-sized business owner to do marketing their business more easily. Also I designed and launched a new advertisements platform for mid- to large-scale Advertisers. '
+                companyTitle = {<a target='_blank' href='https://business.daangn.com/'>Karrot</a>}
+                experience = {<div>As a product designer in the advertisement team, I have responsibility of the UX design for lots of small-sized business owner to do marketing their business more easily. Also I designed and launched a new advertisements platform for mid- to large-scale Advertisers.</div>}
                 perieod ='2021.10. - Present'
                 location='Seoul, Republic of Korea'
               />
@@ -66,7 +67,7 @@ function About(props: {
             </AnimationOnScroll>
             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10}>
               <AboutList 
-                companyTitle = 'Bookcovery'
+                companyTitle = {<a target='_blank' href='https://bookcovery.com'>Bookcovery</a>}
                 experience = 'As a founder, I planned the book-browsing service and managed project to release the service to the PC & mobile web environment. also I designed UXUI of the service so that it can be used on PC and mobile. I implemented marketing strategy so that it collected 20,000 active users per a month.'
                 perieod ='2020.12 - 2021.08'
                 location='Seoul, Republic of Korea'
