@@ -170,7 +170,7 @@ a {
   
   .projectContentsAll {
     position: relative;
-
+    flex: 1;
   }
 
   .textGradient {
