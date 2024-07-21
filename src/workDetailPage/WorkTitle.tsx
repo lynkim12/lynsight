@@ -29,6 +29,7 @@ export function WorkTitle(props: {
                         fontStyle: "normal",
                         fontWeight: "400",
                         lineHeight: "130%",
+                        letterSpacing : "0.5px"
                     }}>{props.description}</div>
                 </div>
             <div style = {{display: "flex", flexDirection:"row", gap: "100px" }}>
