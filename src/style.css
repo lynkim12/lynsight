@@ -13,10 +13,6 @@ a {
   a:hover {
     text-decoration: underline;
     text-underline-offset: 4px;
-    animation-name: shake;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
   }
   
   .menu {
@@ -175,6 +171,13 @@ a {
   .projectContentsAll {
     position: relative;
 
+  }
+
+  .textGradient {
+    background: linear-gradient(90deg, #EB5757 0%, #6A27F9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
   }
 
   .projectNewBadge {

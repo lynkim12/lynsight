@@ -1,14 +1,18 @@
 import Navigator from './Navigation';
 import './style.css';
+import './workDetailPage/style_works.css';
 import './font.css';
 import { Waiting } from './Waiting';
-import {WorkTitle} from './WorkTitle';
-import work1image1 from './image/work1image1.jpg';
-import { WorkTextSection } from './WorkTextSection';
+import {WorkTitle} from './workDetailPage/WorkTitle';
+import work1MainImage from './image/works/work1MainImage.jpg';
+import { WorkTextSection } from './workDetailPage/WorkTextSection';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import work1chart1 from './image/work1chart1.png';
-import { Dispatch, SetStateAction } from 'react';
+import work1chart1 from './image/works/work1chart1.png';
+import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
+import {MainImage} from './workDetailPage/WorkMainImage';
+
+//New Ads Platform for Experts
 
 function Work1(props: {
   activeNav: number, 
@@ -20,14 +24,12 @@ function Work1(props: {
       <div className='fadeIn '>
         <WorkTitle 
           title={'New Ads Platform for Experts'} 
-          description={'An entirely new advertising platform for Mid- to Large-scale Advertisers'} 
+          description={'An entirely new advertising platform for mid- to large-scale advertisers.'} 
           team={'Karrot(Daangn)'} 
           role={'User Research, Service Planning, UXUI Design'} 
           period={'2022.01. - 2022.08.'}/>
       </div>
-      <div style = {{maxHeight :"900px",overflow:"hidden"  }}>
-      <img style = {{ width:"100%", aspectRatio: "auto" }} src={work1image1}/>
-      </div>
+      <MainImage image={work1MainImage}/>
       < WorkTextSection 
         title={'Overview'} 
         description={'As the karrot advertisement platform grews continuously, various advertisers began to use it. As a result, the need to develop the platform suited to a variety of advertisers.'} />

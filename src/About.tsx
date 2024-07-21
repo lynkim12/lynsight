@@ -60,7 +60,10 @@ function About(props: {
               <AboutList 
                 companyTitle = {<a target='_blank' href='https://business.daangn.com/'>Karrot</a>}
                 experience = {<div>As a product designer in the advertisement team, I have responsibility of the UX design for lots of small-sized business owner to do marketing their business more easily. Also I designed and launched a new advertisements platform for mid- to large-scale Advertisers.</div>}
-                perieod ='2021.10. - Present'
+                perieod ={<div style={{display: 'flex', flexDirection:'row'}}>
+                  2021.10. - 
+                    <div className='textGradient'> &nbsp;Present </div>
+                  </div>}
                 location='Seoul, Republic of Korea'
               />
               <Divider className = 'divider1'/>
