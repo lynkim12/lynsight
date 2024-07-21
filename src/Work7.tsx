@@ -4,7 +4,7 @@ import './workDetailPage/style_works.css';
 import './font.css';
 import { Waiting } from './Waiting';
 import {WorkTitle} from './workDetailPage/WorkTitle';
-import work1image1 from './image/works/work1MainImage.jpg';
+import mainImage from './image/works/work7MainImage.jpg';
 import { WorkTextSection } from './workDetailPage/WorkTextSection';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import work1chart1 from './image/works/work1chart1.png';
@@ -29,7 +29,7 @@ function Work7(props: {
           role={'User Research, Service Planning, UXUI Design'} 
           period={'2024.01. - 2022.06.'}/>
       </div>
-      <MainImage image={work1image1}/>
+      <MainImage image={mainImage}/>
       <Waiting/>
       </>
     )
