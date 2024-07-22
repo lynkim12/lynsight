@@ -9,6 +9,7 @@ import thumbnail6 from './image/thumbnails/thumbnail6.png';
 import thumbnail7 from './image/thumbnails/thumbnail7.png';
 import thumbnail8 from './image/thumbnails/thumbnail8.png';
 import thumbnail9 from './image/thumbnails/thumbnail9.png';
+import wavedivider from './image/wavedivider.png'
 import "animate.css/animate.min.css";
 import { Dispatch, SetStateAction } from 'react';
 import { Footer } from './Footer';
@@ -20,6 +21,7 @@ function Works(props: {
     return (
       <div>
       <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav}/>
+      <div className='pageTitle'>Works</div>  
       <div className='workContentslist'>
         <div className='contents zoomIn' >
             <Content badge={"Updated"} projectPage={"Work9"} thumbnail={thumbnail9} projectTitle={'New Video Ads'} projectDescription={'Introducing new vertical video ads in the home feed.'} projectSubtitle={'Karrot'} period={'2024.01. - 2024.06.'}/>

@@ -11,6 +11,7 @@ function Writing(props: {
     return (
       <>
       <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav} />
+      <div className='pageTitle'>Writing</div>
       <Waiting/>
       </>
     )

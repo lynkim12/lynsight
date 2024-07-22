@@ -78,9 +78,15 @@ a {
     flex-shrink: 0;
   }
 
+  .pageTitle {
+    font-size: 68px;
+    font-family:Shrikhand;
+    padding:40px 48px 0px 48px;
+    color: #131517;
+  }
   .workContentslist {
     margin : auto;
-    padding: 80px 48px;
+    padding: 48px 48px 80px 48px;
     gap: 100px;
     display: flex;
     flex-direction: column;
@@ -255,35 +261,36 @@ a {
     font-family : 
       /* PridiExtraLight,  */
       /* Handlee,  */
-      Montserrat, -apple-system, BlinkMacSystemFont, sans-serif;
+      /* Montserrat,  */
+      -apple-system, BlinkMacSystemFont, sans-serif;
     font-size : 24px;
     font-style: normal;
     line-height: 161.8%;
     /* width: 680px; */
-    font-weight: 400;
-    letter-spacing: -0.2px;
+    font-weight: 300;
+    /* letter-spacing: -0.2px; */
     margin: 0px 100px;
     max-width: 1400px;
   }
   
   .aboutTitle {
     color: #131517;
-    font-family: Montserrat, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size :54px;
+    font-family: Shrikhand, Montserrat, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size :60px;
     font-style : normal;
     line-height: 151.8%;
-    font-weight: 700;
+    /* font-weight: 700; */
     
 
   }
 
   .aboutDescription {
     color: #222429;
-    font-family: Montserrat,-apple-system, BlinkMacSystemFont, sans-serif;
-    letter-spacing: -0.5px;
-    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    /* letter-spacing: -0.5px; */
+    font-size: 22px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 151.8%;
 
   }
