@@ -13,6 +13,7 @@ import Work8 from './Work8';
 import Work9 from './Work9';
 import Work10 from './Work10';
 import WorkPage from './WorkPage';
+import PageToTop from './PageToTop';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
     <>
     <div>
       <BrowserRouter>
+      <PageToTop/>
         <Routes>
           <Route path="/" element={<Works activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
           <Route path="Work1" element={<Work1 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>   
