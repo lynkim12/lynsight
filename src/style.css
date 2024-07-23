@@ -83,7 +83,10 @@ a {
     font-family:Shrikhand;
     padding:40px 48px 0px 48px;
     color: #131517;
+    max-width: 1400px;
+    margin : auto;
   }
+
   .workContentslist {
     margin : auto;
     padding: 48px 48px 80px 48px;

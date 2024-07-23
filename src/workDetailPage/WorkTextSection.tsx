@@ -5,8 +5,8 @@ import {AnimationOnScroll} from 'react-animation-on-scroll';
 import './style_works.css';
 
 export function WorkTextSection(props: {
-    title: string; 
-    description? : string;
+    title?: React.ReactNode; 
+    description? : React.ReactNode;
     }) {
     return (
         <>

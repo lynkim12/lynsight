@@ -8,6 +8,7 @@ import Writing from './Writing';
 import Works from './Works';
 import Work1 from './Work1';
 import Work4 from './Work4';
+import Work6 from './Work6';
 import Work7 from './Work7';
 import Work8 from './Work8';
 import Work9 from './Work9';
@@ -27,7 +28,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Works activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
           <Route path="Work1" element={<Work1 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>   
-          <Route path="Work4" element={<Work4 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route> 
+          <Route path="Work4" element={<Work4 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
+          <Route path="Work6" element={<Work6 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>  
           <Route path="Work7" element={<Work7 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route> 
           <Route path="Work8" element={<Work8 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route> 
           <Route path="Work9" element={<Work9 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>  
