@@ -79,9 +79,9 @@ a {
   }
 
   .pageTitle {
-    font-size: 68px;
+    font-size: 72px;
     font-family:Shrikhand;
-    padding:40px 48px 0px 48px;
+    padding:48px 40px 16px 40px;
     color: #131517;
     max-width: 1400px;
     margin : auto;
@@ -359,6 +359,14 @@ a {
     text-align: center;
     min-height: 100vh;
     flex-flow: column;
+  }
+
+  .image-center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 500px;
   }
 
   @keyframes fadeInUp {
