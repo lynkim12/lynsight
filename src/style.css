@@ -66,6 +66,53 @@ a {
     text-decoration-line: none;
     text-decoration: none;
   }
+
+  .defaultChip {
+    display: flex;
+    height: 44px;
+    padding: 0px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid var(--gray-20, #E6E9ED);
+    color: var(--gray-100, #131517);
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+  }
+
+  .selectedChip {
+    display: flex;
+    height: 44px;
+    padding: 0px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: var(--gray-100, #131517);
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;    
+  }
+  
+  .filter {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding : 12px 54px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: #FFF;
+  }
+
   .companyLogo {
     width: 80px;
     height: 80px;       
@@ -81,7 +128,7 @@ a {
   .pageTitle {
     font-size: 72px;
     font-family:Shrikhand;
-    padding:48px 40px 16px 40px;
+    padding:48px 40px 32px 40px;
     color: #131517;
     max-width: 1400px;
     margin : auto;

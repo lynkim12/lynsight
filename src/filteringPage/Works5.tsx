@@ -1,21 +1,21 @@
-import Navigator from './Navigation';
-import Content from './workContent';
-import ChipFilter from './components/ChipFilter';
-import thumbnail1 from './image/thumbnails/thumbnail1.png';
-import thumbnail2 from './image/thumbnails/thumbnail2.png';
-import thumbnail3 from './image/thumbnails/thumbnail3.png';
-import thumbnail4 from './image/thumbnails/thumbnail4.png';
-import thumbnail5 from './image/thumbnails/thumbnail5.png';
-import thumbnail6 from './image/thumbnails/thumbnail6.png';
-import thumbnail7 from './image/thumbnails/thumbnail7.png';
-import thumbnail8 from './image/thumbnails/thumbnail8.png';
-import thumbnail9 from './image/thumbnails/thumbnail9.png';
+import Navigator from '../Navigation';
+import Content from '../workContent';
+import ChipFilter from '../components/ChipFilter';
+import thumbnail1 from '../image/thumbnails/thumbnail1.png';
+import thumbnail2 from '../image/thumbnails/thumbnail2.png';
+import thumbnail3 from '../image/thumbnails/thumbnail3.png';
+import thumbnail4 from '../image/thumbnails/thumbnail4.png';
+import thumbnail5 from '../image/thumbnails/thumbnail5.png';
+import thumbnail6 from '../image/thumbnails/thumbnail6.png';
+import thumbnail7 from '../image/thumbnails/thumbnail7.png';
+import thumbnail8 from '../image/thumbnails/thumbnail8.png';
+import thumbnail9 from '../image/thumbnails/thumbnail9.png';
 import wavedivider from './image/wavedivider.png'
 import "animate.css/animate.min.css";
 import { Dispatch, SetStateAction } from 'react';
-import { Footer } from './Footer';
+import { Footer } from '../Footer';
 
-function Works(props: {
+function Works5(props: {
   activeNav: number, 
   setActiveNav: Dispatch<SetStateAction<number>>,
 }) {
@@ -23,7 +23,7 @@ function Works(props: {
       <div>
       <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav}/>
       <div className='pageTitle'>Works</div>  
-      <ChipFilter activeFilter={1} setActiveFilter={function (value: SetStateAction<number>): void {
+      <ChipFilter activeFilter={5} setActiveFilter={function (value: SetStateAction<number>): void {
           throw new Error('Function not implemented.');
         } }/>
       <div className='workContentslist'>
@@ -53,4 +53,4 @@ function Works(props: {
 }
 
 
-export default Works;
+export default Works5;
