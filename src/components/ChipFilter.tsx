@@ -23,16 +23,13 @@ function ChipFilter(props: {
             <FilterItem isSelected={props.activeFilter === 3 } name='Web' />
         </Link> 
         <Link to="/2024" onClick={() => props.setActiveFilter(4)} style={{textDecoration: 'none'}}>
-            <FilterItem isSelected={props.activeFilter === 4 } name='2024' />
+            <FilterItem isSelected={props.activeFilter === 4 } name= '2024' />
         </Link> 
         <Link to="/2023" onClick={() => props.setActiveFilter(5)} style={{textDecoration: 'none'}}>
-            <FilterItem isSelected={props.activeFilter === 5 } name='2023' />
+            <FilterItem isSelected={props.activeFilter === 5 } name='2022~23' />
         </Link> 
-        <Link to="/2022" onClick={() => props.setActiveFilter(6)} style={{textDecoration: 'none'}}>
-            <FilterItem isSelected={props.activeFilter === 6 } name='2022' />
-        </Link> 
-        <Link to="/2021" onClick={() => props.setActiveFilter(7)} style={{textDecoration: 'none'}}>
-            <FilterItem isSelected={props.activeFilter === 7 } name='2021~' />
+        <Link to="/2021" onClick={() => props.setActiveFilter(6)} style={{textDecoration: 'none'}}>
+            <FilterItem isSelected={props.activeFilter === 6 } name='2021~' />
         </Link> 
     </div>
   );

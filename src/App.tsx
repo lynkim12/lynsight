@@ -20,7 +20,6 @@ import Works3 from './filteringPage/Works3';
 import Works4 from './filteringPage/Works4';
 import Works5 from './filteringPage/Works5';
 import Works6 from './filteringPage/Works6';
-import Works7 from './filteringPage/Works7';
 
 function App() {
   const [activeNav, setActiveNav] = useState(1);
@@ -36,8 +35,7 @@ function App() {
           <Route path="/Web" element={<Works3 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
           <Route path="/2024" element={<Works4 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
           <Route path="/2023" element={<Works5 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
-          <Route path="/2022" element={<Works6 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
-          <Route path="/2021" element={<Works7 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
+          <Route path="/2021" element={<Works6 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
 
           <Route path="Work1" element={<Work1 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>   
           <Route path="Work4" element={<Work4 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>

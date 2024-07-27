@@ -84,6 +84,9 @@ a {
     line-height: normal;
 
   }
+  .defaultChip:hover {
+    background-color: #E6E9ED;
+  }
 
   .selectedChip {
     display: flex;
@@ -94,12 +97,13 @@ a {
     gap: 10px;
     border-radius: 100px;
     background: var(--gray-100, #131517);
+    /* color: var(--gray-100, #131517); */
     color: #FFF;
     font-family: Pretendard;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;    
+    line-height: normal;   
   }
   
   .filter {
@@ -128,7 +132,7 @@ a {
   .pageTitle {
     font-size: 72px;
     font-family:Shrikhand;
-    padding:48px 40px 32px 40px;
+    padding:48px 40px 48px 40px;
     color: #131517;
     max-width: 1400px;
     margin : auto;

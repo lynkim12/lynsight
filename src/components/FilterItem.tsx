@@ -2,7 +2,7 @@ import React from "react"
 
 export function FilterItem (props: {
     isSelected: boolean;
-    name: string;
+    name: React.ReactNode;
 }
 ) {
     return (
