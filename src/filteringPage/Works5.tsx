@@ -10,6 +10,7 @@ import thumbnail6 from '../image/thumbnails/thumbnail6.png';
 import thumbnail7 from '../image/thumbnails/thumbnail7.png';
 import thumbnail8 from '../image/thumbnails/thumbnail8.png';
 import thumbnail9 from '../image/thumbnails/thumbnail9.png';
+import thumbnail10 from '../image/thumbnails/thumbnail10.png';
 import wavedivider from './image/wavedivider.png'
 import "animate.css/animate.min.css";
 import { Dispatch, SetStateAction } from 'react';
@@ -30,7 +31,7 @@ function Works5(props: {
       <div className='workContentslist'>
         <div className='contents zoomIn' >
             <Content projectPage={"Work6"} thumbnail={thumbnail6} projectTitle={'New Outlink-Type Ads'} projectDescription={'Introducing a new outlink-type advertisement for small businesses.'} projectSubtitle={'Karrot'} period={'2023.04 - 2023.07'}/>
-            <Content projectPage={"Work10"} thumbnail={thumbnail6} projectTitle={'Eliminating Concerns of Creating Ads'} projectDescription={'Encouraging ad creation to increase the activation rate.'} projectSubtitle={'Karrot'} period={'2023.01 - 2023.03'}/>
+            <Content projectPage={"Work10"} thumbnail={thumbnail10} projectTitle={'Eliminating Concerns of Creating Ads'} projectDescription={'Encouraging ad creation to increase the activation rate.'} projectSubtitle={'Karrot'} period={'2023.01 - 2023.03'}/>
             <Content projectPage={"Work1"} thumbnail={thumbnail1} projectTitle={'New Ads Platform for Experts'} projectDescription={'An entirely new advertising platform for mid- to large-scale advertisers.'} projectSubtitle={'Karrot'} period={'2022.01. - 2022.08.'}/>
         </div>
         <div className='contents zoomIn'>
