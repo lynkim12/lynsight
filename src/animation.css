@@ -8,6 +8,14 @@
         offset-distance: 100%;
     }
   }
+  .circle {
+    position: absolute;
+    top:140px;  
+    max-width: 913px; 
+    margin : 48px;  
+    justify-content :center;
+    overflow: hidden;
+  }
 
   .moveCircle1 {
     animation-name: moveCircle1;
@@ -15,6 +23,11 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     offset: path('M822 127C822 144.063 810.793 160.508 790.073 175.626C769.375 190.729 739.359 204.372 702.18 215.847C627.832 238.793 525.061 253 411.5 253C297.939 253 195.168 238.793 120.82 215.847C83.6407 204.372 53.6255 190.729 32.9272 175.626C12.2074 160.508 1 144.063 1 127C1 109.937 12.2074 93.4924 32.9272 78.3737C53.6255 63.2706 83.6407 49.6277 120.82 38.153C195.168 15.2073 297.939 1 411.5 1C525.061 1 627.832 15.2073 702.18 38.153C739.359 49.6277 769.375 63.2706 790.073 78.3737C810.793 93.4924 822 109.937 822 127Z') auto;
+    width: 30px;
+    left:-410px; 
+    top: 44px;
+    position: absolute;
+    justify-content : center; 
   }
 
   @keyframes tilt {
@@ -32,6 +45,11 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    width:24px;
+    left:-236px; 
+    top: 24px;
+    position: absolute; 
+    justify-content : center; 
   }
 
   @keyframes twinkle {
@@ -54,6 +72,12 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    width:30px; 
+    left:236px; 
+    top: 220px; 
+    position: absolute; 
+    justify-content : center; 
+    overflow: hidden;
   }
 
   @keyframes shooting {
@@ -97,4 +121,23 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    width:34px;
+    left:426px; 
+    top: 0px; 
+    position: absolute; 
+    justify-content : center; 
+  }
+
+  @media screen and (max-width: 600px) {
+    .circle {
+      display: none;
+    }
+    .moveCircle1 {
+      top: -40px;
+    }
+
+    .shooting {
+      left:226px; 
+      top: -60px; 
+    }
   }

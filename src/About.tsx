@@ -30,20 +30,19 @@ function About(props: {
                   justifyContent: "center",
                   alignItems: "center",
                   textAlign: "center",
-                  flexFlow: "column"}}>
+                  flexFlow: "column"
+                  }}>
             <div className='aboutIntro'>Product Designer <br/> Lyn Kim</div>
-            <img src={circle} style={{position: "absolute", top:"140px",  maxWidth: "913px", margin : "48px",  justifyContent : "center", zIndex:'0' }}/>
-            <div style={{ position: "absolute", top:"120px", margin : "48px",  }}>
-              <img src={image1} className='moveCircle1' style={{ width:"30px", left:"-410px", top: "44px", position: "absolute", justifyContent : "center",}}/>
-              <img src={image2} className='tilt' style={{ width:"24px", left:"-236px", top: "24px", position: "absolute", justifyContent : "center",}}/>
-              <img src={image2} className='twinkle' style={{ width:"30px", left:"236px", top: "220px", position: "absolute", justifyContent : "center",}}/>
-              <img src={image3} className='shooting' style={{ width:"34px", left:"426px", top: "0px", position: "absolute", justifyContent : "center",}}/>
+            <img src={circle} className='circle'/>
+            <div style={{ position: "absolute", top:"120px", margin : "48px"}}>
+              <img src={image1} className='moveCircle1'/>
+              <img src={image2} className='tilt' />
+              <img src={image2} className='twinkle'/>
+              <img src={image3} className='shooting'/>
             </div>
             <div className='aboutIntroDescription'>
               Currently, I joined Karrot(Daangn) as a product designer contributing to the development of an advertising platform for small-sized business. I am responsible for advertiser's experience of creating ads and analyzing performance. We also have a goal to help for small-sized businesses to achieve the success through Karrot advertising.
             </div>
-            
-          {/* <img src={ waiting } className={"flow"} style={{width: "480px", aspectRatio: "auto",  marginTop:"40px"}}/> */}
         </div>
         <div className='dividerWave'></div>
           <div  style={{maxWidth: "1400px", display: 'flex', overflow: "hidden", height: "9px",  justifyContent : "center",  margin:"auto",padding: " 0px 48px"}}><img src={wavedivider} className={"wave"} style={{height: "9px", display : "flex", alignSelf: "stretch", textAlign:"center"}}/></div>
@@ -51,7 +50,7 @@ function About(props: {
       <div className='aboutContents'>
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10} style={{gap: "28px", flexDirection: "column", display: "flex"}}>
           <div className='aboutTitle'>Experience</div>
-          <div className='aboutDescription' style={{marginBottom : "100px"}}>
+          <div className='aboutDescription'>
             I have skills about UX/UI Design, Growth hacking, Product/Project Managing through various responsibilities and roles.
           </div>
         </AnimationOnScroll>

@@ -78,10 +78,11 @@ a {
     border-radius: 100px;
     border: 1px solid var(--gray-20, #E6E9ED);
     color: var(--gray-100, #131517);
-    font-size: 16px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    background-color: #FFF;
 
   }
   .defaultChip:hover {
@@ -99,7 +100,7 @@ a {
     background: var(--gray-100, #131517);
     /* color: var(--gray-100, #131517); */
     color: #FFF;
-    font-size: 16px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;   
@@ -113,10 +114,11 @@ a {
     position: sticky;
     top: 0;
     z-index: 3;
-    background-color: #FFF;
+    /* background-color: #FFF; */
     overflow: scroll;
     overflow: auto;
     white-space: nowrap;
+    background-color: #FFF;
   }
 
   .filter::-webkit-scrollbar{
@@ -324,8 +326,7 @@ a {
     font-style: normal;
     line-height: 161.8%;
     font-weight: 300;
-    margin: 0px 100px;
-    max-width: 1400px;
+    max-width: 1000px;
   }
   
   .aboutTitle {
@@ -346,7 +347,7 @@ a {
     font-style: normal;
     font-weight: 300;
     line-height: 151.8%;
-
+    margin-bottom : 100px;
   }
 
   .divider1 {
@@ -365,22 +366,19 @@ a {
   }
 
   .aboutContactList {
-    color: #222429;
     flex-direction: column;
     display: flex;
     gap : 12px;
   }
   
   .aboutContactListItem {
-    color: #222429;
     font-family: Montserrat, -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
     text-decoration: none;
     letter-spacing: -0.2px;
-
   }
 
 
@@ -401,7 +399,38 @@ a {
     width : 240px;
     display: flex;
     gap: 6px;
+    font-family:Montserrat;
   }
+
+  .companyTitle {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 151.8%;
+  }
+  .location {
+      color: #767D85;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 151.8%;
+  }
+  .experience {
+      color: #3A3E44;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 151.8%;
+      flex: 1 0 0;
+  } 
+  .period{
+    color: #131517;
+    font-size: 18px; 
+    font-weight: 700;
+    text-align: right;
+    line-height: 151.8%;
+    width : 160px;
+  }
+  
 
   .center-screen {
     display: flex;
@@ -569,6 +598,18 @@ a {
     .filter {
       padding : 12px 22px;
     }
+    .defaultChip {
+      display: flex;
+      height: 40px;
+      padding: 0px 14px;
+      font-size: 13px;
+    }  
+    .selectedChip {
+      height: 40px;
+      padding: 0px 14px;
+      font-size: 13px;
+    }
+    
     .logo {
       width: 68px;
     }
@@ -623,6 +664,33 @@ a {
     } 
     .aboutDescription {
       font-size: 16px;
+      margin-bottom : 0px;
     }  
+    .aboutContactListItem {
+      font-weight: auto;
+    }
+    
+    .aboutExperienceListTitle {
+      gap: 4px;
+    }
+    .companyTitle {
+      font-size: 20px;
+    }
+    .location {
+        font-size: 14px;
+    }
+    .experience {
+      font-size: 16px;
+    } 
+    .period{
+      font-size: 14px;
+      text-align: left;
+    } 
+    .aboutContactListItem {
+      font-size: 15px;
+    }
+    .projectTitle {
+      font-size: 26px;
+    }
 
   }
