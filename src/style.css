@@ -446,7 +446,8 @@ a {
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    height: 500px;
+    max-height: 500px;
+    margin: 0px 24px;
   }
 
   @keyframes fadeInUp {
@@ -525,6 +526,9 @@ a {
     animation-duration: 4s;
     animation-iteration-count: infinite;
     offset: 10;
+    width: 480px;
+    aspect-ratio: auto; 
+    margin-bottom: 28px;
   }
 
   @keyframes shake {
@@ -615,7 +619,7 @@ a {
     }
   
     .pageTitle {
-      font-size: 60px;
+      font-size: 52px;
       padding:40px 20px;
     }
     .workContentslist {
@@ -648,7 +652,7 @@ a {
       
     }
     .aboutIntro {
-      font-size :60px;
+      font-size :52px;
       line-height: 120%;
       
     }
@@ -692,5 +696,8 @@ a {
     .projectTitle {
       font-size: 26px;
     }
-
+    .flow {
+      max-width: 300px;
+      padding: 0 24px;
+    }
   }
