@@ -1,5 +1,6 @@
 /* @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"); */
 
+/* 텍스트 선택 */
 ::selection {
   background: #E4C8DB;
   color: #8B3E66;
@@ -77,7 +78,6 @@ a {
     border-radius: 100px;
     border: 1px solid var(--gray-20, #E6E9ED);
     color: var(--gray-100, #131517);
-    font-family: Pretendard;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -99,7 +99,6 @@ a {
     background: var(--gray-100, #131517);
     /* color: var(--gray-100, #131517); */
     color: #FFF;
-    font-family: Pretendard;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -115,6 +114,13 @@ a {
     top: 0;
     z-index: 3;
     background-color: #FFF;
+    overflow: scroll;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .filter::-webkit-scrollbar{
+    display: none; 
   }
 
   .companyLogo {
@@ -313,23 +319,18 @@ a {
   .aboutIntroDescription {
     color: #222429;
     font-family : 
-      /* PridiExtraLight,  */
-      /* Handlee,  */
-      /* Montserrat,  */
       -apple-system, BlinkMacSystemFont, sans-serif;
     font-size : 24px;
     font-style: normal;
     line-height: 161.8%;
-    /* width: 680px; */
     font-weight: 300;
-    /* letter-spacing: -0.2px; */
     margin: 0px 100px;
     max-width: 1400px;
   }
   
   .aboutTitle {
     color: #131517;
-    font-family: Shrikhand, Montserrat, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: Shrikhand, -apple-system, BlinkMacSystemFont, sans-serif;
     font-size :60px;
     font-style : normal;
     line-height: 151.8%;
@@ -340,7 +341,6 @@ a {
 
   .aboutDescription {
     color: #222429;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     /* letter-spacing: -0.5px; */
     font-size: 22px;
     font-style: normal;
@@ -557,3 +557,72 @@ a {
     line-height: 135%;
   }
 
+
+  @media screen and (max-width: 600px) {
+   
+    .menu {
+      gap: 20px;
+    }
+    .nav {
+      padding : 20px 20px;
+    }
+    .filter {
+      padding : 12px 22px;
+    }
+    .logo {
+      width: 68px;
+    }
+  
+    .pageTitle {
+      font-size: 60px;
+      padding:40px 20px;
+    }
+    .workContentslist {
+      padding: 40px 20px;
+      gap: 60px;
+    }
+    .contents {
+      flex-direction: column;
+      gap: 60px;
+    }
+    .aboutContents {
+      padding: 60px 20px;
+      gap: 28px;
+    }  
+    .aboutExperienceList {
+      gap : 20px;
+      padding-top : 60px;
+      padding-bottom : 60px;
+      flex-direction: column;
+    }
+    
+    .aboutIntroSection {
+      padding-bottom: 60px;
+      padding-top: 60px;
+      padding-right: 20px;
+      padding-left: 20px;
+      gap: 40px;
+      flex-direction: column;
+      display: flex;
+      
+    }
+    .aboutIntro {
+      font-size :60px;
+      line-height: 120%;
+      
+    }
+  
+    .aboutIntroDescription {
+      font-size : 18px;
+      margin: 0px 20px;
+      z-index: 2;
+    }
+    
+    .aboutTitle {
+      font-size :40px;
+    } 
+    .aboutDescription {
+      font-size: 16px;
+    }  
+
+  }
