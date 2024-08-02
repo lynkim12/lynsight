@@ -3,21 +3,33 @@
     color: #51575E;
 }
 
-.image-center-align {
+.image-center {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    max-height: 500px;
-    margin: 0px 24px;
+    margin: 0px 48px;
+    overflow: hidden;
+    max-height: 700px;
   }
 
 .workImage {
     aspect-ratio: auto;
     max-width: 1100px;
     max-height: 500px;
-    margin:0px 24px;
+    margin:0px 48px;
     overflow: hidden;
+}
+
+.workFullImage {
+    width: 100%;
+    /* aspect-ratio: auto; */
+    max-width: 1400px;
+    object-fit: contain; 
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    background-color: #F2F3F6;
 }
 
 @media screen and (max-width: 600px){
