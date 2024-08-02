@@ -12,7 +12,7 @@ export function WorkFullImage(props: {
         <>
         <AnimationOnScroll animateIn="fadeIn" animateOnce={true} offset={0}>
         <div className='image-center' style={{gap:'20px'}}> 
-          <img className='workFullImage'  src = {props.image}/>
+          <img className='workFullImage' src = {props.image}/>
           {props.description && <div className='imageCaption'>{props.description}</div>}
         </div>
         </AnimationOnScroll>
