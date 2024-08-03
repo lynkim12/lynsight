@@ -11,7 +11,7 @@ export function WorkTextSection(props: {
     return (
         <>
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10}>
-            <div style={{ margin:"auto", maxWidth:"1400px", alignContent:"center", padding: "120px 48px", display: "flex", flexDirection: "column", gap: "28px" }}>
+            <div className='textsection'>
                 {props.title&& <div style={{
                         color: "#131517",
                         fontSize: "24px",
