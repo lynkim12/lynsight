@@ -17,6 +17,9 @@ import { WorkFullImage } from './workDetailPage/WorkFullImage';
 import usecaseTable from './image/works/work8table.png';
 import goalimage from './image/works/work8goalimage.png';
 import keyfeatures from './image/works/work8keyfeaturesimage.png';
+import planningImage from './image/works/work8Planningimage.png';
+import { Wavedivider } from './Wavedivider';
+
 //A Bidding System in Search Ads
 
 function Work8(props: {
@@ -42,20 +45,24 @@ function Work8(props: {
           <br/><br/>To address this, we have decided to implement a "keyword bidding system" that will allow advertisers to compete freely by setting their own CPCs, thereby increasing search ad revenue.</div>}
       />
       <WorkFullImage image={work8image1} isBackgroundColor={true} isRoundedCorner={true}/>     
-      <WorkTextSection 
-        title = 'Usecase Analysis'
-        description = {<div>The main users of search advertisements are more companies that provide services in close proximity than those that provide services nationwide.</div>}
-      />
-      <WorkFullImage image={usecaseTable} isBackgroundColor={false} isRoundedCorner={false}/>
+  
       <WorkTextSection
         title = 'Goal'
         description = {<div>To add a biding system that allows small business owners in the neighborhood to advertise as much as they want to.</div>}
       />
       <WorkFullImage image={goalimage} isBackgroundColor={false} isRoundedCorner={false}/> 
+      
+      <WorkTextSection 
+        title = 'Usecase Analysis'
+        description = {<div>The main users of search advertisements are more companies that provide services in close proximity than those that provide services nationwide.</div>}
+      />
+      <WorkFullImage image={usecaseTable} isBackgroundColor={false} isRoundedCorner={false}/>
+
       <WorkTextSection
         title = 'Key Features'/>
       <WorkFullImage image={keyfeatures} isBackgroundColor={false} isRoundedCorner={false}/> 
-      <div style={{backgroundColor:'#F2F3F6', padding:'80px 0px'}}>
+        <WorkFullImage image={planningImage} isBackgroundColor={true} isRoundedCorner={true} />
+        <Wavedivider/>
         <WorkTextSection title = 'UXUI Design'/>
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10}>
             <div className='contentsalign gap20'>
@@ -65,10 +72,8 @@ function Work8(props: {
                 <div style={{fontSize: "22px", fontWeight: "400", color:'#51575E'}}>
                   Choose related keywords with good advertising effects
                 </div>
-
             </div>
         </AnimationOnScroll>
-        </div>
       <Waiting/>
       </>
     )
