@@ -24,7 +24,8 @@ export function WorkTextSection(props: {
                     fontSize: "20px",
                     fontStyle: "normal",
                     fontWeight: "400",
-                    lineHeight: "151.8%"
+                    lineHeight: "151.8%",
+                    margin:"0px 0px 60px 0px"
                 }}>{props.description}</div>}
             </div>
         </AnimationOnScroll>

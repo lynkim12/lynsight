@@ -16,6 +16,27 @@ a {
     text-underline-offset: 4px;
   }
   
+  .content-container {
+    margin: 20px;
+  }
+  .dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .dialog {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
   .menu {
     display: flex;
     flex-direction: row;
@@ -108,6 +129,7 @@ a {
   
   .filter {
     display: flex;
+    max-width: 1400px;
     align-items: flex-start;
     gap: 8px;
     padding : 12px 54px;
@@ -441,14 +463,7 @@ a {
     flex-flow: column;
   }
 
-  .image-center-align {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    max-height: 500px;
-    margin: 0px 24px;
-  }
+
 
   @keyframes fadeInUp {
     from {
