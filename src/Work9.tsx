@@ -11,6 +11,7 @@ import work1chart1 from './image/works/work1chart1.png';
 import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
 import { MainImage } from './workDetailPage/WorkMainImage';
+import YouTubeEmbed from './YouTubeEmbed';
 
 //New Video Ads
 
@@ -29,6 +30,7 @@ function Work9(props: {
           role={'Service Planning, UXUI Design, Experience'} 
           period={'2024.01. - 2024.06.'}/>
       </div>
+      <YouTubeEmbed videoId="182NS2pHE2o" />
       <MainImage image={mainImage}/>
       <Waiting/>
       </>

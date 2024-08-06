@@ -15,6 +15,9 @@ import wavedivider from './image/wavedivider.png'
 import "animate.css/animate.min.css";
 import { Dispatch, SetStateAction } from 'react';
 import { Footer } from './Footer';
+import YouTubeEmbed from './YouTubeEmbed';
+import MediaComponent from './workDetailPage/thumbnail';
+import thumbnail9video from './videos/thumbnail9.mp4';
 
 function Works(props: {
   activeNav: number, 
@@ -46,6 +49,7 @@ function Works(props: {
             <Content projectPage={"Work3"} thumbnail={thumbnail3} projectTitle={'Store UX/UI Design'} projectDescription={'Mobile store tap UX/UI design on Styleshare to maximize store tap using rates and purchase amout.'} projectSubtitle={'Styleshare'} period={'2020.10 - 2020.12'}/>
             <div style={{flex:'1'}}/>
             <div style={{flex:'1'}}/>
+            <MediaComponent src={thumbnail9video} type="video" autoplay={true} loop={true} controls={false}/>
           </div>
       </div>
       <Footer/>

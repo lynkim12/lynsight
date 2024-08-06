@@ -1,10 +1,11 @@
 import React from 'react';
 import '../App.css';
 import '../style.css';
+import YouTubeEmbed from '../YouTubeEmbed';
 
 export function Thumbnail(props: {
     isHovered: boolean; 
-    thumbnail: string; 
+    thumbnail?: string; 
 }) {
     return (
         <div style={{width: "100%", aspectRatio: "100/60 auto", borderRadius:"18px", overflow:"hidden", maxHeight: '480px', background: 'linear-gradient(#F4F5F8 0%, #F1F2F7 100%)' }}>
