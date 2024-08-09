@@ -49,7 +49,7 @@ function Works(props: {
             <Content projectPage={"Work3"} thumbnail={thumbnail3} projectTitle={'Store UX/UI Design'} projectDescription={'Mobile store tap UX/UI design on Styleshare to maximize store tap using rates and purchase amout.'} projectSubtitle={'Styleshare'} period={'2020.10 - 2020.12'}/>
             <div style={{flex:'1'}}/>
             <div style={{flex:'1'}}/>
-            <MediaComponent src={thumbnail9video} type="video" autoplay={true} loop={true} controls={false}/>
+            {/* <MediaComponent src={thumbnail9video} type="video" autoplay={true} loop={true} controls={false}/> */}
           </div>
       </div>
       <Footer/>
