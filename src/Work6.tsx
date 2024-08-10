@@ -59,7 +59,7 @@ function Work6(props: {
         <WorkImage image={goalimage} isMaxheight={false} isbottomPadding={true}/>
         <div style={{backgroundColor:'#000'}}>
         <WorkTextSection 
-          title={<div>Karrot's Ads Ecosystem</div>} />
+              title={<div>Karrot's Ads Ecosystem</div>} isWhiteText={true} />
           <WorkImage image={ecosystem} isMaxheight={false} isbottomPadding={true}/>
         </div>
       </AnimationOnScroll>

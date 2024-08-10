@@ -7,13 +7,14 @@ import './style_works.css';
 export function WorkTextSection(props: {
     title?: React.ReactNode; 
     description? : React.ReactNode;
+    isWhiteText? : boolean;
     }) {
     return (
         <>
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10}>
             <div className='textsection'>
                 {props.title&& <div style={{
-                        color: "#131517",
+                        color: props.isWhiteText ? '#fff' : '#131517',
                         fontSize: "24px",
                         fontStyle: "normal",
                         fontWeight: "700",
