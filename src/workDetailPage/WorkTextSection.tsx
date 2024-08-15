@@ -6,14 +6,15 @@ import './style_works.css';
 
 export function WorkTextSection(props: {
     title?: React.ReactNode; 
+    bigTitle? : boolean;
     description? : React.ReactNode;
     isWhiteText? : boolean;
     }) {
     return (
         <>
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10}>
-            <div className='textsection'>
-                {props.title&& <div style={{
+            <div className={'textsection'}>
+                {props.title && <div className={`${props.bigTitle? 'bigTitle' :''}`} style={{
                         color: props.isWhiteText ? '#fff' : '#131517',
                         fontSize: "24px",
                         fontStyle: "normal",

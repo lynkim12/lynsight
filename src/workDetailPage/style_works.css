@@ -34,7 +34,7 @@
 
 .workFullImage {
     width: 100%;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     object-fit: contain; 
     overflow: hidden;
     display: flex;
@@ -50,9 +50,16 @@
 }
 
 .margin48 {
-    margin: 0px 48px;
+    padding: 0px 48px;
 }
 
+.bottomMargin80 {
+    margin: 0px 0px 80px 0px;
+}
+
+.bigTitle {
+    font-size: 32px;
+}
 .textsection {
     margin: auto; 
     max-width: 1400px; 

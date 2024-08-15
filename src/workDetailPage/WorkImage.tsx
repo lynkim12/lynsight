@@ -14,7 +14,7 @@ export function WorkImage(props: {
     return (
         <>
         <AnimationOnScroll animateIn="fadeIn" animateOnce={true} offset={0}>
-        <div className={`'image-center ${props.isbottomPadding ? 'bottomPadding':''}`}> 
+        <div className={`image-center ${props.isbottomPadding ? 'bottomPadding':''}`}> 
           <img className={`workImage ${props.isMaxheight ? 'maxheight600' : ''}`} src = {props.image}/>
           {props.description && <div className='imageCaption'>{props.description}</div>}
         </div>
