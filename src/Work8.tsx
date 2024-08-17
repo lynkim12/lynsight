@@ -25,6 +25,9 @@ import asis from './image/works/work8asis.png';
 import tobe from './image/works/work8tobe.png';
 import { Divider } from '@mui/material';
 import design1 from './image/works/work8design1.png';
+import design2 from './image/works/work8design2.png';
+import design3 from './image/works/work8design3.png';
+import design4 from './image/works/work8design4.png';
 
 //A Bidding System in Search Ads
 
@@ -91,8 +94,30 @@ function Work8(props: {
             <br/><br/>
             The prominence of the keyword search feature has been lowered, and recommended keywords have been emphasized to prevent the selection of ineffective keywords.
           </div>}/>
-      <WorkFullImage image={design1} />
-        
+      <WorkFullImage image={design1} isBottomMargin={true} />
+      <Divider/>
+      <div style={{background: 'linear-gradient(0deg, rgba(250, 250, 251, 0.00) 0%, #F6F7F9 30%)'}}>
+        <WorkTextSection bigTitle={true}
+          title = 'The easiest bidding competition'
+          description = {
+            <div>
+              We conducted multiple rounds of usability testing to ensure that everyone could enter an appropriate bid amount. We adjusted the messaging to help users better understand the concept of ad bidding, and added a control button to allow them to set a suitable amount.
+            </div>}/>
+        <WorkFullImage image={design2} />
+        <WorkTextSection bigTitle={true}
+          description = {
+            <div>
+              On the bidding page, advertisers were able to easily grasp the information presented, such as “how much other advertisers are paying on average,” and in an effort to stay competitive, they decided to add an extra 10 won to their bid.</div>}/>
+        <WorkFullImage image={design3} />
+      </div>
+      <Divider/>
+      <WorkTextSection bigTitle={true}
+          title = 'To select An appropriate budget'
+          description = {
+            <div>
+              Finally, we used the UI to help advertisers set an appropriate ad budget based on their chosen bid amount.</div>}/>
+      <WorkFullImage image={design4} isBottomMargin={true} />    
+      <Wavedivider/>    
       <Waiting/>
       </>
     )
