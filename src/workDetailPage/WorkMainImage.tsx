@@ -8,7 +8,7 @@ export function MainImage(props: {
 }) {
     return (
         <>
-        <div style = {{maxHeight :"900px",overflow:"hidden"  }}>
+        <div style = {{maxHeight :"1200px",overflow:"hidden"  }}>
             <img style = {{ width:"100%", aspectRatio: "auto" }} src={props.image}/>
         </div>
         </>

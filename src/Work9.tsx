@@ -28,11 +28,11 @@ function Work9(props: {
           title={'New Video Ads'} 
           description={'Introducing new vertical video ads in the home feed.'} 
           team={'Karrot(Daangn)'} 
-          role={'Service Planning, UXUI Design, Experience'} 
+          role={'UXUI Design, Data Experiment'} 
           period={'2024.01. - 2024.06.'}/>
       </div>
-      <YouTubeEmbed videoId="182NS2pHE2o" />
       <MainImage image={mainImage}/>
+      <YouTubeEmbed videoId="182NS2pHE2o" />
       <Waiting/>
       <BackButton/>
       </>

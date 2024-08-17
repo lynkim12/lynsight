@@ -4,7 +4,7 @@ import './workDetailPage/style_works.css';
 import './font.css';
 import { Waiting } from './Waiting';
 import {WorkTitle} from './workDetailPage/WorkTitle';
-import mainImage from './image/works/work9MainImage.png';
+import mainImage from './image/works/work10MainImage.png';
 import { WorkTextSection } from './workDetailPage/WorkTextSection';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import work1chart1 from './image/works/work1chart1.png';
@@ -25,9 +25,9 @@ function Work10(props: {
       <div className='fadeIn '>
         <WorkTitle 
           title={'Eliminating Concerns of Creating Ads'} 
-          description={'Introducing new vertical video ads in the home feed.'} 
+          description={'Encouraging ad creation to increase the activation rate.'} 
           team={'Karrot(Daangn)'} 
-          role={'Service Planning, UXUI Design, Experience'} 
+          role={'Service Planning, UXUI Design, Data Experiment'} 
           period={'2023.01. - 2023.03.'}/>
       </div>
       <MainImage image={mainImage}/>

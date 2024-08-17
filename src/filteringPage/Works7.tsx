@@ -41,7 +41,7 @@ function Works7(props: {
          </div>
          <div className='contents zoomIn'>
             <Content projectPage={"Work2"} thumbnail={thumbnail2} projectTitle={'First User Process Design'} projectDescription={'Onboarding process design on bookcovery to make activation.'} projectSubtitle={'Bookcovery'} period={'2020.05 - 2020.11'}/>
-            <Content projectPage={"Work5"} thumbnail={thumbnail5} projectTitle={'New Service Design'} projectDescription={'Designing an entirely new book-share platform for working people who want to develop compentency.'} projectSubtitle={'Karrot'} period={'2020.01. - 2020.08.'}/>
+            <Content projectPage={"Work5"} thumbnail={thumbnail5} projectTitle={'New Service Design'} projectDescription={'Designing an entirely new book-share platform for working people who want to develop compentency.'} projectSubtitle={'Bookcovery'} period={'2020.01. - 2020.08.'}/>
             <Content projectPage={"Work3"} thumbnail={thumbnail3} projectTitle={'Store UX/UI Design'} projectDescription={'Mobile store tap UX/UI design on Styleshare to maximize store tap using rates and purchase amout.'} projectSubtitle={'Styleshare'} period={'2020.10 - 2020.12'}/>
           {/* <div style={{flex:'1'}}/> */}
          </div>

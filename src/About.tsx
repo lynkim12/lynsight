@@ -13,7 +13,7 @@ import image1 from './image/@.png';
 import image2 from './image/*.png';
 import image3 from './image/shooting.png';
 import './animation.css';
-
+import { Wavedivider } from './Wavedivider';
 
 function About(props: {
   activeNav: number, 
@@ -44,9 +44,9 @@ function About(props: {
               Currently, I joined Karrot(Daangn) as a product designer contributing to the development of an advertising platform for small-sized business. I am responsible for advertiser's experience of creating ads and analyzing performance. We also have a goal to help for small-sized businesses to achieve the success through Karrot advertising.
             </div>
         </div>
-        <div className='dividerWave'></div>
-          <div  style={{maxWidth: "1400px", display: 'flex', overflow: "hidden", height: "9px",  justifyContent : "center",  margin:"auto",padding: " 0px 48px"}}><img src={wavedivider} className={"wave"} style={{height: "9px", display : "flex", alignSelf: "stretch", textAlign:"center"}}/></div>
         </div>
+        <Wavedivider/>
+      
       <div className='aboutContents'>
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10} style={{gap: "28px", flexDirection: "column", display: "flex"}}>
           <div className='aboutTitle'>Experience</div>
@@ -54,6 +54,7 @@ function About(props: {
             I have skills about UX/UI Design, Growth hacking, Product/Project Managing through various responsibilities and roles.
           </div>
         </AnimationOnScroll>
+          
           <div>
             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10}>
               <AboutList 

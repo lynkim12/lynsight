@@ -43,7 +43,7 @@ function Works2(props: {
            {/* <div style={{flex:'1'}}/> */}
          </div>
          <div className='contents zoomIn'>
-            <Content projectPage={"/Work5"} thumbnail={thumbnail5} projectTitle={'New Service Design'} projectDescription={'Designing an entirely new book-share platform for working people who want to develop compentency.'} projectSubtitle={'Karrot'} period={'2020.01. - 2020.08.'}/>
+            <Content projectPage={"/Work5"} thumbnail={thumbnail5} projectTitle={'New Service Design'} projectDescription={'Designing an entirely new book-share platform for working people who want to develop compentency.'} projectSubtitle={'Bookcovery'} period={'2020.01. - 2020.08.'}/>
             <Content projectPage={"/Work3"} thumbnail={thumbnail3} projectTitle={'Store UX/UI Design'} projectDescription={'Mobile store tap UX/UI design on Styleshare to maximize store tap using rates and purchase amout.'} projectSubtitle={'Styleshare'} period={'2020.10 - 2020.12'}/>
            <div style={{flex:'1'}}/>
          </div>
