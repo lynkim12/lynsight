@@ -11,6 +11,7 @@ import work1chart1 from './image/works/work1chart1.png';
 import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
 import {MainImage} from './workDetailPage/WorkMainImage';
+import BackButton from './components/BackButton';
 
 //New Ads Platform for Experts
 
@@ -81,6 +82,7 @@ function Work1(props: {
           
       <div  style={{maxWidth: "1400px", display: 'flex', overflow: "hidden", height: "9px",  justifyContent : "center",  margin:"auto",padding: " 0px 48px"}}><img src={wavedivider} className={"wave"} style={{height: "9px", display : "flex", alignSelf: "stretch", textAlign:"center"}}/></div>
       <Waiting/>
+      <BackButton/>
       </>
     )
 }

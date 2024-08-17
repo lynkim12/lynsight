@@ -12,6 +12,7 @@ import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
 import { MainImage } from './workDetailPage/WorkMainImage';
 import YouTubeEmbed from './YouTubeEmbed';
+import BackButton from './components/BackButton';
 
 //New Video Ads
 
@@ -33,6 +34,7 @@ function Work9(props: {
       <YouTubeEmbed videoId="182NS2pHE2o" />
       <MainImage image={mainImage}/>
       <Waiting/>
+      <BackButton/>
       </>
     )
 }

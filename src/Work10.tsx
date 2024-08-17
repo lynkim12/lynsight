@@ -11,6 +11,7 @@ import work1chart1 from './image/works/work1chart1.png';
 import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
 import { MainImage } from './workDetailPage/WorkMainImage';
+import BackButton from './components/BackButton';
 
 //Eliminating Concerns of Creating Ads
 
@@ -31,6 +32,7 @@ function Work10(props: {
       </div>
       <MainImage image={mainImage}/>
       <Waiting/>
+      <BackButton/>
       </>
     )
 }

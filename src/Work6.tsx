@@ -17,6 +17,7 @@ import { WorkFullImage } from './workDetailPage/WorkFullImage';
 import survey from './image/works/work6survey.png';
 import ecosystem  from './image/works/work6ecosystem.png';
 import direction  from './image/works/work6direction.png';
+import BackButton from './components/BackButton';
 
 
 //New Outlink-Type Ads
@@ -69,9 +70,9 @@ function Work6(props: {
           description={<div>
               Unlike outlink ads provided to professional advertisers, the UX direction for outlink ads aimed at small advertisers has been set to ensure that anyone can use them easily.</div>}/>
         <WorkFullImage image={direction} isRoundedCorner={false} isBackgroundColor={false} isMargin={true}/>
-          
       </AnimationOnScroll>
       <Waiting/>
+      <BackButton/>
       </>
     )
 }

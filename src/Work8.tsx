@@ -28,6 +28,9 @@ import design1 from './image/works/work8design1.png';
 import design2 from './image/works/work8design2.png';
 import design3 from './image/works/work8design3.png';
 import design4 from './image/works/work8design4.png';
+import result1 from './image/works/work8result1.png';
+import result2 from './image/works/work8result2.png';
+import BackButton from './components/BackButton';
 
 //A Bidding System in Search Ads
 
@@ -37,7 +40,9 @@ function Work8(props: {
 }) {
     return (
       <>
+      <div className='work-page-bottom-padding'>
       <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav} />
+      
       <div className='fadeIn'>
         <WorkTitle 
           title={'A Bidding System in Search Ads'} 
@@ -117,8 +122,19 @@ function Work8(props: {
             <div>
               Finally, we used the UI to help advertisers set an appropriate ad budget based on their chosen bid amount.</div>}/>
       <WorkFullImage image={design4} isBottomMargin={true} />    
-      <Wavedivider/>    
-      <Waiting/>
+      <Wavedivider/>  
+      <WorkTextSection 
+        title = 'Result'
+        description = {<div>Two months after the launch of Search Ads V2, search advertising revenue increased more than <b className='textGradient'>4 times</b>, and bid amounts per keyword also grew rapidly. This significant growth is still ongoing.</div>}
+      />
+      <div className='image-center' style={{display:'flex', flexDirection:'row', gap:'24px', margin:'auto', maxWidth:'1400px'}}>
+        <WorkFullImage image={result1} isMargin={false} isBackgroundColor={true} isRoundedCorner={true} isBottomMargin={true} description='Search advertising revenue'/>   
+        <WorkFullImage image={result2} isMargin={false} isBackgroundColor={true} isRoundedCorner={true} isBottomMargin={true} description='Bid amount per keyword'/>   
+        </div>  
+      <WorkTextSection
+        title = ' '/>
+      <BackButton/>
+      </div>
       </>
     )
 }

@@ -11,6 +11,7 @@ import work1chart1 from './image/works/work1chart1.png';
 import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
 import {MainImage} from './workDetailPage/WorkMainImage';
+import BackButton from './components/BackButton';
 
 //Leading More Business Users to Advertising
 
@@ -20,6 +21,7 @@ function Work2(props: {
 }) {
     return (
       <>
+      
       <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav} />
       <div className='fadeIn'>
         <WorkTitle 
@@ -31,6 +33,7 @@ function Work2(props: {
       </div>
       <MainImage image={work1image1}/>
       <Waiting/>
+      <BackButton/>
       </>
     )
 }
