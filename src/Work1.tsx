@@ -12,6 +12,12 @@ import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
 import {MainImage} from './workDetailPage/WorkMainImage';
 import BackButton from './components/BackButton';
+import { WorkImage } from './workDetailPage/WorkImage';
+import { WorkFullImage } from './workDetailPage/WorkFullImage';
+import goal from './image/works/work1goal.png';
+import needs from './image/works/work1needs.png';
+import IA from './image/works/work1IA.png';
+import wireframe from './image/works/work1wireframe.png';
 
 //New Ads Platform for Experts
 
@@ -42,10 +48,9 @@ function Work1(props: {
                     <div className='nurmericIndex'>1</div>
                     <div style={{
                         color: "#F4F5F8",
-                        fontSize: "20px",
-                        fontStyle: "normal",
-                        fontWeight: "600",
-                        lineHeight: "139%",
+                        fontSize: "18px",
+                        fontWeight: "500",
+                        lineHeight: "139%"
                         }}>We have continuously developed the platform to reflect the diverse needs of users, which has increased the difficulty and complexity of the platform for SMB to use.
                     </div>
                 </div>
@@ -53,34 +58,35 @@ function Work1(props: {
                     <div className='nurmericIndex'>2</div>
                     <div style={{
                         color: "#F4F5F8",
-                        fontSize: "20px",
-                        fontStyle: "normal",
-                        fontWeight: "600",
-                        lineHeight: "139%",
+                        fontSize: "18px",
+                        fontWeight: "500",
+                        lineHeight: "139%"
                         }}>There is a need to launch an advanced advertising platform that meets the needs of professional advertisers who advertise over 1 million won per a month.
                     </div>
                 </div>
             </div>
-            </AnimationOnScroll>
-            
-            <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10}>
-            <div style={{textAlign:"center", alignItems:"center", display:'flex', justifyContent:"center"}}>
-                <img src={work1chart1}/>
-            </div>
-            </AnimationOnScroll>
+            </AnimationOnScroll>       
+            <WorkImage image={work1chart1} isMaxheight={true} isbottomPadding={false}/>
           </div>
         </div>
         < WorkTextSection title={'Goal'} description={'As our product grew, various advertisers began to use it. As a result, the need to develop a platform suited to a variety of advertisers.'} />
-          <AnimationOnScroll animateIn="zoomIn" offset={200}>
-            <div style={{
-              fontFamily: "Montserrat", fontSize: "68px", fontWeight:"600", color: "#353C46",  display:"flex", margin:"auto", padding: "0px 48px", maxWidth:"1400px", justifyContent:"center", textAlign:"center", alignContent:"center"
-              }}>Powerful MVP <br/> with essential features for experts
-            </div>
-          </AnimationOnScroll> 
+        <WorkFullImage image={goal} isBottomMargin={true}/>
         < WorkTextSection title={'User Needs'} description={'In order to create an MVP that reflects the needs of advertisers, we find out the needs of target users throungh In-depth interviews.'} />
-          
-          
-      <div  style={{maxWidth: "1400px", display: 'flex', overflow: "hidden", height: "9px",  justifyContent : "center",  margin:"auto",padding: " 0px 48px"}}><img src={wavedivider} className={"wave"} style={{height: "9px", display : "flex", alignSelf: "stretch", textAlign:"center"}}/></div>
+        <WorkFullImage image={needs} isMargin={true} isBottomMargin={true}/>
+        <div style={{backgroundColor:'#F4F5F8', paddingBottom:'80px'}}>
+          <WorkTextSection 
+            title='Information Architecture'
+            description='We designed a Information Architecture that users can understand and use key features easily.'
+            />
+          <WorkFullImage isMargin={true} image={IA} isRoundedCorner={true} isBottomMargin={false}/>
+          <WorkTextSection 
+            title='Wireframe'
+            description='Based on the information Architecture, We carefully planned the actual usage environment such as a creating and managing ads.'
+            />
+          <WorkFullImage isMargin={true} image={wireframe} isRoundedCorner={true} isBottomMargin={true}/>
+        </div>
+
+
       <Waiting/>
       <BackButton/>
       </>
