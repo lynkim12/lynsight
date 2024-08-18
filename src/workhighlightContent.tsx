@@ -1,0 +1,45 @@
+import React from 'react';
+import './App.css';
+import './style.css';
+import { Link } from 'react-router-dom';
+import {useState} from 'react';
+import { HighlightThumbnail } from './workDetailPage/WorkHighlightThumbnail';
+
+
+export function HighlightContent (props: {
+    thumbnail: string;
+    projectTitle: string;
+    projectDescription : string;
+    projectSubtitle : string;
+    period : string;
+    projectPage : string;
+    badge? : string;
+}) {
+    const [isHovering, setIsHovering] = useState(false);
+
+  return (
+    <div className='projectContentsAll' onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
+        {props.badge && <div className = 'projectNewBadge'>{props.badge}</div>}
+        <Link to={props.projectPage} className='project' style={{textDecoration: 'none'}} >
+        <HighlightThumbnail thumbnail={props.thumbnail} isHovered={isHovering}/>
+        <div className='projectContents'>
+            <div className='projectSubtitle'>
+                {props.projectSubtitle}
+            </div>
+            <div style={{display : "flex", flexDirection : "column",gap:"10px"}}>
+                <div className="projectTitle">
+                    {props.projectTitle}
+                </div>
+                <div className='projectDescription'>
+                    {props.projectDescription}
+                </div>
+            </div>
+            <div className='projectPeriod'>{props.period}</div>
+        </div>
+        </Link>
+    </div>
+  
+  );
+}
+
+export default HighlightContent;

@@ -242,8 +242,19 @@ a {
     align-content: center;
   }
 
+
   .contents {
     width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    align-self: stretch;
+    cursor: pointer;
+  }
+
+  .highlight-contents {
+    width: 100%;
+    max-width: 800px;
     display: flex;
     align-items: flex-start;
     gap: 22px;

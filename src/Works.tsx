@@ -1,5 +1,6 @@
 import Navigator from './Navigation';
 import Content from './workContent';
+import HighlightContent from './workhighlightContent';
 import ChipFilter from './components/ChipFilter';
 import thumbnail1 from './image/thumbnails/thumbnail1.png';
 import thumbnail2 from './image/thumbnails/thumbnail2.png';
@@ -30,6 +31,9 @@ function Works(props: {
       <ChipFilter activeFilter={1} setActiveFilter={function (value: SetStateAction<number>): void {
         } }/>
     <div className='workContentslist'>
+        {/* <div className='highlight-contents zoomIn' >
+             <HighlightContent badge={"Updated"} projectPage={"Work8"} thumbnail={thumbnail8} projectTitle={'A Bidding System in Search Ads'} projectDescription={'Designing a search advertising bidding system that anyone can easily use on mobile'} projectSubtitle={'Karrot'} period={'2024.04 - 2024.06.'}/>
+        </div> */}
         <div className='contents zoomIn' >
             <Content badge={"Updated"} projectPage={"Work9"} thumbnail={thumbnail9} projectTitle={'New Video Ads'} projectDescription={'Introducing new vertical video ads in the home feed.'} projectSubtitle={'Karrot'} period={'2024.01. - 2024.06.'}/>
             <Content badge={"Updated"} projectPage={"Work8"} thumbnail={thumbnail8} projectTitle={'A Bidding System in Search Ads'} projectDescription={'Designing a search advertising bidding system that anyone can easily use on mobile'} projectSubtitle={'Karrot'} period={'2024.04 - 2024.06.'}/>

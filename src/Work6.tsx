@@ -22,6 +22,9 @@ import userflow from './image/works/work6userflow.png';
 import research1 from './image/works/work6research1.png';
 import research2 from './image/works/work6research2.png';
 import research3 from './image/works/work6research3.png';
+import design1 from './image/works/work6design1.png';
+import design2 from './image/works/work6design2.png';
+import design3 from './image/works/work6design3.png';
 
 //New Outlink-Type Ads
 
@@ -59,8 +62,8 @@ function Work6(props: {
         <WorkTextSection 
           title={'User Research'} 
           description={<div>
-              On Karrot, there are small advertisers who spend less than 1 million KRW per month on ads and professional advertisers who spend more than 1 million KRW. <br/> The expert mode has a campaign &gt; ad group &gt; ad structure, which is challenging for small business owners who are not familiar with advertising to understand and use effectively. 
-            </div>} 
+              
+To understand the situations in which small business owners primarily utilize outlink advertising, I analyzed the URLs added to "Business Profile Posts" across different industries.</div>} 
         />
         <div className='image-center' style={{display:'flex', flexDirection:'row', gap:'24px', margin:'auto', maxWidth:'1400px'}}>
         <WorkFullImage image={research1} isMargin={false} isBackgroundColor={true} isRoundedCorner={true} isBottomMargin={true} description='Example of a Post'/>   
@@ -88,6 +91,26 @@ function Work6(props: {
         <WorkFullImage image={direction} isRoundedCorner={false} isBackgroundColor={false} isBottomMargin={true} isMargin={true}/>
       <WorkTextSection title='UXUI Design'/>
       <WorkFullImage image={userflow}/>
+      
+      <WorkTextSection 
+          title={<div>Key Design1.<br/>To help each advertiser choose the suitable ad</div>} 
+          description={<div>
+              Encourage online advertisers to choose "website ads", while guiding offline businesses owners to choose "Business Profile ads".</div>}/>
+      <WorkImage image={design1} isMaxheight={true} isbottomPadding={false}/>
+      
+      <WorkTextSection 
+          title={<div>Key Design2.<br/>To reduce decision-making complexity</div>} 
+          description={<div>
+              By analyzing the preference and click-through rate (performance) of each CTA used in outlink ads within expert mode, we identified the most effective options. This allows us to offer a minimal selection of CTAs, reducing decision-making complexity for the user.</div>}/>
+      <WorkFullImage image={design2} isMargin={true}/>
+      
+      <WorkTextSection 
+          title={<div>Key Design3.<br/>Tp reduce decision-making complexity</div>} 
+          description={<div>
+              We have designed a user experience that takes into account the challenges of entering URLs on mobile devices, ensuring a seamless process across various devices. By researching the link copying environment of websites commonly used by small business owners, we identified potential issues and addressed them to minimize errors. This comprehensive approach ensures that users can successfully input URL.</div>}/>
+      <WorkFullImage image={design3} isMargin={true}/>
+      
+      
       
       </AnimationOnScroll>
       <Waiting/>
