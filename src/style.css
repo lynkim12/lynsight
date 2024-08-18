@@ -774,6 +774,13 @@ a {
     .projectTitle {
       font-size: 26px;
     }
+
+    .projectDescription {
+      font-size: 15px;
+    }
+    .projectContents {
+      gap: 12px;
+    }
     .flow {
       max-width: 300px;
       padding: 0 24px;
