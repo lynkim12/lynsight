@@ -48,7 +48,7 @@ function Work6(props: {
           period={'2023.04 - 2023.07'}/>
       </div>
       <MainImage image={mainImage}/>
-      <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} offset={10}> 
+
         <WorkTextSection 
           title={'Background'} 
           description={<div>
@@ -124,12 +124,11 @@ To understand the situations in which small business owners primarily utilize ou
           
       <WorkTextSection 
           title={<div>Result</div>} />
-      <div className='image-center' style={{display:'flex', flexDirection:'row', gap:'24px', margin:'auto', maxWidth:'1400px'}}>
+      <div className='image-center horizontal-layout'>
         <WorkFullImage image={result1} isMargin={false} isBottomMargin={true} />   
         <WorkFullImage image={result2} isMargin={false} isBottomMargin={true} />   
-        </div>  
+      </div>  
       <WorkTextSection title = ' '/>      
-      </AnimationOnScroll>
       <BackButton/>
       </>
     )

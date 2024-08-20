@@ -127,7 +127,7 @@ function Work8(props: {
         title = 'Result'
         description = {<div>Two months after the launch of Search Ads V2, search advertising revenue increased more than <b className='textGradient'>4 times</b>, and bid amounts per keyword also grew rapidly. This significant growth is still ongoing.</div>}
       />
-      <div className='image-center' style={{display:'flex', flexDirection:'row', gap:'24px', margin:'auto', maxWidth:'1400px'}}>
+      <div className='image-center horizontal-layout'>
         <WorkFullImage image={result1} isMargin={false} isBackgroundColor={true} isRoundedCorner={true} isBottomMargin={true} description='Search advertising revenue'/>   
         <WorkFullImage image={result2} isMargin={false} isBackgroundColor={true} isRoundedCorner={true} isBottomMargin={true} description='Bid amount per keyword'/>   
         </div>  

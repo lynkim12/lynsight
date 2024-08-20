@@ -13,11 +13,19 @@
     justify-content: center;
     overflow: hidden;
     max-height: 700px;
-    max-width: 1400px;
+    max-width: 1600px;
     /* margin: 0px 48px; */
     margin:auto;
     flex-direction: column; 
   }
+
+.horizontal-layout {
+    display:flex;
+    flex-direction:row;
+    gap:24px; 
+    margin:auto;
+    max-width:1600px;
+}
 
 .workImage {
     /* aspect-ratio: auto; */
@@ -40,7 +48,7 @@
 
 .workFullImage {
     width: 100%;
-    max-width: 1560px;
+    max-width: 1600px;
     object-fit: contain; 
     overflow: hidden;
     display: flex;
@@ -68,7 +76,7 @@
 }
 .textsection {
     margin: auto; 
-    max-width: 1400px; 
+    max-width: 1600px; 
     align-content: center; 
     padding: 120px 48px 60px 48px;
     display: flex; 
@@ -78,7 +86,7 @@
 
 .contentsalign {
     margin: auto; 
-    max-width: 1400px; 
+    max-width: 1600px; 
     align-content: center; 
     padding: 0px 48px;
     display: flex; 
