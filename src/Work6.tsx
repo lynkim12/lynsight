@@ -25,6 +25,10 @@ import research3 from './image/works/work6research3.png';
 import design1 from './image/works/work6design1.png';
 import design2 from './image/works/work6design2.png';
 import design3 from './image/works/work6design3.png';
+import design4 from './image/works/work6design4.png';
+import { Wavedivider } from './Wavedivider';
+import result1 from './image/works/work6result1.png';
+import result2 from './image/works/work6result2.png';
 
 //New Outlink-Type Ads
 
@@ -105,15 +109,27 @@ To understand the situations in which small business owners primarily utilize ou
       <WorkFullImage image={design2} isMargin={true}/>
       
       <WorkTextSection 
-          title={<div>Key Design3.<br/>Tp reduce decision-making complexity</div>} 
+          title={<div>Key Design3.<br/>To reduce decision-making complexity</div>} 
           description={<div>
               We have designed a user experience that takes into account the challenges of entering URLs on mobile devices, ensuring a seamless process across various devices. By researching the link copying environment of websites commonly used by small business owners, we identified potential issues and addressed them to minimize errors. This comprehensive approach ensures that users can successfully input URL.</div>}/>
       <WorkFullImage image={design3} isMargin={true}/>
+
+      <WorkTextSection 
+          title={<div>Key Design4.<br/>To integrate outlink ads naturally into a feed</div>} 
+          description={<div>
+              We insert ads in a format similar to regular posts in the feed, providing users with a seamless browsing experience and achieving a high Click-Through Rate(CTR).</div>}/>
+      <WorkFullImage image={design4} isMargin={true} isBottomMargin={true}/>
       
-      
-      
+      <Wavedivider/>
+          
+      <WorkTextSection 
+          title={<div>Result</div>} />
+      <div className='image-center' style={{display:'flex', flexDirection:'row', gap:'24px', margin:'auto', maxWidth:'1400px'}}>
+        <WorkFullImage image={result1} isMargin={false} isBottomMargin={true} />   
+        <WorkFullImage image={result2} isMargin={false} isBottomMargin={true} />   
+        </div>  
+      <WorkTextSection title = ' '/>      
       </AnimationOnScroll>
-      <Waiting/>
       <BackButton/>
       </>
     )
