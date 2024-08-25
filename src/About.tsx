@@ -43,7 +43,7 @@ function About(props: {
             <div className='aboutIntroDescription'>
               Currently, I joined Karrot(Daangn) as a product designer contributing to the development of an advertising platform for small-sized business. I am responsible for advertiser's experience of creating ads and analyzing performance. We also have a goal to help for small-sized businesses to achieve the success through Karrot advertising.
             </div>
-        </div>
+          </div>
         </div>
         <Wavedivider/>
       
@@ -60,9 +60,9 @@ function About(props: {
               <AboutList 
                 companyTitle = {<a target='_blank' href='https://business.daangn.com/'>Karrot</a>}
                 experience = {<div>As a product designer in the advertisement team, I have responsibility of the UX design for lots of small-sized business owner to do marketing their business more easily. Also I designed and launched a new advertisements platform for mid- to large-scale Advertisers.</div>}
-                perieod ={<div style={{display: 'flex', flexDirection:'row'}}>
+                perieod ={<div style={{display: 'flex', flexDirection:'row', textAlign:'right', right:'0'}}>
                   2021.10. - 
-                    <div className='textGradient'> &nbsp;Present </div>
+                    <div style={{textAlign:'right'}} className='textGradient'> &nbsp;Present</div>
                   </div>}
                 location='Seoul, Republic of Korea'
               />

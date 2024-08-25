@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
-import '../style.css';
-import YouTubeEmbed from '../YouTubeEmbed';
+import './App.css';
+import './style.css';
+import YouTubeEmbed from './YouTubeEmbed';
 
 export function Thumbnail(props: {
     isHovered: boolean; 

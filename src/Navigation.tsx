@@ -6,6 +6,19 @@ import { Link } from 'react-router-dom';
 import { NavMenuItem } from './navMenuItem';
 import React from 'react';
 
+const nav = document.querySelector('.nav') as HTMLElement | null;
+let lastScrollY: number = window.scrollY;
+
+if (nav) {
+  window.addEventListener('scroll', () => {
+      if (window.scrollY > lastScrollY && window.scrollY > 250) {
+          nav.style.transform = 'translateY(-100%)';
+      } else {
+          nav.style.transform = 'translateY(0)';
+      }
+      lastScrollY = window.scrollY;
+  });
+}
 
 function Navigator(props: {
   activeNav: number, 

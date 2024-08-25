@@ -99,7 +99,49 @@ a {
     color: #fff;
   }
 
+  .next-floatingButton {
+    position: fixed; /* 화면에 고정된 위치에 배치 */
+    bottom: 20px; /* 페이지 하단에서 20px 떨어진 위치 */
+    right: 20px; /* 페이지 오른쪽에서 20px 떨어진 위치 */
+    display: inline-flex;
+    padding: 20px ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid var(--gray-20, #E6E9ED);
+    background: var(--white, #FFF);
+    color: var(--gray-100, #131517);
+    transition: background-color 0.5s, box-shadow 0.5s, gap 0.3s, padding 0.3s, transform 0.5s;/* 부드러운 색상 변화 */
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: translateY(1000px);
+    opacity: 0; /* 기본 상태에서 버튼을 숨기기 */
+
+  }
   
+
+  .next-floatingButton.show {
+    transform: translateY(0); /* 스크롤 후 버튼을 화면에 표시 */
+    opacity: 1; /* 버튼을 보이게 설정 */
+  }
+
+  .next-floatingButton:hover {
+    gap: 16px;
+    padding: 14px 20px 20px 20px  ;
+    border-color: transparent;
+    background-color: #131517; 
+    color: #fff;
+  }
+
+  .next-floatingButton.scrolled-to-bottom {
+    border-color: transparent;
+    background-color: #131517; 
+    color: #fff;
+  }
+
+
   .menu {
     display: flex;
     flex-direction: row;
@@ -116,7 +158,8 @@ a {
     top: 0;
     z-index: 3;
     /* background: linear-gradient(180deg, #FFF 0% , rgba(255, 255, 255, 0.00) 100%); */
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(4px);
+    transition: transform 0.3s ease;
   }
 
   .Menu {
@@ -199,7 +242,6 @@ a {
     position: sticky;
     top: 0;
     z-index: 3;
-    /* background-color: #FFF; */
     overflow: scroll;
     overflow: auto;
     white-space: nowrap;
@@ -270,6 +312,14 @@ a {
     flex: 1 0 0;
   }
 
+  .project-next {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+  }
+
   .projectThumbnail {
     width: 100%;
     background-color: #e5e5e5;
@@ -293,6 +343,14 @@ a {
     align-self: stretch;
   }
 
+  .projectHighlightContents { 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+  }
+
   .projectSubtitle {
     color: #131517;
     font-size: 15px;
@@ -303,7 +361,7 @@ a {
 
   .projectTitle {
     color: #131517;
-    font-size: 30px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -316,17 +374,17 @@ a {
   }
   
   .projectDescription {
-    color: #9AA0A7;
-    font-size: 17px;
+    color: #51575E;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%;
+    line-height: 135%;
     
   }
 
   .projectPeriod {
     color: #51575E;
-    font-size: 15px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -416,8 +474,6 @@ a {
 
   .aboutIntroDescription {
     color: #222429;
-    font-family : 
-      -apple-system, BlinkMacSystemFont, sans-serif;
     font-size : 24px;
     font-style: normal;
     line-height: 161.8%;
@@ -437,11 +493,11 @@ a {
   }
 
   .aboutDescription {
-    color: #222429;
+    color: #3A3E44;
     /* letter-spacing: -0.5px; */
     font-size: 22px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 350;
     line-height: 151.8%;
     margin-bottom : 100px;
   }
@@ -468,13 +524,13 @@ a {
   }
   
   .aboutContactListItem {
-    font-family: Montserrat, -apple-system, BlinkMacSystemFont, sans-serif;
+    /* font-family: Montserrat, -apple-system, BlinkMacSystemFont, sans-serif; */
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
-    letter-spacing: -0.2px;
+    /* letter-spacing: -0.2px; */
   }
 
 
@@ -495,7 +551,7 @@ a {
     width : 240px;
     display: flex;
     gap: 6px;
-    font-family:Montserrat;
+    /* font-family:Montserrat; */
   }
 
   .companyTitle {
@@ -503,24 +559,25 @@ a {
     font-style: normal;
     font-weight: 700;
     line-height: 151.8%;
+    font-family:Montserrat;
   }
   .location {
       color: #767D85;
       font-size: 16px;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 151.8%;
   }
   .experience {
-      color: #3A3E44;
-      font-size: 20px;
-      font-weight: 400;
+      color: #222429;
+      font-size: 18px;
+      font-weight: 350;
       line-height: 151.8%;
       flex: 1 0 0;
   } 
   .period{
     color: #131517;
-    font-size: 18px; 
+    font-size: 16px; 
     font-weight: 700;
     text-align: right;
     line-height: 151.8%;

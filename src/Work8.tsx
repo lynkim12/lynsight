@@ -71,7 +71,7 @@ function Work8(props: {
         description = {<div>Before I started designing, first of all, I analyzed the most purchased keywords by advertisers who used search advertisements so far, and defined the main target that required a keyword planner.
           <br/><br/>I also organized the service policy for that user, the requirements of the users, and the scenarios that should be considered.</div>}
       />
-      <div className='image-center' style={{display:'flex', flexDirection:'row', gap:'24px', margin:'auto', maxWidth:'1400px'}}>
+      <div className='image-center margin48 horizontal-layout'>
         <WorkFullImage image={work8usecaseimage2} isMargin={false} isBackgroundColor={true} isRoundedCorner={true} isBottomMargin={true} description='Keyword Purchase Count Status'/>   
         <WorkFullImage image={work8usecaseimage1} isMargin={false} isBackgroundColor={true} isRoundedCorner={true} isBottomMargin={true} description='Policy and Experience Design'/>   
         </div>

@@ -66,10 +66,9 @@ function Work6(props: {
         <WorkTextSection 
           title={'User Research'} 
           description={<div>
-              
-To understand the situations in which small business owners primarily utilize outlink advertising, I analyzed the URLs added to "Business Profile Posts" across different industries.</div>} 
+              To understand the situations in which small business owners primarily utilize outlink advertising, I analyzed the URLs added to "Business Profile Posts" across different industries.</div>} 
         />
-        <div className='image-center' style={{display:'flex', flexDirection:'row', gap:'24px', margin:'auto', maxWidth:'1400px'}}>
+        <div className='image-center margin48 horizontal-layout'>
         <WorkFullImage image={research1} isMargin={false} isBackgroundColor={true} isRoundedCorner={true} isBottomMargin={true} description='Example of a Post'/>   
         <WorkFullImage image={research2} isMargin={false} isBackgroundColor={true} isRoundedCorner={true} isBottomMargin={true} description='Share by Outlink Type'/>   
         <WorkFullImage image={research3} isMargin={false} isBackgroundColor={true} isRoundedCorner={true} isBottomMargin={true} description='Outlink by Usecase'/>   
@@ -124,7 +123,7 @@ To understand the situations in which small business owners primarily utilize ou
           
       <WorkTextSection 
           title={<div>Result</div>} />
-      <div className='image-center horizontal-layout'>
+      <div className='image-center margin48 horizontal-layout'>
         <WorkFullImage image={result1} isMargin={false} isBottomMargin={true} />   
         <WorkFullImage image={result2} isMargin={false} isBottomMargin={true} />   
       </div>  

@@ -3,7 +3,7 @@ import './App.css';
 import './style.css';
 import { Link } from 'react-router-dom';
 import {useState} from 'react';
-import { Thumbnail } from './workDetailPage/WorkThumbnail';
+import { Thumbnail } from './WorkThumbnail';
 
 
 export function Content (props: {
