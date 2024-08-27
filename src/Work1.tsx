@@ -21,6 +21,8 @@ import wireframe from './image/works/work1wireframe.png';
 import { Divider } from '@mui/material';
 import liteIA from './image/works/work1liteIA.png';
 import ExpertIA from './image/works/work1exportIA.png';
+import NextItem from './components/NextItem';
+import thumbnail1 from './image/thumbnails/thumbnail1.png';
 
 //New Ads Platform for Experts
 
@@ -95,6 +97,7 @@ function Work1(props: {
         </div>
       <Waiting/>
       <BackButton/>
+      <NextItem to='' thumbnail={thumbnail1}/>
       </>
     )
 }
