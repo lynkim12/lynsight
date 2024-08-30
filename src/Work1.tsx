@@ -97,7 +97,7 @@ function Work1(props: {
         </div>
       <Waiting/>
       <BackButton/>
-      <NextItem to='' thumbnail={thumbnail1}/>
+      <NextItem to='' thumbnail={thumbnail1} nextProjectTitle='next project title'/>
       </>
     )
 }
