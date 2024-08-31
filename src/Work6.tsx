@@ -29,6 +29,8 @@ import design4 from './image/works/work6design4.png';
 import { Wavedivider } from './Wavedivider';
 import result1 from './image/works/work6result1.png';
 import result2 from './image/works/work6result2.png';
+import NextItem from './components/NextItem';
+import thumbnail10 from './image/thumbnails/thumbnail10.png';
 
 //New Outlink-Type Ads
 
@@ -129,6 +131,7 @@ function Work6(props: {
       </div>  
       <WorkTextSection title = ' '/>      
       <BackButton/>
+      <NextItem to='/Work10' thumbnail={thumbnail10} nextProjectTitle='Eliminating Concerns of Creating Ads'/>
       </>
     )
 }

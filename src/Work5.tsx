@@ -21,7 +21,8 @@ import { WorkImage } from './workDetailPage/WorkImage';
 import wireframe from './image/works/work5wireframe.png';
 import system from './image/works/work5system.png';
 import system2 from './image/works/work5system2.png';
-
+import NextItem from './components/NextItem';
+import thumbnail3 from './image/thumbnails/thumbnail3.png';
 //New Service Design
 
 function Work5(props: {
@@ -65,6 +66,7 @@ function Work5(props: {
       <WorkFullImage image={system2}/>
       <Waiting/>
       <BackButton/>
+      <NextItem to='/Work3' thumbnail={thumbnail3} nextProjectTitle='Store UX/UI Design'/>
       </>
     )
 }

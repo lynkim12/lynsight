@@ -12,7 +12,8 @@ import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
 import { MainImage } from './workDetailPage/WorkMainImage';
 import BackButton from './components/BackButton';
-
+import NextItem from './components/NextItem';
+import thumbnail6 from './image/thumbnails/thumbnail6.png';
 //New Catalog Manager for Ads
 
 function Work7(props: {
@@ -34,6 +35,7 @@ function Work7(props: {
       <MainImage image={mainImage}/>
       <Waiting/>
       <BackButton/>
+      <NextItem to='/Work6' thumbnail={thumbnail6} nextProjectTitle='New Outlink-Type Ads'/>
       </>
     )
 }

@@ -22,7 +22,7 @@ import { Divider } from '@mui/material';
 import liteIA from './image/works/work1liteIA.png';
 import ExpertIA from './image/works/work1exportIA.png';
 import NextItem from './components/NextItem';
-import thumbnail1 from './image/thumbnails/thumbnail1.png';
+import thumbnail4 from './image/thumbnails/thumbnail4.png';
 
 //New Ads Platform for Experts
 
@@ -97,7 +97,7 @@ function Work1(props: {
         </div>
       <Waiting/>
       <BackButton/>
-      <NextItem to='./Work1' thumbnail={thumbnail1} nextProjectTitle='Leading More Business Users to Advertising'/>
+      <NextItem to='/Work4' thumbnail={thumbnail4} nextProjectTitle='Leading More Business Users to Advertising'/>
       </>
     )
 }

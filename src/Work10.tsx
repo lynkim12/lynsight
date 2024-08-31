@@ -12,6 +12,8 @@ import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
 import { MainImage } from './workDetailPage/WorkMainImage';
 import BackButton from './components/BackButton';
+import NextItem from './components/NextItem';
+import thumbnail1 from './image/thumbnails/thumbnail1.png';
 
 //Eliminating Concerns of Creating Ads
 
@@ -33,6 +35,7 @@ function Work10(props: {
       <MainImage image={mainImage}/>
       <Waiting/>
       <BackButton/>
+      <NextItem to='/Work1' thumbnail={thumbnail1} nextProjectTitle='New Ads Platform for Experts'/>
       </>
     )
 }

@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../style.css'
-import '../image/icon_forward.svg'
+import '../image/icon_arrow.svg'
 
 interface NextItemProps {
   to?: string; // 이동할 URL을 나타내는 props
   thumbnail?: string;
-  isHovered?: boolean;
   nextProjectTitle?: string;
 }
 
-const NextItem: React.FC<NextItemProps> = ({ to, thumbnail, isHovered, nextProjectTitle }) => {
+const NextItem: React.FC<NextItemProps> = ({ to, thumbnail, nextProjectTitle }) => {
   const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const [scrolledToBottom, setScrolledToBottom] = useState<boolean>(false);
@@ -45,17 +44,18 @@ const NextItem: React.FC<NextItemProps> = ({ to, thumbnail, isHovered, nextProje
   return (
     <button className={`next-item ${isVisible ? 'show' : ''} ${scrolledToBottom ? 'scrolled-to-bottom' : ''}`}
       onClick={Click} onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
-        <div className={`next-item-thumbnail ${isHovered ? "next-item-thumbnail-hover" : ""}`}>
+        <div className={`next-item-thumbnail ${isHovering ? "next-item-thumbnail-hover" : ""}`}>
           <img  src={thumbnail} />
         </div>
-        <div className={`next-sign ${isHovered ? "next-sign-hover" : ""}`}>
-        <svg  xmlns='../image/icon_forward.svg' width="24" height="24" viewBox="0 0 12 12" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.64645 10.3536C5.45118 10.1583 5.45118 9.84171 5.64645 9.64645L8.79289 6.5L2 6.5C1.72386 6.5 1.5 6.27614 1.5 6C1.5 5.72386 1.72386 5.5 2 5.5L8.79289 5.5L5.64645 2.35355C5.45118 2.15829 5.45118 1.84171 5.64645 1.64645C5.84171 1.45118 6.15829 1.45118 6.35355 1.64645L10.3536 5.64645C10.5488 5.84171 10.5488 6.15829 10.3536 6.35355L6.35355 10.3536C6.15829 10.5488 5.84171 10.5488 5.64645 10.3536Z" fill="white"/>
-        </svg>
+        <div className={`next-sign ${isHovering ? "next-sign-hover" : ""}`}>
+          <svg  xmlns='../image/icon_arrow.svg' width="24" height="24" viewBox="0 0 12 12" fill="none">
+            <path d="M9.60359 2.5898C9.58156 2.55025 9.55374 2.51306 9.52014 2.47945C9.41997 2.37929 9.28787 2.3305 9.1566 2.33311L3.5 2.33309C3.22386 2.33309 3 2.55694 3 2.83309C3 3.10923 3.22385 3.33309 3.5 3.33309L7.95938 3.3331L2.4797 8.81279C2.28444 9.00805 2.28444 9.32463 2.4797 9.51989C2.67496 9.71516 2.99154 9.71516 3.18681 9.51989L8.66668 4.04002V8.49976C8.66668 8.7759 8.89054 8.99975 9.16668 8.99975C9.44282 8.99975 9.66668 8.7759 9.66668 8.49976V2.83311C9.66668 2.74478 9.64378 2.66181 9.60359 2.5898Z" fill="white"/>
+          </svg>
         </div>
         <div className='next-item-text'>
           <div className='next-text'>Next</div>
           <div className='next-project-title'>{nextProjectTitle}</div>
+          
         </div>
   </button>
   );

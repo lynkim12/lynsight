@@ -12,6 +12,8 @@ import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
 import {MainImage} from './workDetailPage/WorkMainImage';
 import BackButton from './components/BackButton';
+import thumbnail2 from './image/thumbnails/thumbnail2.png';
+import NextItem from './components/NextItem';
 
 //Leading More Business Users to Advertising
 
@@ -34,6 +36,7 @@ function Work2(props: {
       <MainImage image={work1image1}/>
       <Waiting/>
       <BackButton/>
+      <NextItem to='/Work2' thumbnail={thumbnail2} nextProjectTitle='First User Process Design'/>
       </>
     )
 }

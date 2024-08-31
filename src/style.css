@@ -53,12 +53,12 @@ a {
   }
 
   .next-item {
-    border-radius: 16px;
+    border-radius: 30px;
     border: 1px solid var(--gray-20, #E6E9ED);
     background: #FFF;
     display: inline-flex;
-    width: 320px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
     flex-direction: column;
     /* justify-content: flex-end; */
     align-items: center;
@@ -78,24 +78,19 @@ a {
   }
   .next-item-text {
     position: absolute;
-    bottom: 0px;
+    top: 134px;
+    /* bottom: 8px; */
     left: 0px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 4px;
-    margin: 12px;
+    gap: 0px;
+    margin: 10px;
     width: auto;
     flex-shrink: 0;
   }
 
-  .white-arrow{
-    width: 12px;
-    height: 12px;
-    flex-shrink: 0;
-
-  }
   .next-sign {
     display: flex;
     position: absolute;
@@ -110,8 +105,8 @@ a {
     flex-shrink: 0;
     z-index: 3;
     border-radius: 50px;
-    background: rgba(0, 0, 0, 0.12);
-    backdrop-filter: blur(1px); 
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(4px); 
     transition: .3s ease-in-out;
   }
 
@@ -124,21 +119,21 @@ a {
 
   .next-text {
     color: #767D85;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
   }
   .next-project-title {
     color: var(--gray-100, #131517);
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
     text-align: left;
     line-height: 135%;
   }
 
   .next-item-thumbnail {
-    width: 320px;
+    width: 400px;
     height: 100%;
-    border-radius: 16px;
+    border-radius: 20px;
     overflow: hidden;
     position: relative;
     -webkit-transform: scale(1);
@@ -151,6 +146,7 @@ a {
 
   .next-item-thumbnail img {
     width: 100%;
+    background-color: #F2F3F6;
     /* height: 100%; */
     /* object-fit: cover; 이미지의 짧은 변이 컨테이너를 꽉 채우고 비율을 유지 */
     object-position: center; /* 이미지를 중앙에 배치 */
@@ -160,9 +156,9 @@ a {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     margin: 8px;
-    width:290px;
-    height: 96px;
-    border-radius: 10px;
+    width: 366px;
+    height:120px;
+    border-radius: 24px;
  }
 
   .next-item.scrolled-to-bottom {

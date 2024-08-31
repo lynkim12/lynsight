@@ -31,6 +31,10 @@ import design4 from './image/works/work8design4.png';
 import result1 from './image/works/work8result1.png';
 import result2 from './image/works/work8result2.png';
 import BackButton from './components/BackButton';
+import NextItem from './components/NextItem';
+import thumbnail7 from './image/thumbnails/thumbnail7.png';
+
+
 
 //A Bidding System in Search Ads
 
@@ -134,6 +138,7 @@ function Work8(props: {
       <WorkTextSection
         title = ' '/>
       <BackButton/>
+      <NextItem to='/Work7' thumbnail={thumbnail7} nextProjectTitle='New Catalog Manager for Ads'/>
       </div>
       </>
     )

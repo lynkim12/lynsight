@@ -13,7 +13,8 @@ import wavedivider from './image/wavedivider.png'
 import { MainImage } from './workDetailPage/WorkMainImage';
 import YouTubeEmbed from './YouTubeEmbed';
 import BackButton from './components/BackButton';
-
+import NextItem from './components/NextItem';
+import thumbnail8 from './image/thumbnails/thumbnail8.png';
 //New Video Ads
 
 function Work9(props: {
@@ -35,6 +36,7 @@ function Work9(props: {
       <YouTubeEmbed videoId="182NS2pHE2o" />
       <Waiting/>
       <BackButton/>
+      <NextItem to='/Work8' thumbnail={thumbnail8} nextProjectTitle='A Bidding System in Search Ads'/>
       </>
     )
 }
