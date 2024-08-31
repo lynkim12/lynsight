@@ -1,8 +1,8 @@
-import Navigator from './Navigation';
+import Navigator from './components/Navigation';
 import './style.css';
 import './workDetailPage/style_works.css';
 import './font.css';
-import { Waiting } from './Waiting';
+import { Waiting } from './components/Waiting';
 import {WorkTitle} from './workDetailPage/WorkTitle';
 import mainImage from './image/works/work9MainImage.png';
 import { WorkTextSection } from './workDetailPage/WorkTextSection';
@@ -11,7 +11,7 @@ import work1chart1 from './image/works/work1chart1.png';
 import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
 import { MainImage } from './workDetailPage/WorkMainImage';
-import YouTubeEmbed from './YouTubeEmbed';
+import YouTubeEmbed from './components/YouTubeEmbed';
 import BackButton from './components/BackButton';
 import NextItem from './components/NextItem';
 import thumbnail8 from './image/thumbnails/thumbnail8.png';

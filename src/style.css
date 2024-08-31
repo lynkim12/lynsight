@@ -152,7 +152,7 @@ a {
     object-position: center; /* 이미지를 중앙에 배치 */
   }
 
-  .next-item-thumbnail:hover {
+  .next-item-thumbnail-hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     margin: 8px;

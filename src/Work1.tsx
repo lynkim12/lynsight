@@ -1,8 +1,8 @@
-import Navigator from './Navigation';
+import Navigator from './components/Navigation';
 import './style.css';
 import './workDetailPage/style_works.css';
 import './font.css';
-import { Waiting } from './Waiting';
+import { Waiting } from './components/Waiting';
 import {WorkTitle} from './workDetailPage/WorkTitle';
 import work1MainImage from './image/works/work1MainImage.jpg';
 import { WorkTextSection } from './workDetailPage/WorkTextSection';

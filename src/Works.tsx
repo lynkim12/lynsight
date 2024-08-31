@@ -1,5 +1,5 @@
-import Navigator from './Navigation';
-import Content from './workContent';
+import Navigator from './components/Navigation';
+import Content from './components/workContent';
 import ChipFilter from './components/ChipFilter';
 import thumbnail1 from './image/thumbnails/thumbnail1.png';
 import thumbnail2 from './image/thumbnails/thumbnail2.png';
@@ -14,11 +14,11 @@ import thumbnail10 from './image/thumbnails/thumbnail10.png';
 import wavedivider from './image/wavedivider.png'
 import "animate.css/animate.min.css";
 import { Dispatch, SetStateAction } from 'react';
-import { Footer } from './Footer';
-import YouTubeEmbed from './YouTubeEmbed';
+import { Footer } from './components/Footer';
+import YouTubeEmbed from './components/YouTubeEmbed';
 import MediaComponent from './workDetailPage/thumbnail';
 import thumbnail9video from './videos/thumbnail9.mp4';
-import { Wavedivider } from './Wavedivider';
+import { Wavedivider } from './components/Wavedivider';
 
 function Works(props: {
   activeNav: number, 

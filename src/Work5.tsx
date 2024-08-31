@@ -1,8 +1,8 @@
-import Navigator from './Navigation';
+import Navigator from './components/Navigation';
 import './style.css';
 import './workDetailPage/style_works.css';
 import './font.css';
-import { Waiting } from './Waiting';
+import { Waiting } from './components/Waiting';
 import {WorkTitle} from './workDetailPage/WorkTitle';
 import mainImage from './image/works/work5MainImage.png';
 import { WorkTextSection } from './workDetailPage/WorkTextSection';
@@ -15,7 +15,7 @@ import { WorkFullImage } from './workDetailPage/WorkFullImage';
 import research1 from './image/works/work5research1.png';
 import research2 from './image/works/work5research2.png';
 import { Divider } from '@mui/material';
-import { Wavedivider } from './Wavedivider';
+import { Wavedivider } from './components/Wavedivider';
 import strategy from './image/works/work5strategy.png';
 import { WorkImage } from './workDetailPage/WorkImage';
 import wireframe from './image/works/work5wireframe.png';
@@ -23,6 +23,12 @@ import system from './image/works/work5system.png';
 import system2 from './image/works/work5system2.png';
 import NextItem from './components/NextItem';
 import thumbnail3 from './image/thumbnails/thumbnail3.png';
+import design1 from './image/works/work5design1.png';
+import design2 from './image/works/work5design2.png';
+import design3 from './image/works/work5design3.png';
+import design4 from './image/works/work5design4.png';
+import cover from './image/works/work5coverimage.png';
+
 //New Service Design
 
 function Work5(props: {
@@ -64,7 +70,14 @@ function Work5(props: {
       <WorkTextSection title='Design System'/>
       <WorkFullImage image={system}/>
       <WorkFullImage image={system2}/>
-      <Waiting/>
+      <div style={{background: 'linear-gradient(180deg, #F4F5F8 0%, #F1F2F7 100%)'}}>
+        <WorkTextSection title='UXUI Design' description='Since the experience of discovering books through browsing is most important, I designed a UX that encourages repetitive behavior.'/>      
+        <WorkFullImage image={design1}/>
+      </div>
+      <WorkFullImage image={design2}/>
+      <WorkFullImage image={design3}/>
+      <div style={{backgroundColor:'#333443'}}><WorkFullImage image={design4}/></div>
+      <div style={{marginTop:'60px'}}><WorkFullImage image={cover} isMargin={true} isRoundedCorner={true} isBottomMargin={true}/></div>
       <BackButton/>
       <NextItem to='/Work3' thumbnail={thumbnail3} nextProjectTitle='Store UX/UI Design'/>
       </>

@@ -1,9 +1,9 @@
-import Navigator from './Navigation';
-import { AboutList } from './AboutList';
+import Navigator from './components/Navigation';
+import { AboutList } from './components/AboutList';
 import { Divider, Hidden } from '@mui/material';
 import './style.css';
 import './font.css';
-import { Footer } from './Footer';
+import { Footer } from './components/Footer';
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Dispatch, SetStateAction } from 'react';
@@ -13,7 +13,7 @@ import image1 from './image/@.png';
 import image2 from './image/*.png';
 import image3 from './image/shooting.png';
 import './animation.css';
-import { Wavedivider } from './Wavedivider';
+import { Wavedivider } from './components/Wavedivider';
 
 function About(props: {
   activeNav: number, 

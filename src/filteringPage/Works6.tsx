@@ -1,5 +1,5 @@
-import Navigator from '../Navigation';
-import Content from '../workContent';
+import Navigator from '../components/Navigation';
+import Content from '../components/workContent';
 import ChipFilter from '../components/ChipFilter';
 import thumbnail1 from '../image/thumbnails/thumbnail1.png';
 import thumbnail2 from '../image/thumbnails/thumbnail2.png';
@@ -13,7 +13,7 @@ import thumbnail9 from '../image/thumbnails/thumbnail9.png';
 import wavedivider from './image/wavedivider.png'
 import "animate.css/animate.min.css";
 import { Dispatch, SetStateAction } from 'react';
-import { Footer } from '../Footer';
+import { Footer } from '../components/Footer';
 
 //2021 
 

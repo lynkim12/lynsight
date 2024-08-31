@@ -1,9 +1,9 @@
 import React, { Dispatch, SetStateAction } from 'react';
-import Navigator from './Navigation';
-import { Waiting } from './Waiting';
+import Navigator from './components/Navigation';
+import { Waiting } from './components/Waiting';
 import './font.css';
 import './style.css';
-import { Footer } from './Footer';
+import { Footer } from './components/Footer';
 
 function Writing(props: {
   activeNav: number, 

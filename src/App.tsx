@@ -16,7 +16,7 @@ import Work7 from './Work7';
 import Work8 from './Work8';
 import Work9 from './Work9';
 import Work10 from './Work10';
-import PageToTop from './PageToTop';
+import PageToTop from './components/PageToTop';
 import Works2 from './filteringPage/Works2';
 import Works3 from './filteringPage/Works3';
 import Works4 from './filteringPage/Works4';
