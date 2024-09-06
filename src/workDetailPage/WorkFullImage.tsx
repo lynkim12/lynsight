@@ -11,6 +11,8 @@ export function WorkFullImage (props: {
     isBackgroundColor? : boolean;
     isMargin? : boolean;
     isBottomMargin? : boolean;
+    isShadow?: boolean;
+    isBorder? : boolean;
 }){
 
     return (
@@ -20,7 +22,9 @@ export function WorkFullImage (props: {
             <div style={{display:'flex', flexDirection:'column', gap:'20px'}}>
                 <img className={`workFullImage 
                         ${props.isRoundedCorner ? 'corner-round24' : ''} 
-                        ${props.isBackgroundColor ? 'worksimage-GrayBackgroundColor' : ''} 
+                        ${props.isBackgroundColor ? 'worksimage-GrayBackgroundColor' : ''}
+                        ${props.isShadow ? 'worksimage-Shadow' : ''} 
+                        ${props.isBorder ? 'worksimage-Border' : ''} 
                         ` } src = {props.image}/>
                 {props.description && <div className='imageCaption'>{props.description}</div>}
             </div>

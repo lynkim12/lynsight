@@ -793,19 +793,17 @@ a {
 
   .nurmericIndex {
     display: flex;
-    width: 44px;
-    height: 44px;
-    flex-direction: column;
+    width: 40px;
+    height: 40px;
     justify-content: center;
     align-items: center;
-    border-radius: 42px;
-    border: 0.5px solid #FFF;
+    border-radius: 20px;
     color: #F7F8FA;
     text-align: center;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: 135%;
+    background:#3A3E44;
   }
 
 

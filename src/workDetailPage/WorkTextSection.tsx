@@ -22,7 +22,7 @@ export function WorkTextSection(props: {
                         lineHeight: "normal"
                     }}>{props.title}</div>}
                 {props.description && <div style={{
-                    color: "#3A3E44",
+                    color: props.isWhiteText ? '#E6E9ED' : '#3A3E44',
                     fontSize: "20px",
                     fontStyle: "normal",
                     fontWeight: "400",

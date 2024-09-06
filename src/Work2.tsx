@@ -13,7 +13,7 @@ import wavedivider from './image/wavedivider.png'
 import { MainImage } from './workDetailPage/WorkMainImage';
 import BackButton from './components/BackButton';
 import NextItem from './components/NextItem';
-import thumbnail5 from './image/thumbnails/thumbnail5.png';
+import thumbnail3 from './image/thumbnails/thumbnail3.png';
 //First User Process Design
 
 function Work2(props: {
@@ -34,7 +34,7 @@ function Work2(props: {
       <MainImage image={mainImage}/>
       <Waiting/>
       <BackButton/>
-      <NextItem to='/Work5' thumbnail={thumbnail5} nextProjectTitle='New Service Design'/>
+      <NextItem to='/Work3' thumbnail={thumbnail3} nextProjectTitle='Store UX/UI Design'/>
       </>
     )
 }

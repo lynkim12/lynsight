@@ -22,7 +22,7 @@ import wireframe from './image/works/work5wireframe.png';
 import system from './image/works/work5system.png';
 import system2 from './image/works/work5system2.png';
 import NextItem from './components/NextItem';
-import thumbnail3 from './image/thumbnails/thumbnail3.png';
+import thumbnail2 from './image/thumbnails/thumbnail2.png';
 import design1 from './image/works/work5design1.png';
 import design2 from './image/works/work5design2.png';
 import design3 from './image/works/work5design3.png';
@@ -79,7 +79,7 @@ function Work5(props: {
       <div style={{backgroundColor:'#333443'}}><WorkFullImage image={design4}/></div>
       <div style={{marginTop:'60px'}}><WorkFullImage image={cover} isMargin={true} isRoundedCorner={true} isBottomMargin={true}/></div>
       <BackButton/>
-      <NextItem to='/Work3' thumbnail={thumbnail3} nextProjectTitle='Store UX/UI Design'/>
+      <NextItem to='/Work2' thumbnail={thumbnail2} nextProjectTitle='First User Process Design'/>
       </>
     )
 }
