@@ -34,6 +34,7 @@ import direction2 from './image/works/work1direction2.png';
 import design1 from './image/works/work1design1.png';
 import design2 from './image/works/work1design2.png';
 import design3 from './image/works/work1design3.png';
+import design4 from './image/works/work1design4.png';
 //New Ads Platform for Experts
 
 
@@ -133,10 +134,9 @@ function Work1(props: {
               title='Personalized UX for each user'
               description='We designed different UX experiences tailored to best suit small business owners and professional marketers.'
               />
-        <WorkFullImage image={design3} isBottomMargin={true}/>
+        <WorkFullImage image={design3} />
       </div>
-
-      <Waiting/>
+      <WorkFullImage image={design4} isBottomMargin={true}/>
       <BackButton/>
       <NextItem to='/Work4' thumbnail={thumbnail4} nextProjectTitle='Leading More Business Users to Advertising'/>
 
