@@ -31,7 +31,11 @@ import feature5 from './image/works/work1feature5.png';
 import feature6 from './image/works/work1feature6.png';
 import direction1 from './image/works/work1direction1.png';
 import direction2 from './image/works/work1direction2.png';
+import design1 from './image/works/work1design1.png';
+import design2 from './image/works/work1design2.png';
+import design3 from './image/works/work1design3.png';
 //New Ads Platform for Experts
+
 
 function Work1(props: {
   activeNav: number, 
@@ -86,7 +90,7 @@ function Work1(props: {
        <WorkFullImage image={needs} isMargin={true} isBottomMargin={true} isRoundedCorner={true} isShadow={true} isBorder={true}/>
        
        <WorkTextSection title='Design Direction' description='Marketer-friendly UX with detailed performance analysis features for advertising professionals'/>
-       <div className={'margin48'} style={{ display: "flex", flexDirection: "row", gap:"24px"}}>
+       <div className={'margin48'} style={{margin:"auto", maxWidth:"1600px", alignContent: "center",  display: "flex", flexDirection: "row", gap:"24px"}}>
        <WorkFullImage image={direction1} isRoundedCorner={true} isShadow={true} isBorder={true}/>
        <WorkFullImage image={direction2} isRoundedCorner={true} isShadow={true} isBorder={true}/>
        </div>
@@ -109,22 +113,33 @@ function Work1(props: {
           <WorkFullImage isMargin={true} image={wireframe} isRoundedCorner={true} isBottomMargin={true}/>
       </div>
       <WorkTextSection title='Key features'/>
-      <div className={'margin48'} style={{ display: "flex", flexDirection: "column", gap:"12px"}}>
+      <div className={'margin48'} style={{margin:"auto", maxWidth:"1600px", alignContent: "center", display: "flex", flexDirection: "column", gap:"12px", marginBottom:'60px'}}>
         <div style={{ display: "flex", flexDirection: "row", gap:"12px"}}>
           <WorkFullImage image={feature1} isRoundedCorner={true} isShadow={true} isBorder={true}/>     
           <WorkFullImage image={feature2} isRoundedCorner={true} isShadow={true} isBorder={true}/>   
           <WorkFullImage image={feature3} isRoundedCorner={true} isShadow={true} isBorder={true}/>       
         </div>
-        <div style={{ display: "flex", flexDirection: "row", gap:"12px"}}>
+        <div style={{display: "flex", flexDirection: "row", gap:"12px"}}>
           <WorkFullImage image={feature4} isRoundedCorner={true} isShadow={true} isBorder={true}/>     
           <WorkFullImage image={feature5} isRoundedCorner={true} isShadow={true} isBorder={true}/>   
           <WorkFullImage image={feature6} />                              
         </div>
       </div>
-      
+      <WorkTextSection title='UXUI Design'/>
+      <WorkFullImage image={design1} isBottomMargin={true}/>
+      <WorkFullImage image={design2} isBottomMargin={true}/>
+     <div style={{backgroundColor:'#F4F5F8'}}>
+        <WorkTextSection 
+              title='Personalized UX for each user'
+              description='We designed different UX experiences tailored to best suit small business owners and professional marketers.'
+              />
+        <WorkFullImage image={design3} isBottomMargin={true}/>
+      </div>
+
       <Waiting/>
       <BackButton/>
       <NextItem to='/Work4' thumbnail={thumbnail4} nextProjectTitle='Leading More Business Users to Advertising'/>
+
       </>
     )
 }
