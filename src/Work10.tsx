@@ -23,10 +23,15 @@ import problem3 from './image/works/work10problem3.png';
 import problem4 from './image/works/work10problem4.png';
 import solution1 from './image/works/work10solution1.png';
 import solution2 from './image/works/work10solution2.png';
+import solution3 from './image/works/work10solution3.png';
 import revise from './image/works/work10 Revised structure.png';
 import past from './image/works/work10 Past structure.png';
 import solution11 from './image/works/work10solution1-1.png';
+import solution22 from './image/works/work10solution2-2.png';
+import solution33 from './image/works/work10solution33.png';
 import { Divider } from '@mui/material';
+import result1 from './image/works/work10result1.png';
+import result2 from './image/works/work10result2.png';
 
 //Eliminating Concerns of Creating Ads
 
@@ -72,9 +77,19 @@ function Work10(props: {
             <WorkFullImage image={past} isBorder={true} isRoundedCorner={true} isShadow={true} />     
             <WorkFullImage image={revise} isBorder={true} isRoundedCorner={true} isShadow={true}/>        
         </div>
-
-
-      <Waiting/>
+        <WorkFullImage image={solution22} isBottomMargin={true} /> 
+        <Divider/>
+      <WorkTextSection title='Solution 3.' description={"Guide proper actions on the ad manager"}/>
+      <WorkFullImage image={solution3} isBottomMargin={false} />
+      <WorkFullImage image={solution33} isBottomMargin={true} /> 
+      <Divider/>
+      <WorkTextSection 
+          title='Result' />
+      <div className='image-center margin48 horizontal-layout'>
+        <WorkFullImage image={result1} isMargin={false} isBottomMargin={true} />   
+        <WorkFullImage image={result2} isMargin={false} isBottomMargin={true} />   
+      </div>  
+      <WorkTextSection title = ' '/>    
       <BackButton/>
       <NextItem to='/Work1' thumbnail={thumbnail1} nextProjectTitle='New Ads Platform for Experts'/>
       </>
