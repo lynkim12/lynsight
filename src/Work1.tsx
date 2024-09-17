@@ -35,6 +35,8 @@ import design1 from './image/works/work1design1.png';
 import design2 from './image/works/work1design2.png';
 import design3 from './image/works/work1design3.png';
 import design4 from './image/works/work1design4.png';
+import design5 from './image/works/work1design5.png';
+import flowchart from './image/works/work1flowchart.png';
 //New Ads Platform for Experts
 
 
@@ -137,6 +139,15 @@ function Work1(props: {
         <WorkFullImage image={design3} />
       </div>
       <WorkFullImage image={design4} isBottomMargin={true}/>
+      <div style={{backgroundColor:'#F4F5F8'}}>
+        <WorkTextSection title='Managing multiple operators' description='A professional marketer frequently invites and manages a large volume of operators. Unlike the lite mode, it is designed for convenient bulk invitations of operators.'/>
+        <WorkFullImage image={design5}/>
+        <WorkFullImage image={flowchart}/>
+      <Divider/>
+      </div>
+      <WorkTextSection title='Result' 
+        description={<div>We conducted a closed beta test targeting mid-to-large advertisers and confirmed <b className='textGradient'>satisfaction with the user-friendly UX</b> through a satisfaction survey. <br/><br/>After the CBT, the service was opened to all users. As a result, mid-to-large advertisers who had previously used the simple ad mode transitioned to the new expert mode ad platform, and with the influx of new mid-to-large advertisers, ad revenue experienced rapid growth.</div>}/>                  
+      <WorkTextSection title='' />
       <BackButton/>
       <NextItem to='/Work4' thumbnail={thumbnail4} nextProjectTitle='Leading More Business Users to Advertising'/>
 

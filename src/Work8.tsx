@@ -96,7 +96,7 @@ function Work8(props: {
       <Divider/>
       <WorkFullImage image={tobe} isMargin={false}/>
       <WorkTextSection bigTitle={true}
-        title = 'To select a recommended keyword'
+        title = { <div>Key Design 1. <br/> To select a recommended keyword</div>}
         description = {
           <div>
             The bidding competition rate and bid price for each keyword have been removed, leaving only the search volume for advertisers to consider when selecting keywords, reducing the complexity of their decision-making. 
@@ -107,7 +107,7 @@ function Work8(props: {
       <Divider/>
       <div style={{background: 'linear-gradient(0deg, rgba(250, 250, 251, 0.00) 0%, #F6F7F9 30%)'}}>
         <WorkTextSection bigTitle={true}
-          title = 'The easiest bidding competition'
+          title =  { <div>Key Design 2. <br/> The easiest bidding competition</div>}
           description = {
             <div>
               We conducted multiple rounds of usability testing to ensure that everyone could enter an appropriate bid amount. We adjusted the messaging to help users better understand the concept of ad bidding, and added a control button to allow them to set a suitable amount.
@@ -121,7 +121,7 @@ function Work8(props: {
       </div>
       <Divider/>
       <WorkTextSection bigTitle={true}
-          title = 'To select An appropriate budget'
+          title =  { <div>Key Design 3. <br/> To select an appropriate budget</div>}
           description = {
             <div>
               Finally, we used the UI to help advertisers set an appropriate ad budget based on their chosen bid amount.</div>}/>
