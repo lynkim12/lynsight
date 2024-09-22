@@ -10,6 +10,7 @@ import thumbnail6 from '../image/thumbnails/thumbnail6.png';
 import thumbnail7 from '../image/thumbnails/thumbnail7.png';
 import thumbnail8 from '../image/thumbnails/thumbnail8.png';
 import thumbnail9 from '../image/thumbnails/thumbnail9.png';
+import thumbnail11 from '../image/thumbnails/thumbnail11.png';
 import wavedivider from './image/wavedivider.png'
 import "animate.css/animate.min.css";
 import { Dispatch, SetStateAction } from 'react';
@@ -43,7 +44,12 @@ function Works7(props: {
             <Content projectPage={"Work2"} thumbnail={thumbnail2} projectTitle={'First User Process Design'} projectDescription={'Onboarding process design on bookcovery to make activation.'} projectSubtitle={'Bookcovery'} period={'2020.05 - 2020.11'}/>
             <Content projectPage={"Work5"} thumbnail={thumbnail5} projectTitle={'New Service Design'} projectDescription={'Designing an entirely new book-share platform for working people who want to develop compentency.'} projectSubtitle={'Bookcovery'} period={'2020.01. - 2020.08.'}/>
             <Content projectPage={"Work3"} thumbnail={thumbnail3} projectTitle={'Store UX/UI Design'} projectDescription={'Mobile store tap UX/UI design on Styleshare to maximize store tap using rates and purchase amout.'} projectSubtitle={'Styleshare'} period={'2020.10 - 2020.12'}/>
-          {/* <div style={{flex:'1'}}/> */}
+          
+          <div className='contents zoomIn'>
+            <Content projectPage={"Work11"} thumbnail={thumbnail11} projectTitle={'Improvement the mission contents UX'} projectDescription={'Improving content UX to increase mission completion rate.'} projectSubtitle={'Minding'} period={'2019.01. - 2019.06.'}/>
+            <div style={{flex:'1'}}/>
+            <div style={{flex:'1'}}/>
+          </div>
          </div>
       </div>
       <Footer/>

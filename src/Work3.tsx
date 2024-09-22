@@ -12,6 +12,8 @@ import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
 import { MainImage } from './workDetailPage/WorkMainImage';
 import BackButton from './components/BackButton';
+import NextItem from './components/NextItem';
+import thumbnail11 from './image/thumbnails/thumbnail11.png';
 
 //Store UX/UI Design
 
@@ -31,6 +33,7 @@ function Work3(props: {
           period={'2020.10 - 2020.12.'}/>
       </div>
       <MainImage image={mainImage}/>
+      <NextItem to='/Work11' thumbnail={thumbnail11} nextProjectTitle='Improvement the mission contents UX'/>
       <Waiting/>
       <BackButton/>
       </>

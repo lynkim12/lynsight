@@ -29,7 +29,7 @@ function ChipFilter(props: {
             <FilterItem isSelected={props.activeFilter === 5 } name='2022~23' />
         </Link> 
         <Link to="/2021" onClick={() => props.setActiveFilter(6)} style={{textDecoration: 'none'}}>
-            <FilterItem isSelected={props.activeFilter === 6 } name='2021~' />
+            <FilterItem isSelected={props.activeFilter === 6 } name='2021~19' />
         </Link> 
     </div>
   );

@@ -16,12 +16,13 @@ import Work7 from './Work7';
 import Work8 from './Work8';
 import Work9 from './Work9';
 import Work10 from './Work10';
+import Work11 from './Work11';
 import PageToTop from './components/PageToTop';
-import Works2 from './filteringPage/Works2';
-import Works3 from './filteringPage/Works3';
-import Works4 from './filteringPage/Works4';
-import Works5 from './filteringPage/Works5';
-import Works6 from './filteringPage/Works6';
+import AppFilter from './filteringPage/Appfilter';
+import Webfilter from './filteringPage/Webfilter';
+import Filter2024 from './filteringPage/Filter2024';
+import Filter2023 from './filteringPage/Filter2023';
+import Filter2021 from './filteringPage/Filter2021';
 
 function App() {
   const [activeNav, setActiveNav] = useState(1);
@@ -33,11 +34,11 @@ function App() {
       <PageToTop/>
         <Routes>
           <Route path="/" element={<Works activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
-          <Route path="/App" element={<Works2 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
-          <Route path="/Web" element={<Works3 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
-          <Route path="/2024" element={<Works4 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
-          <Route path="/2023" element={<Works5 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
-          <Route path="/2021" element={<Works6 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
+          <Route path="/App" element={<AppFilter activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
+          <Route path="/Web" element={<Webfilter activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
+          <Route path="/2024" element={<Filter2024 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
+          <Route path="/2023" element={<Filter2023 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
+          <Route path="/2021" element={<Filter2021 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
           <Route path="Work1" element={<Work1 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>   
           <Route path="Work2" element={<Work2 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>   
           <Route path="Work3" element={<Work3 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>   
@@ -48,6 +49,7 @@ function App() {
           <Route path="Work8" element={<Work8 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route> 
           <Route path="Work9" element={<Work9 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>  
           <Route path="Work10" element={<Work10 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>  
+          <Route path="Work11" element={<Work11 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>  
           <Route path="/Writing/*" element={<Writing activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
           <Route path="/About/*" element={<About activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
         </Routes>
