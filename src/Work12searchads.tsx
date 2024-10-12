@@ -5,12 +5,12 @@ import BackButton from "./components/BackButton";
 import { WorkTextSection } from "./workDetailPage/WorkTextSection";
 import { MainImage } from "./workDetailPage/WorkMainImage";
 import Navigator from './components/Navigation';
-import thumbnail1 from './image/thumbnails/thumbnail1.png';
+
 import mainImage from './image/works/work11MainImage.png';
 
-//Improving the mission page UX
+//search ads
 
-function Work11(props: {
+function Work12(props: {
     activeNav: number, 
     setActiveNav: Dispatch<SetStateAction<number>>,
   }) {
@@ -19,11 +19,11 @@ function Work11(props: {
         <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav} />
         <div className='fadeIn '>
           <WorkTitle 
-            title={'Improvement the mission contents UX'} 
-            description={'Improving content UX to increase mission completion rate.'} 
-            team={'Minding'} 
-            role={'Service Planning, UXUI Design'} 
-            period={'2019.01. - 2019.06.'}/>
+            title={'The design of a top search ad'} 
+            description={<div>The UX direction and specific design of Karrot's top search result ads.</div>} 
+            team={'Karrot'} 
+            role={'UX Strategic Planning, UXUI Design'} 
+            period={'2024.06. - 2024.10.'}/>
         </div>
         <MainImage image={mainImage}/>
         <WorkTextSection title = ' '/>    
@@ -32,4 +32,4 @@ function Work11(props: {
       )
   }
   
-  export default Work11;
+  export default Work12;

@@ -33,7 +33,7 @@ import { Divider } from '@mui/material';
 import result1 from './image/works/work10result1.png';
 import result2 from './image/works/work10result2.png';
 
-//Eliminating Concerns of Creating Ads
+//EliminatingConcernsofCreatingAds
 
 function Work10(props: {
   activeNav: number, 

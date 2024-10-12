@@ -36,7 +36,7 @@ import thumbnail7 from './image/thumbnails/thumbnail7.png';
 
 
 
-//A Bidding System in Search Ads
+//BiddingSystem
 
 function Work8(props: {
   activeNav: number, 

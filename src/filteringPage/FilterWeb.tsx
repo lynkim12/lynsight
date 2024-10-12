@@ -29,7 +29,7 @@ function Webfilter(props: {
         } }/>
       <div className='workContentslist'>
         <div className='contents zoomIn' >
-            <Content badge={"Updated"} projectPage={"/Work7"} thumbnail={thumbnail7} projectTitle={'New Catalog Manager for Ads'} projectDescription={'Creating a catalog manager service that can handle over one million products.'} projectSubtitle={'Karrot'} period={'2024.01 - 2024.06'}/>
+            <Content badge={"Updated"} projectPage={"/Work7"} thumbnail={thumbnail7} projectTitle={'New Catalog Manager for Ads'} projectDescription={'Design a catalog management platform that can manage and advertise millions of products for Karrot.'} projectSubtitle={'Karrot'} period={'2024.01 - 2024.06'}/>
             <Content projectPage={"/Work1"} thumbnail={thumbnail1} projectTitle={'New Ads Platform for Experts'} projectDescription={'An entirely new advertising platform for mid- to large-scale advertisers.'} projectSubtitle={'Karrot'} period={'2022.01. - 2022.08.'}/>
             {/* <div style={{flex:'1'}}/> */}
             {/* <Content projectPage={"Work6"} thumbnail={thumbnail6} projectTitle={'New Outlink-Type Ads'} projectDescription={'Introducing a new outlink-type advertisement for small businesses.'} projectSubtitle={'Karrot'} period={'2023.04 - 2023.07'}/> */}

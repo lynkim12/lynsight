@@ -4,20 +4,20 @@ import './workDetailPage/style_works.css';
 import './font.css';
 import { Waiting } from './components/Waiting';
 import {WorkTitle} from './workDetailPage/WorkTitle';
-import mainImage from './image/works/work9MainImage.png';
+import mainImage from './image/works/work3MainImage.png';
 import { WorkTextSection } from './workDetailPage/WorkTextSection';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import work1chart1 from './image/works/work1chart1.png';
 import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
 import { MainImage } from './workDetailPage/WorkMainImage';
-import YouTubeEmbed from './components/YouTubeEmbed';
 import BackButton from './components/BackButton';
 import NextItem from './components/NextItem';
-import thumbnail8 from './image/thumbnails/thumbnail8.png';
-//New Video Ads
+import thumbnail11 from './image/thumbnails/thumbnail11.png';
 
-function Work9(props: {
+//StoreUXUIDesign
+
+function Work3(props: {
   activeNav: number, 
   setActiveNav: Dispatch<SetStateAction<number>>,
 }) {
@@ -26,19 +26,18 @@ function Work9(props: {
       <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav} />
       <div className='fadeIn '>
         <WorkTitle 
-          title={'New Video Ads'} 
-          description={'Introducing new vertical video ads in the home feed.'} 
-          team={'Karrot(Daangn)'} 
-          role={'UXUI Design, Data Experiment'} 
-          period={'2024.01. - 2024.06.'}/>
+          title={'Store UX/UI Design'} 
+          description={'Mobile store tap UX/UI design on Styleshare to maximize store tap using rates and purchase amout.'} 
+          team={'Styleshare'} 
+          role={'Service Planning, UXUI Design'} 
+          period={'2020.10 - 2020.12.'}/>
       </div>
       <MainImage image={mainImage}/>
-      <YouTubeEmbed videoId="182NS2pHE2o" />
+      <NextItem to='/Work11' thumbnail={thumbnail11} nextProjectTitle='Improvement the mission contents UX'/>
       <Waiting/>
       <BackButton/>
-      <NextItem to='/Work8' thumbnail={thumbnail8} nextProjectTitle='A Bidding System in Search Ads'/>
       </>
     )
 }
 
-export default Work9;
+export default Work3;

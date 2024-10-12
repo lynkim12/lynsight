@@ -5,7 +5,7 @@ import './style_works.css';
 
 export function WorkTitle(props: {
     title: string; 
-    description : string;
+    description : React.ReactNode ;
     team : string;
     role : string;
     period : string;

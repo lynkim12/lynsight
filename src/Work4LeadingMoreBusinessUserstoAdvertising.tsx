@@ -4,40 +4,41 @@ import './workDetailPage/style_works.css';
 import './font.css';
 import { Waiting } from './components/Waiting';
 import {WorkTitle} from './workDetailPage/WorkTitle';
-import mainImage from './image/works/work3MainImage.png';
+import work1image1 from './image/works/work4MainImage.png';
 import { WorkTextSection } from './workDetailPage/WorkTextSection';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import work1chart1 from './image/works/work1chart1.png';
 import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
-import { MainImage } from './workDetailPage/WorkMainImage';
+import {MainImage} from './workDetailPage/WorkMainImage';
 import BackButton from './components/BackButton';
+import thumbnail5 from './image/thumbnails/thumbnail5.png';
 import NextItem from './components/NextItem';
-import thumbnail11 from './image/thumbnails/thumbnail11.png';
 
-//Store UX/UI Design
+//LeadingMoreBusinessUserstoAdvertising
 
-function Work3(props: {
+function Work2(props: {
   activeNav: number, 
   setActiveNav: Dispatch<SetStateAction<number>>,
 }) {
     return (
       <>
+      
       <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav} />
-      <div className='fadeIn '>
+      <div className='fadeIn'>
         <WorkTitle 
-          title={'Store UX/UI Design'} 
-          description={'Mobile store tap UX/UI design on Styleshare to maximize store tap using rates and purchase amout.'} 
-          team={'Styleshare'} 
-          role={'Service Planning, UXUI Design'} 
-          period={'2020.10 - 2020.12.'}/>
+          title={'Leading More Business Users to Advertising'} 
+          description={'An experiment of UX to induce users to start advertising.'} 
+          team={'Karrot(Daangn)'} 
+          role={'User Research, Service Planning, UXUI Design'} 
+          period={'2022.01. - 2022.08.'}/>
       </div>
-      <MainImage image={mainImage}/>
-      <NextItem to='/Work11' thumbnail={thumbnail11} nextProjectTitle='Improvement the mission contents UX'/>
+      <MainImage image={work1image1}/>
       <Waiting/>
       <BackButton/>
+      <NextItem to='/Work5' thumbnail={thumbnail5} nextProjectTitle='New Service Design'/>
       </>
     )
 }
 
-export default Work3;
+export default Work2;

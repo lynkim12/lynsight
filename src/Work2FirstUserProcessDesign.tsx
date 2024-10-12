@@ -4,18 +4,17 @@ import './workDetailPage/style_works.css';
 import './font.css';
 import { Waiting } from './components/Waiting';
 import {WorkTitle} from './workDetailPage/WorkTitle';
-import work1image1 from './image/works/work4MainImage.png';
+import mainImage from './image/works/work2MainImage.png';
 import { WorkTextSection } from './workDetailPage/WorkTextSection';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import work1chart1 from './image/works/work1chart1.png';
 import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
-import {MainImage} from './workDetailPage/WorkMainImage';
+import { MainImage } from './workDetailPage/WorkMainImage';
 import BackButton from './components/BackButton';
-import thumbnail5 from './image/thumbnails/thumbnail5.png';
 import NextItem from './components/NextItem';
-
-//Leading More Business Users to Advertising
+import thumbnail3 from './image/thumbnails/thumbnail3.png';
+//FirstUserProcessDesign
 
 function Work2(props: {
   activeNav: number, 
@@ -23,20 +22,19 @@ function Work2(props: {
 }) {
     return (
       <>
-      
       <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav} />
-      <div className='fadeIn'>
+      <div className='fadeIn '>
         <WorkTitle 
-          title={'Leading More Business Users to Advertising'} 
-          description={'An experiment of UX to induce users to start advertising.'} 
-          team={'Karrot(Daangn)'} 
-          role={'User Research, Service Planning, UXUI Design'} 
-          period={'2022.01. - 2022.08.'}/>
+          title={'First User Process Design'} 
+          description={'Onboarding process design on bookcovery to make activation.'} 
+          team={'Bookcovery'} 
+          role={'Service Planning, UXUI Design'} 
+          period={'2020.05 - 2020.11.'}/>
       </div>
-      <MainImage image={work1image1}/>
+      <MainImage image={mainImage}/>
       <Waiting/>
       <BackButton/>
-      <NextItem to='/Work5' thumbnail={thumbnail5} nextProjectTitle='New Service Design'/>
+      <NextItem to='/Work3' thumbnail={thumbnail3} nextProjectTitle='Store UX/UI Design'/>
       </>
     )
 }

@@ -29,7 +29,7 @@ import design3 from './image/works/work5design3.png';
 import design4 from './image/works/work5design4.png';
 import cover from './image/works/work5coverimage.png';
 
-//New Service Design
+//NewServiceDesign
 
 function Work5(props: {
   activeNav: number, 

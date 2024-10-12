@@ -4,40 +4,41 @@ import './workDetailPage/style_works.css';
 import './font.css';
 import { Waiting } from './components/Waiting';
 import {WorkTitle} from './workDetailPage/WorkTitle';
-import mainImage from './image/works/work7MainImage.jpg';
+import mainImage from './image/works/work9MainImage.png';
 import { WorkTextSection } from './workDetailPage/WorkTextSection';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import work1chart1 from './image/works/work1chart1.png';
 import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
 import { MainImage } from './workDetailPage/WorkMainImage';
+import YouTubeEmbed from './components/YouTubeEmbed';
 import BackButton from './components/BackButton';
 import NextItem from './components/NextItem';
-import thumbnail6 from './image/thumbnails/thumbnail6.png';
-//New Catalog Manager for Ads
+import thumbnail8 from './image/thumbnails/thumbnail8.png';
+//NewVideoAds
 
-function Work7(props: {
+function Work9(props: {
   activeNav: number, 
   setActiveNav: Dispatch<SetStateAction<number>>,
 }) {
     return (
       <>
-
       <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav} />
       <div className='fadeIn '>
         <WorkTitle 
-          title={'New Catalog Manager for Ads'} 
-          description={'Creating a catalog manager service that can handle over one million products.'} 
+          title={'New Video Ads'} 
+          description={'Introducing new vertical video ads in the home feed.'} 
           team={'Karrot(Daangn)'} 
-          role={'User Research, Service Planning, UXUI Design'} 
-          period={'2024.01. - 2022.06.'}/>
+          role={'UXUI Design, Data Experiment'} 
+          period={'2024.01. - 2024.06.'}/>
       </div>
       <MainImage image={mainImage}/>
+      <YouTubeEmbed videoId="182NS2pHE2o" />
       <Waiting/>
       <BackButton/>
-      <NextItem to='/Work6' thumbnail={thumbnail6} nextProjectTitle='New Outlink-Type Ads'/>
+      <NextItem to='/Work8' thumbnail={thumbnail8} nextProjectTitle='A Bidding System in Search Ads'/>
       </>
     )
 }
 
-export default Work7;
+export default Work9;
