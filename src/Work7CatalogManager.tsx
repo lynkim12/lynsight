@@ -16,6 +16,14 @@ import NextItem from './components/NextItem';
 import thumbnail6 from './image/thumbnails/thumbnail6.png';
 import goal from './image/works/work7goal.png';
 import background from './image/works/work7background.png';
+import needs from './image/works/work7needs.png';
+import feature1 from './image/works/work7feature1.png';
+import feature2 from './image/works/work7feature2.png';
+import feature3 from './image/works/work7feature3.png';
+import feature4 from './image/works/work7feature4.png';
+import structure from './image/works/work7structure.png';
+import design1 from './image/works/work7design1.png';
+import design2 from './image/works/work7design2.png';
 import { WorkFullImage } from './workDetailPage/WorkFullImage';
 //CatalogManager
 
@@ -51,6 +59,28 @@ function Work7(props: {
             </div>} 
         />
       <WorkFullImage image={goal} />
+      <WorkTextSection 
+          title={'User Needs'} 
+          description={<div>
+              We conducted research on the essential features a catalog management platform must have when dealing with shopping malls that sell millions of products.
+            </div>}   
+        />
+      <WorkFullImage image={needs} />
+      <WorkTextSection 
+          title={'Key Features'} 
+          description={'To meet the requirements of shopping malls that sell a large volume of products, we planned to develop an MVP with the minimum must-have features.'}
+          />
+      <div style={{ display: "flex", flexDirection: "row", gap:"12px", margin:"auto", paddingLeft:"48px", paddingRight:"48px", maxWidth:"1600px", alignContent: "center", marginBottom:'60px'}}>
+          <WorkFullImage image={feature1} isRoundedCorner={true} isShadow={true} isBorder={true}/>     
+          <WorkFullImage image={feature2} isRoundedCorner={true} isShadow={true} isBorder={true}/>   
+          <WorkFullImage image={feature3} isRoundedCorner={true} isShadow={true} isBorder={true}/>     
+          <WorkFullImage image={feature4} isRoundedCorner={true} isShadow={true} isBorder={true}/>      
+        </div>
+      <WorkTextSection title={'Structure'} description={'First, we restructured the catalog manager to allow users to create product sets. To facilitate managing large volumes of products, we added product filters, enabling users to easily identify items that match specific criteria.'}/>
+      <WorkFullImage image={structure} isMargin={true}/>
+      <WorkTextSection title={'UX/UI Design'}/>
+      <WorkFullImage image={design1}/>
+      <WorkFullImage image={design2}/>
       <Waiting/>
       <BackButton/>
       <NextItem to='/Work6' thumbnail={thumbnail6} nextProjectTitle='New Outlink-Type Ads'/>
