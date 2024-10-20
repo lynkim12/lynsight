@@ -24,7 +24,10 @@ import feature4 from './image/works/work7feature4.png';
 import structure from './image/works/work7structure.png';
 import design1 from './image/works/work7design1.png';
 import design2 from './image/works/work7design2.png';
+import FeedURLUpload1 from './image/works/work7FeedURLUpload1.png';
+import firstUserScenario from './image/works/work7firstUserScenario.png';
 import { WorkFullImage } from './workDetailPage/WorkFullImage';
+import { Divider } from '@mui/material';
 //CatalogManager
 
 function Work7(props: {
@@ -81,6 +84,12 @@ function Work7(props: {
       <WorkTextSection title={'UX/UI Design'}/>
       <WorkFullImage image={design1}/>
       <WorkFullImage image={design2}/>
+      <Divider/>
+      <WorkTextSection title={'First User Scenario'}/>
+      
+      <WorkFullImage image={firstUserScenario}/>
+      <WorkTextSection title={'Feed URL Upload'}/>
+      <WorkFullImage image={FeedURLUpload1}/>
       <Waiting/>
       <BackButton/>
       <NextItem to='/Work6' thumbnail={thumbnail6} nextProjectTitle='New Outlink-Type Ads'/>
