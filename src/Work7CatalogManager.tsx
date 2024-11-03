@@ -25,6 +25,7 @@ import structure from './image/works/work7structure.png';
 import design1 from './image/works/work7design1.png';
 import design2 from './image/works/work7design2.png';
 import FeedURLUpload1 from './image/works/work7FeedURLUpload1.png';
+import FeedURLUpload2 from './image/works/work7FeedURLUpload2.png';
 import firstUserScenario from './image/works/work7firstUserScenario.png';
 import { WorkFullImage } from './workDetailPage/WorkFullImage';
 import { Divider } from '@mui/material';
@@ -80,7 +81,8 @@ function Work7(props: {
           <WorkFullImage image={feature4} isRoundedCorner={true} isShadow={true} isBorder={true}/>      
         </div>
       <WorkTextSection title={'Structure'} description={'First, we restructured the catalog manager to allow users to create product sets. To facilitate managing large volumes of products, we added product filters, enabling users to easily identify items that match specific criteria.'}/>
-      <WorkFullImage image={structure} isMargin={true}/>
+      <WorkFullImage image={structure} isMargin={true} isBottomMargin={true}/>
+      <Divider/>
       <WorkTextSection title={'UX/UI Design'}/>
       <WorkFullImage image={design1}/>
       <WorkFullImage image={design2}/>
@@ -89,7 +91,12 @@ function Work7(props: {
       
       <WorkFullImage image={firstUserScenario}/>
       <WorkTextSection title={'Feed URL Upload'}/>
-      <WorkFullImage image={FeedURLUpload1}/>
+      <WorkFullImage image={FeedURLUpload1} isBottomMargin={true}/>
+      <div style={{background: 'linear-gradient(180deg, rgba(242, 243, 246, 0.00) 0%, #F2F3F6 100%)'}}>
+        <WorkTextSection description={'When the upload is complete, system check for any issues with the Feed URL. And then, we provide a guide for users to pre-check and correct any errors.'}/>
+        <WorkFullImage image={FeedURLUpload2}  />
+      </div>
+      
       <Waiting/>
       <BackButton/>
       <NextItem to='/Work6' thumbnail={thumbnail6} nextProjectTitle='New Outlink-Type Ads'/>
