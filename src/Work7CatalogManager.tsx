@@ -27,6 +27,7 @@ import design2 from './image/works/work7design2.png';
 import FeedURLUpload1 from './image/works/work7FeedURLUpload1.png';
 import FeedURLUpload2 from './image/works/work7FeedURLUpload2.png';
 import firstUserScenario from './image/works/work7firstUserScenario.png';
+import UploadHistory from './image/works/work7UploadHistory.png';
 import { WorkFullImage } from './workDetailPage/WorkFullImage';
 import { Divider } from '@mui/material';
 //CatalogManager
@@ -95,6 +96,10 @@ function Work7(props: {
       <div style={{background: 'linear-gradient(180deg, rgba(242, 243, 246, 0.00) 0%, #F2F3F6 100%)'}}>
         <WorkTextSection description={'When the upload is complete, system check for any issues with the Feed URL. And then, we provide a guide for users to pre-check and correct any errors.'}/>
         <WorkFullImage image={FeedURLUpload2}  />
+      </div>
+      <div style={{background: 'linear-gradient(180deg, #F2F3F6  0%, rgba(242, 243, 246, 0.00) 100%)'}}>
+        <WorkTextSection title={'Upload History & Error report'}/>
+        <WorkFullImage image={UploadHistory}/>  
       </div>
       
       <Waiting/>
