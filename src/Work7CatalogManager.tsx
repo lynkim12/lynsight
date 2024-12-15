@@ -101,7 +101,8 @@ function Work7(props: {
         <WorkTextSection title={'Upload History & Error report'}/>
         <WorkFullImage image={UploadHistory}/>  
       </div>
-      
+      <Divider/>
+      <WorkTextSection title={'Product Set'} description={'Product Set Description'}/>
       <Waiting/>
       <BackButton/>
       <NextItem to='/Work6' thumbnail={thumbnail6} nextProjectTitle='New Outlink-Type Ads'/>

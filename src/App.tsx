@@ -4,7 +4,7 @@ import './style.css';
 import './font.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './PageAbout';
-import Writing from './PageWriting';
+import Activities from './PageActivities';
 import Works from './PageWorks';
 import Work1 from './Work1NewAdsPlatformforExperts';
 import Work2 from './Work2FirstUserProcessDesign';
@@ -50,7 +50,7 @@ function App() {
           <Route path="Work9" element={<Work9 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>  
           <Route path="Work10" element={<Work10 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>  
           <Route path="Work11" element={<Work11 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>  
-          <Route path="/Writing/*" element={<Writing activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
+          <Route path="/Activities/*" element={<Activities activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
           <Route path="/About/*" element={<About activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
         </Routes>
       </BrowserRouter>

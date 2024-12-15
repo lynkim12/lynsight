@@ -35,8 +35,8 @@ function Navigator(props: {
         <Link to="/" onClick={() => props.setActiveNav(1)} style={{textDecoration: 'none'}}>
           <NavMenuItem isSelected={props.activeNav === 1 } name='Works' />
         </Link>  
-        <Link to="/Writing" onClick={() => props.setActiveNav(2)} style={{textDecoration: 'none'}}>
-          <NavMenuItem isSelected={props.activeNav === 2 } name='Writing' />
+        <Link to="/Activities" onClick={() => props.setActiveNav(2)} style={{textDecoration: 'none'}}>
+          <NavMenuItem isSelected={props.activeNav === 2 } name='Activities' />
         </Link>
         <Link to="/About" onClick={() => props.setActiveNav(3)} style={{textDecoration: 'none'}}>
           <NavMenuItem isSelected={props.activeNav === 3 } name='About' />
