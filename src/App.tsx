@@ -17,6 +17,7 @@ import Work8 from './Work8BiddingSystem';
 import Work9 from './Work9NewVideoAds';
 import Work10 from './Work10EliminatingConcernsofCreatingAds';
 import Work11 from './Work11missionUX';
+import Work13 from './Work13personalizedAdsConsent';
 import PageToTop from './components/PageToTop';
 import AppFilter from './filteringPage/FilterApp';
 import Webfilter from './filteringPage/FilterWeb';
@@ -49,7 +50,8 @@ function App() {
           <Route path="Work8" element={<Work8 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route> 
           <Route path="Work9" element={<Work9 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>  
           <Route path="Work10" element={<Work10 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>  
-          <Route path="Work11" element={<Work11 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>  
+          <Route path="Work11" element={<Work11 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
+          <Route path="Work13" element={<Work13 activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>   
           <Route path="/Activities/*" element={<Activities activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
           <Route path="/About/*" element={<About activeNav={activeNav} setActiveNav={setActiveNav} />}></Route>
         </Routes>

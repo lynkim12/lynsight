@@ -13,6 +13,11 @@
   }
 }
 
+.mainimageVideo {
+  max-height: 1200px;
+  overflow: hidden;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

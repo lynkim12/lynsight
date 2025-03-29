@@ -84,7 +84,7 @@ function Work7(props: {
       <WorkTextSection title={'Structure'} description={'First, we restructured the catalog manager to allow users to create product sets. To facilitate managing large volumes of products, we added product filters, enabling users to easily identify items that match specific criteria.'}/>
       <WorkFullImage image={structure} isMargin={true} isBottomMargin={true}/>
       <Divider/>
-      <WorkTextSection title={'UX/UI Design'}/>
+      <WorkTextSection title={'UX/UI Design Overview'}/>
       <WorkFullImage image={design1}/>
       <WorkFullImage image={design2}/>
       <Divider/>
