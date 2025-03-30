@@ -13,6 +13,12 @@
   }
 }
 
+.textlink {
+  color: #1A76FF;
+  text-underline-offset: 3px;
+  text-decoration: underline;
+}
+
 .mainimageVideo {
   max-height: 1200px;
   overflow: hidden;
