@@ -15,6 +15,8 @@ import research2 from "./image/works/work13research2.png";
 import research3 from "./image/works/work13research3.png";
 import research4 from "./image/works/work13research4.png";
 import research5 from "./image/works/work13research5.png";
+import design1 from "./image/works/work13design1.png";
+import design2 from "./image/works/work13design2.png";
 // import mainImage from './image/works/work13main';
 
 //Personalized Ads consent
@@ -39,7 +41,7 @@ function Work13(props: {
             <source src="/work13MainImage.mov" type="video/mp4" />
                 Your browser does not support the video tag.
         </video>
-        <WorkTextSection title = 'background' 
+        <WorkTextSection title = 'Background' 
             description='Karrot has not explicitly obtain users consent for receiving personalized ads until now. However, to comply with regulations, we plan to request consent for personalized ads from new users upon signup.
                 If a user declines consent for personalized ads, we will be unable to serve tailored advertisements, which could significantly decrease CTR and lead to a revenue drop of over 30%.
                 To mitigate the impact, it is crucial to maximize the opt-in rate for personalized ads. Therefore, we aim to develop effective way to get users consent who initially opted out during signup.'/>    
@@ -110,7 +112,7 @@ function Work13(props: {
         <WorkImage image={research5} isMaxheight={true} isbottomPadding={false}/>
         <WorkTextSection title='Design'
             description={<div>
-                Based on the insights discovered through research,  we designed the basic structure of the bottom sheet.
+                Based on the insights discovered through research, we designed the basic structure of the bottom sheet.
                 <br/><br/>
                 <b>1. The bottom sheet should cover almost the entire screen.</b>
                 <br/>Research has shown that a full-screen bottom sheet significantly increases the consent rate compared to a half-view. As people’s willpower and mental energy deplete, they tend to make intuitive rather than logical decisions. When they have just completed a task or are preparing for one, they increasingly rely on instinct and look for ways to complete the current task with minimal effort. Therefore, a bottom sheet that fully covers the screen makes it easier to guide users toward clicking the prominent consent button, rather than allowing them to easily dismiss a half-view sheet.
@@ -122,6 +124,13 @@ function Work13(props: {
                 <br/>While offering a decline button allows for selective consent, it also makes rejection an easy choice, which can lower the overall consent rate. Removing a clearly visible decline option helps maintain a higher opt-in rate.               
             </div>}
         />
+        <WorkImage image={design1} isMaxheight={false} isbottomPadding={false}/>
+        <WorkFullImage image={design2} isBackgroundColor={true} />
+        <WorkTextSection
+            title='Experiment'
+
+        />
+  
         <Waiting/>
 
         <BackButton/>
