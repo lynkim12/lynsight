@@ -15,6 +15,7 @@ import YouTubeEmbed from './components/YouTubeEmbed';
 import BackButton from './components/BackButton';
 import NextItem from './components/NextItem';
 import thumbnail8 from './image/thumbnails/thumbnail8.png';
+import { Hidden } from '@mui/material';
 //NewVideoAds
 
 function Work9(props: {
@@ -32,8 +33,13 @@ function Work9(props: {
           role={'UXUI Design, Data Experiment'} 
           period={'2024.01. - 2024.06.'}/>
       </div>
+      <div style = {{ overflow:'Hidden', maxHeight:'1000px', background:'linear-gradient(180deg, #F4F5F8 0%, #F1F2F7 100%)'}} >
+      <video style = {{ width:"100%", aspectRatio: "auto", maxHeight:'800px'}}  loop autoPlay muted>
+            <source src="/thumbnail9.mov" type="video/mp4" />
+                Your browser does not support the video tag.
+      </video>
+      </div>
       <MainImage image={mainImage}/>
-      <YouTubeEmbed videoId="182NS2pHE2o" />
       <Waiting/>
       <BackButton/>
       <NextItem to='/Work8' thumbnail={thumbnail8} nextProjectTitle='A Bidding System in Search Ads'/>

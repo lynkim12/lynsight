@@ -17,6 +17,14 @@ import research4 from "./image/works/work13research4.png";
 import research5 from "./image/works/work13research5.png";
 import design1 from "./image/works/work13design1.png";
 import design2 from "./image/works/work13design2.png";
+import experiment1 from "./image/works/work13experiment1.png"
+import experiment2 from "./image/works/work13experiment2.png"
+import experiment3 from "./image/works/work13experiment3.png"
+import experiment4 from "./image/works/work13experiment4.png"
+import experiment5 from "./image/works/work13experiment5.png"
+import experiment6 from "./image/works/work13experiment6.png"
+import { Divider } from "@mui/material";
+import thumbnail9 from './image/thumbnails/thumbnail9.png';
 // import mainImage from './image/works/work13main';
 
 //Personalized Ads consent
@@ -125,14 +133,92 @@ function Work13(props: {
             </div>}
         />
         <WorkImage image={design1} isMaxheight={false} isbottomPadding={false}/>
-        <WorkFullImage image={design2} isBackgroundColor={true} />
+        <WorkFullImage image={design2} isBackgroundColor={true} isMargin={true} isRoundedCorner={true} />
         <WorkTextSection
-            title='Experiment'
+                title='Experiment'
+                description={
+                    <div>
+                        We conducted experiments by formulating hypotheses based on five different strategies derived from psychological principles:
+                        <br/><b>Effort</b> – Emphasizing the effort the service puts in for customers to encourage consent.
+                        <br/><b>Psychological Accounting</b> – Framing benefits and losses in a way that leverages the natural tendency to avoid losses.
+                        <br/><b>Endowment Effect</b> – Creating a sense of ownership so that users perceive not receiving the benefits as a loss, which feels more significant than gaining a benefit.
+                        <br/><b>Social Norms</b> – Positioning the brand’s values as widely recognized and important, encouraging users to participate.
+                        <br/>By leveraging these psychological principles, we tested various approaches to maximize user consent.
+                    </div>
+                }
+            />
+        <WorkFullImage image={experiment1} />
+        <div className='horizontal-layout'>
+            <WorkTextSection 
+                description={
+                <div>
+                    <b>Variant1. Emphasizing the Value of Personalized Content (While Hiding Ad-Related Information)</b>
+                    <br/><br/>Preliminary data shows that using <b>positive, personally relevant language</b> (e.g., better experience, amazing, relevant to you) increases consent rates by more than 3x. By framing the message around delivering a feed filled with personally relevant posts, we aim to reduce resistance and drive higher opt-in rates.
+                    <br/>To enhance intuitive understanding, the UI will <b>mimic the service's existing look and feel</b>, rather than using illustrations. This approach is expected to be far more persuasive, helping users immediately grasp the benefits of a personalized feed.
+                    <br/>Additionally, loss aversion is a stronger psychological driver than the expectation of gains. Since Karrot’s feed is primarily used for secondhand trading, one of its most valuable aspects is discovering great deals. By implying that users may <b>miss out on items they are interested in</b> if they opt out, we leverage the natural fear of loss to increase consent rates.
 
-        />
-  
+                </div>
+            }
+            />
+            <div style={{maxWidth:'640px'}}><WorkFullImage image={experiment2}/></div>
+        </div>
+        <Divider className = 'divider1'/>
+        <div className='horizontal-layout'>
+            <WorkTextSection 
+                description={
+                <div>
+                    <b>Variant2. Emphasizing the Value of Personalized Content (Including Ad-Related Information)</b>
+                    <br/><br/><b>Highlight key benefits with icons</b> to make them more visually prominent and easier to read, increasing user engagement.
+                    <br/>Use language like <em>"We’ll improve your experience by showing only relevant ads"</em> to eliminate concerns about seeing unrelated ads.
+                    <br/><b>Emphasize the additional value of receiving personalized benefits from nearby stores</b>, using a message like "Discover exclusive offers from local businesses that matter to you." Focusing on future benefits has been shown to significantly increase consent rates.
+                    <br/><b>Avoid terms like <em>"tracking"</em> or <em>"collecting"</em></b>, as they can create negative perceptions and lead to lower opt-in rates. Instead, clearly explain how the data is used in a beneficial way. By framing it as "Your data is only used to recommend posts on Karrot", we address user concerns and build trust.
+                </div>
+            }
+            />
+            <div style={{maxWidth:'640px'}}><WorkFullImage image={experiment3}/></div>
+        </div>
+        <Divider className = 'divider1'/>
+        <div className='horizontal-layout'>
+            <WorkTextSection 
+                description={
+                <div>
+                    <b>Variant3. Emphasizing Brand Values to Foster User Alignment and Participation</b>
+                    <br/><br/>Providing emotional imagery and messaging can evoke positive feelings, which in turn lead to higher consent rates.
+                </div>
+            }
+            />
+            <div style={{maxWidth:'640px'}}><WorkFullImage image={experiment4} /></div>
+        </div>
+        <Divider className = 'divider1'/>
+        <div className='horizontal-layout'>
+            <WorkTextSection 
+                description={
+                <div>
+                    <b>Variant4. Persuading Users with Service Efforts & Asking for Their Support</b>
+                    <br/><br/>We adopt a strategy that emphasizes efforts made for the user, creating a sense of goodwill. Users are more likely to respond positively when they recognize that a service is making an effort for them.
+                    <br/>Providing emotional images and messages can evoke positive feelings, which in turn increases the likelihood of positive responses. Therefore, we use visuals that depict warm and meaningful transactions within the service.
+                </div>
+            }
+            />
+            <div style={{maxWidth:'640px'}}><WorkFullImage image={experiment5}/></div>
+        </div>
+        <Divider className = 'divider1'/>
+        <div className='horizontal-layout'>
+            <WorkTextSection 
+                description={
+                <div>
+                    <b>Variant5. Implying the Negative Scenario That Unnecessary Ads</b>
+                    <br/><br/>We adopt a strategy that highlights the unexpected benefit of reducing excessively repetitive ads. By reminding users that they may experience inconvenience if they do not agree, we can encourage them to consent.
+                    <br/>We aim to alleviate concerns by using language that clarifies that their information is only used for recommending posts on Karrot.
+                    </div>
+            }
+            />
+            <div style={{maxWidth:'640px'}}><WorkFullImage image={experiment6} /></div>
+        </div>
+        <Divider className = 'divider1'/>
+        <WorkTextSection title='Result'/>
         <Waiting/>
-
+        <NextItem to='/Work9' thumbnail={thumbnail9} nextProjectTitle='New Video Ads'/>
         <BackButton/>
         </>
       )
