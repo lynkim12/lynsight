@@ -35,11 +35,11 @@ function Works(props: {
     <div className='workContentslist'>
         <div className='contents zoomIn' >
             <Content badge={"New"} projectPage={"Work13"} thumbnail={thumbnail13} projectTitle={'Obtaining Consent for Personalized Advertising'} projectDescription={'Obtain personalized advertising consent from new users to serve tailored ads.'} projectSubtitle={'Karrot'} period={'2024.10. - 2024.12.'}/>
-            <Content badge={"New"} projectPage={"Work9"} thumbnail={thumbnail9} projectTitle={'New Video Ads'} projectDescription={'Introducing new vertical video ads in the home feed.'} projectSubtitle={'Karrot'} period={'2024.01. - 2024.06.'}/>
-            <Content badge={"Updated"} projectPage={"Work8"} thumbnail={thumbnail8} projectTitle={'A Bidding System in Search Ads'} projectDescription={'Designing a search advertising bidding system that anyone can easily use on mobile'} projectSubtitle={'Karrot'} period={'2024.04 - 2024.06.'}/>
+            <Content projectPage={"Work9"} thumbnail={thumbnail9} projectTitle={'New Video Ads'} projectDescription={'Introducing new vertical video ads in the home feed.'} projectSubtitle={'Karrot'} period={'2024.01. - 2024.06.'}/>
+            <Content badge={"New"} projectPage={"Work8"} thumbnail={thumbnail8} projectTitle={'A Bidding System in Search Ads'} projectDescription={'Designing a search advertising bidding system that anyone can easily use on mobile'} projectSubtitle={'Karrot'} period={'2024.04 - 2024.06.'}/>
             </div>
         <div className='contents zoomIn'>
-            <Content badge={"Updated"} projectPage={"Work6"} thumbnail={thumbnail6} projectTitle={'New Outlink-Type Ads'} projectDescription={'Introducing a new outlink-type advertisement for small businesses.'} projectSubtitle={'Karrot'} period={'2023.04 - 2023.0.'}/>
+            <Content badge={"New"} projectPage={"Work6"} thumbnail={thumbnail6} projectTitle={'New Outlink-Type Ads'} projectDescription={'Introducing a new outlink-type advertisement for small businesses.'} projectSubtitle={'Karrot'} period={'2023.04 - 2023.0.'}/>
             <Content projectPage={"Work10"} thumbnail={thumbnail10} projectTitle={'Eliminating Concerns of Creating Ads'} projectDescription={'Encouraging ad creation to increase the activation rate.'} projectSubtitle={'Karrot'} period={'2023.01 - 2023.03.'}/>
             <Content projectPage={"Work7"} thumbnail={thumbnail7} projectTitle={'New Catalog Manager for Ads'} projectDescription={'Design a catalog management platform that can manage and advertise millions of products for Karrot.'} projectSubtitle={'Karrot'} period={'2024.01 - 2024.06.'}/>
             
