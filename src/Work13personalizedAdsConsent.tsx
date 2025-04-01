@@ -26,8 +26,10 @@ import experiment6 from "./image/works/work13experiment6.png"
 import result1 from "./image/works/work13result1.png"
 import result2 from "./image/works/work13result2.png"
 import result4 from "./image/works/work13result4.png"
+import result5 from "./image/works/work13result5.png"
 import { Divider, Hidden } from "@mui/material";
 import thumbnail9 from './image/thumbnails/thumbnail9.png';
+import { Wavedivider } from "./components/Wavedivider";
 // import mainImage from './image/works/work13main';
 
 //Personalized Ads consent
@@ -219,7 +221,7 @@ function Work13(props: {
             <div style={{maxWidth:'640px'}}><WorkFullImage image={experiment6} /></div>
         </div>
         <Divider className = 'divider1'/>
-        <WorkTextSection title='Result'
+        <WorkTextSection title='Experiment Analysis'
             description={
                 <div>
                     We found that the effective strategies in obtaining user consent for personalized ads on Karrot:
@@ -260,19 +262,45 @@ function Work13(props: {
                     Your browser does not support the video tag.
         </video>
       </div>
+      <WorkTextSection description={
+        <div>
+            When users declined consent after viewing the bottom sheet, it was repeatedly shown again <b>after seven days.</b>
+            <br/>
+            Analyzing Group 5, which had the highest consent rate, we observed that the consent rate (CTR) gradually increased with each repetition and <b>converged to around 39% after four or more exposures.</b>
+            <br/>
+            Displaying the bottom sheet more than five times seems to have little impact. <b>Showing it more than four times to a single user does not yield additional benefits and may instead cause fatigue in their service experience.</b>
+        </div>
+      }
+      />
+      <WorkFullImage image={result5} isMargin={true} isBottomMargin={true}/> 
+      <WorkTextSection title='Result'
+        description={
+            <div>
+                We have decided to display the Bottom Sheet for Group5 <b>up to 4 times every 7 days upon app launch</b>. Additionally, after 4 exposures, the exposure limit will be reset 90 days after the last exposure, allowing repeated exposures to resume.
+            </div>
+        }
+      />
+      <div style={{ padding: " 0px 48px"}}><Wavedivider/></div>
       <WorkTextSection title='Impact'
             description={
                 <div>
-                    We found that the effective strategies in obtaining user consent for personalized ads on Karrot:
-                    <br/><br/>
-                    1. <b>Emphasizing potential losses (inconvenient situations)</b> led to a higher consent rate.
+                    <b>Consent Rate of Personalized Ads</b>
+                    <br/>As a result of the experiment, approximately 76% of users consented to receiving personalized ads through opt-in consent at the time of sign-up. 
+                    <br/>Additionally, users who initially declined on signup reconsent via the bottom sheet, so that the overall consent rate for personalized ads increased to about 80%.
                     <br/>
-                    2. Clearly presenting and persuading users about <b>potentially unpleasant or inconvenient aspects</b>, rather than hiding them, resulted in a higher consent rate.
-                </div>
+                    Therefore, if Group 5 is applied to all users, <b>we can maintain a consent rate of 82% among new sign-ups.</b>
+                    <br/><br/>
+                    
+                    <b>Revenue Increase</b>
+                    <br/>In Group 5, revenue per user saw the highest increase, <b>rising by approximately 27–29%.</b>
+                    <br/>
+                    The higher the consent rate for personalized ads, the higher the ad revenue. All experimental groups showed an increase in revenue compared to the control group. By utilizing user information, we were able to deliver ads with a higher expected click-through rate, resulting in an actual increase in CTR.
+                    <br/>Therefore, we can expect that as the consent rate for personalized ads increases, it will continue to have a positive impact on revenue.</div>
             }
         />
-         <WorkFullImage image={result4} isMargin={false} /> 
-        <Waiting/>
+        
+        <WorkFullImage image={result4} isMargin={true} isBottomMargin={true}/> 
+        <WorkTextSection title=''/>
         <NextItem to='/Work9' thumbnail={thumbnail9} nextProjectTitle='New Video Ads'/>
         <BackButton/>
         </>
