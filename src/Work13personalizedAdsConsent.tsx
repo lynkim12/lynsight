@@ -25,6 +25,7 @@ import experiment5 from "./image/works/work13experiment5.png"
 import experiment6 from "./image/works/work13experiment6.png"
 import result1 from "./image/works/work13result1.png"
 import result2 from "./image/works/work13result2.png"
+import result4 from "./image/works/work13result4.png"
 import { Divider, Hidden } from "@mui/material";
 import thumbnail9 from './image/thumbnails/thumbnail9.png';
 // import mainImage from './image/works/work13main';
@@ -259,6 +260,18 @@ function Work13(props: {
                     Your browser does not support the video tag.
         </video>
       </div>
+      <WorkTextSection title='Impact'
+            description={
+                <div>
+                    We found that the effective strategies in obtaining user consent for personalized ads on Karrot:
+                    <br/><br/>
+                    1. <b>Emphasizing potential losses (inconvenient situations)</b> led to a higher consent rate.
+                    <br/>
+                    2. Clearly presenting and persuading users about <b>potentially unpleasant or inconvenient aspects</b>, rather than hiding them, resulted in a higher consent rate.
+                </div>
+            }
+        />
+         <WorkFullImage image={result4} isMargin={false} /> 
         <Waiting/>
         <NextItem to='/Work9' thumbnail={thumbnail9} nextProjectTitle='New Video Ads'/>
         <BackButton/>
