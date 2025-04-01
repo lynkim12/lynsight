@@ -23,7 +23,9 @@ import experiment3 from "./image/works/work13experiment3.png"
 import experiment4 from "./image/works/work13experiment4.png"
 import experiment5 from "./image/works/work13experiment5.png"
 import experiment6 from "./image/works/work13experiment6.png"
-import { Divider } from "@mui/material";
+import result1 from "./image/works/work13result1.png"
+import result2 from "./image/works/work13result2.png"
+import { Divider, Hidden } from "@mui/material";
 import thumbnail9 from './image/thumbnails/thumbnail9.png';
 // import mainImage from './image/works/work13main';
 
@@ -216,7 +218,47 @@ function Work13(props: {
             <div style={{maxWidth:'640px'}}><WorkFullImage image={experiment6} /></div>
         </div>
         <Divider className = 'divider1'/>
-        <WorkTextSection title='Result'/>
+        <WorkTextSection title='Result'
+            description={
+                <div>
+                    We found that the effective strategies in obtaining user consent for personalized ads on Karrot:
+                    <br/><br/>
+                    1. <b>Emphasizing potential losses (inconvenient situations)</b> led to a higher consent rate.
+                    <br/>
+                    2. Clearly presenting and persuading users about <b>potentially unpleasant or inconvenient aspects</b>, rather than hiding them, resulted in a higher consent rate.
+                </div>
+            }
+        />
+        <WorkFullImage image={result1} isMargin={true} isBottomMargin={true}/>
+        <WorkTextSection 
+            description={
+                <div>
+                    When we observed that the click-through rate of Experiment Group 1 was <b>more than twice</b> that of Experiment Group 2, we discovered that clearly explaining and persuading users about potentially <b>uncomfortable topics (such as ad personalization and the use of personal data)</b> had a positive impact on obtaining consent, rather than hiding these aspects.
+                </div>
+            }
+        />
+        <WorkFullImage image={result2} isMargin={false} />   
+        {/* <div className='image-center margin48 horizontal-layout'>
+         <WorkFullImage image={result2} isMargin={false} isBottomMargin={true} />   
+         <WorkFullImage image={result3} isMargin={false} isBottomMargin={true} />   
+        </div>   */}
+      <WorkTextSection 
+            description={
+                <div>
+                    Additionally, the experiment group with the highest consent rate, Experiment Group 5, adopted a <b>"psychological accounting"</b> strategy, which emphasized the inconvenience of not giving consent rather than highlighting the value users would gain.
+                    <br/>
+                    In this experiment, the content suggested that refusing to consent to data usage could lead to <b>irrelevant ads being shown repeatedly</b>, implying a negative scenario.
+                    <br/>
+                    Although we were initially concerned that emphasizing potential inconvenience might cause discomfort, the results showed that leveraging users' tendency to avoid losses was significantly more effective in obtaining consent.
+                </div>
+            }
+        />
+        <div style={{ overflow:"Hidden",  height: "calc(100% - 1px)"}}>
+            <video style = {{ width:"100%", aspectRatio: "auto", height: "auto", marginBottom: "-10px"}}  loop autoPlay muted>
+                <source src="/work13result3.mov" type="video/mp4" />
+                    Your browser does not support the video tag.
+        </video>
+      </div>
         <Waiting/>
         <NextItem to='/Work9' thumbnail={thumbnail9} nextProjectTitle='New Video Ads'/>
         <BackButton/>
