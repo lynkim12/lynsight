@@ -17,6 +17,7 @@ import research4 from "./image/works/work13research4.png";
 import research5 from "./image/works/work13research5.png";
 import design1 from "./image/works/work13design1.png";
 import design2 from "./image/works/work13design2.png";
+import design3 from "./image/works/work13design3.png";
 import experiment1 from "./image/works/work13experiment1.png"
 import experiment2 from "./image/works/work13experiment2.png"
 import experiment3 from "./image/works/work13experiment3.png"
@@ -139,6 +140,12 @@ function Work13(props: {
         />
         <WorkImage image={design1} isMaxheight={false} isbottomPadding={false}/>
         <WorkFullImage image={design2} isBackgroundColor={true} isMargin={true} isRoundedCorner={true} />
+        <WorkTextSection description={<div>
+            During the initial Terms of Service agreement, users are asked to opt in to receive personalized advertisements.
+            If they decline, a re-consent prompt will be shown in a bottom sheet <b>upon completing the onboarding process and entering the main screen.</b>
+            <br/>If the user also declines at this stage, the bottom sheet will reappear on the main screen <b>the next time they access the app after 7 days</b>, prompting them once again for consent.
+       </div>}/>
+        <WorkFullImage image={design3}/>
         <WorkTextSection
                 title='Experiment'
                 description={
@@ -153,6 +160,7 @@ function Work13(props: {
                 }
             />
         <WorkFullImage image={experiment1} />
+        <Divider className = 'divider1'/>
         <div className='horizontal-layout'>
             <WorkTextSection 
                 description={
@@ -188,7 +196,8 @@ function Work13(props: {
                 description={
                 <div>
                     <b>Variant3. Emphasizing Brand Values to Foster User Alignment and Participation</b>
-                    <br/><br/>Providing emotional imagery and messaging can evoke positive feelings, which in turn lead to higher consent rates.
+                    <br/><br/>We emphasized the value that Karrot promotes — <b>connecting neighbors within the local community</b> — to make users feel that, by giving their consent, they are participating in and contributing to this shared value.
+                    <br/>We also informed users that local business owners nearby are offering various benefits, and encouraged consent by highlighting that, by opting in, users can receive personalized offers that are <b>relevant and useful to them in their neighborhood.</b>
                 </div>
             }
             />
@@ -200,7 +209,7 @@ function Work13(props: {
                 description={
                 <div>
                     <b>Variant4. Persuading Users with Service Efforts & Asking for Their Support</b>
-                    <br/><br/>We adopt a strategy that emphasizes efforts made for the user, creating a sense of goodwill. Users are more likely to respond positively when they recognize that a service is making an effort for them.
+                    <br/><br/>We adopt a strategy that <b>emphasizes efforts made for the user</b>, creating a sense of goodwill. Users are more likely to respond positively when they recognize that a service is making an effort for them.
                     <br/>Providing emotional images and messages can evoke positive feelings, which in turn increases the likelihood of positive responses. Therefore, we use visuals that depict warm and meaningful transactions within the service.
                 </div>
             }
@@ -213,7 +222,7 @@ function Work13(props: {
                 description={
                 <div>
                     <b>Variant5. Implying the Negative Scenario That Unnecessary Ads</b>
-                    <br/><br/>We adopt a strategy that highlights the unexpected benefit of reducing excessively repetitive ads. By reminding users that they may experience inconvenience if they do not agree, we can encourage them to consent.
+                    <br/><br/>We adopt a strategy that <b>highlights the unexpected benefit of reducing excessively repetitive ads.</b> By reminding users that they may experience inconvenience if they do not agree, we can encourage them to consent.
                     <br/>We aim to alleviate concerns by using language that clarifies that their information is only used for recommending posts on Karrot.
                     </div>
             }
@@ -276,7 +285,7 @@ function Work13(props: {
       <WorkTextSection title='Result'
         description={
             <div>
-                We have decided to display the Bottom Sheet for Group5 <b>up to 4 times every 7 days upon app launch</b>. Additionally, after 4 exposures, the exposure limit will be reset 90 days after the last exposure, allowing repeated exposures to resume.
+                We have decided to display the Bottom Sheet for Group5 <b className="textGradient">up to 4 times every 7 days upon app launch</b>. Additionally, after 4 exposures, the exposure limit will be reset 90 days after the last exposure, allowing repeated exposures to resume.
             </div>
         }
       />
@@ -288,11 +297,11 @@ function Work13(props: {
                     <br/>As a result of the experiment, approximately 76% of users consented to receiving personalized ads through opt-in consent at the time of sign-up. 
                     <br/>Additionally, users who initially declined on signup reconsent via the bottom sheet, so that the overall consent rate for personalized ads increased to about 80%.
                     <br/>
-                    Therefore, if Group 5 is applied to all users, <b>we can maintain a consent rate of 82% among new sign-ups.</b>
+                    Therefore, if Group 5 is applied to all users, <b>we can maintain a consent rate of <b className="textGradient">82%</b> among new sign-ups.</b>
                     <br/><br/>
                     
                     <b>Revenue Increase</b>
-                    <br/>In Group 5, revenue per user saw the highest increase, <b>rising by approximately 27–29%.</b>
+                    <br/>In Group 5, revenue per user saw the highest increase, <b>rising by approximately <b className="textGradient">27–29%.</b></b>
                     <br/>
                     The higher the consent rate for personalized ads, the higher the ad revenue. All experimental groups showed an increase in revenue compared to the control group. By utilizing user information, we were able to deliver ads with a higher expected click-through rate, resulting in an actual increase in CTR.
                     <br/>Therefore, we can expect that as the consent rate for personalized ads increases, it will continue to have a positive impact on revenue.</div>

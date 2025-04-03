@@ -39,9 +39,10 @@ function Works(props: {
             <Content badge={"New"} projectPage={"Work8"} thumbnail={thumbnail8} projectTitle={'A Bidding System in Search Ads'} projectDescription={'Designing a search advertising bidding system that anyone can easily use on mobile'} projectSubtitle={'Karrot'} period={'2024.04 - 2024.06.'}/>
             </div>
         <div className='contents zoomIn'>
-            <Content badge={"New"} projectPage={"Work6"} thumbnail={thumbnail6} projectTitle={'New Outlink-Type Ads'} projectDescription={'Introducing a new outlink-type advertisement for small businesses.'} projectSubtitle={'Karrot'} period={'2023.04 - 2023.0.'}/>
+        <Content projectPage={"Work7"} thumbnail={thumbnail7} projectTitle={'New Catalog Manager for Ads'} projectDescription={'Design a catalog management platform that can manage and advertise millions of products for Karrot.'} projectSubtitle={'Karrot'} period={'2024.01 - 2024.06.'}/>
+            <Content badge={"New"} projectPage={"Work6"} thumbnail={thumbnail6} projectTitle={'New Outlink-Type Ads'} projectDescription={'Introducing a new outlink-type advertisement for small businesses.'} projectSubtitle={'Karrot'} period={'2023.04 - 2023.07.'}/>
             <Content projectPage={"Work10"} thumbnail={thumbnail10} projectTitle={'Eliminating Concerns of Creating Ads'} projectDescription={'Encouraging ad creation to increase the activation rate.'} projectSubtitle={'Karrot'} period={'2023.01 - 2023.03.'}/>
-            <Content projectPage={"Work7"} thumbnail={thumbnail7} projectTitle={'New Catalog Manager for Ads'} projectDescription={'Design a catalog management platform that can manage and advertise millions of products for Karrot.'} projectSubtitle={'Karrot'} period={'2024.01 - 2024.06.'}/>
+            
             
             </div>
          <div className='contents zoomIn'>
