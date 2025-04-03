@@ -23,7 +23,10 @@ function Work11(props: {
             description={'Improving content UX to increase mission completion rate.'} 
             team={'Minding'} 
             role={'Service Planning, UXUI Design'} 
-            period={'2019.01. - 2019.06.'}/>
+            period={'2019.01. - 2019.06.'}
+            showButton={true}
+            buttonLabel="View Project"
+            buttonHref="https://www.figma.com/proto/iQ9Tgs7kQgjO6waM0oealt/Portfolio_lynkim?page-id=559%3A204&node-id=559-205&p=f&viewport=383%2C1421%2C0.31&t=4huYVHl4a2DTxKcO-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=559%3A205"/>
         </div>
         <MainImage image={mainImage}/>
         <WorkTextSection title = ' '/>    

@@ -212,6 +212,53 @@
     height:120px;
     border-radius: 24px;
  }
+  .BlackButton {
+    position: relative;
+    background: #EB5757;
+    color: white;
+    overflow: hidden;
+    z-index: 1;
+    transition: padding 0.3s, gap 0.3s;
+    display: inline-flex;
+    padding: 20px ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: transparent;
+    background: #EB5757;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .BlackButton::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #EB5757 0%, #6A27F9 100%);
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 0;
+  }
+
+  .BlackButton:hover::before {
+    opacity: 1;
+  }
+
+  .BlackButton span,
+  .BlackButton svg {
+    position: relative;
+    z-index: 1;
+    
+  }
+
+  .BlackButton:hover {
+    gap: 14px;
+    padding: 20px 16px 20px 20px ;
+    
+  }
 
   .floatingButton {
     position: fixed; /* 화면에 고정된 위치에 배치 */
