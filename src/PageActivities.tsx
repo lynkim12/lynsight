@@ -16,12 +16,12 @@ function Activities(props: {
     <div>
     <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav}/>
     <div className='pageTitle'>Activities</div>  
-  <div className='workContentslist'>
-      <div className='contents zoomIn' >
+  {/* <div className='workContentslist'> */}
+      {/* <div className='contents zoomIn' > */}
         {/* <ActivitiyCard thumbnail={thumbnail9} projectTitle={'title'} projectDescription={'description'} projectSubtitle={'subtitle'} period={'2024'} activityPage={''} /> */}
-      </div>
-    </div>
-    
+      {/* </div> */}
+    {/* </div> */}
+    <Waiting/>
     <Footer/>
   </div>
   )

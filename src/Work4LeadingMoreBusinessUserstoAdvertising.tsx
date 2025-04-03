@@ -37,7 +37,7 @@ function Work2(props: {
             buttonHref="https://www.figma.com/proto/iQ9Tgs7kQgjO6waM0oealt/Portfolio_lynkim?page-id=318%3A17734&node-id=318-20269&viewport=429%2C606%2C0.2&t=FH0n1cixdg4JTkII-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=318%3A20269"/>
       </div>
       <MainImage image={work1image1}/>
-      <Waiting/>
+      {/* <Waiting/> */}
       <BackButton/>
       <NextItem to='/Work5' thumbnail={thumbnail5} nextProjectTitle='New Service Design'/>
       </>
