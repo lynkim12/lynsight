@@ -24,6 +24,7 @@ import feature4 from './image/works/work7feature4.png';
 import structure from './image/works/work7structure.png';
 import design1 from './image/works/work7design1.png';
 import design2 from './image/works/work7design2.png';
+import design3 from './image/works/work7design3.png';
 import FeedURLUpload1 from './image/works/work7FeedURLUpload1.png';
 import FeedURLUpload2 from './image/works/work7FeedURLUpload2.png';
 import firstUserScenario from './image/works/work7firstUserScenario.png';
@@ -84,9 +85,10 @@ function Work7(props: {
       <WorkTextSection title={'Structure'} description={'First, we restructured the catalog manager to allow users to create product sets. To facilitate managing large volumes of products, we added product filters, enabling users to easily identify items that match specific criteria.'}/>
       <WorkFullImage image={structure} isMargin={true} isBottomMargin={true}/>
       <Divider/>
-      <WorkTextSection title={'UX/UI Design Overview'}/>
+      <WorkTextSection title={'Overview of the New Catalog Platform'}/>
       <WorkFullImage image={design1}/>
       <WorkFullImage image={design2}/>
+      <WorkFullImage image={design3}/>
       <Divider/>
       <WorkTextSection title={'First User Scenario'}/>
       
