@@ -5,6 +5,7 @@ import logo from '../image/logo.png';
 import { Link } from 'react-router-dom';
 import { NavMenuItem } from './navMenuItem';
 import React from 'react';
+import LanguageToggle from './LanguageToggle';
 
 const nav = document.querySelector('.nav') as HTMLElement | null;
 let lastScrollY: number = window.scrollY;
@@ -41,7 +42,9 @@ function Navigator(props: {
         <Link to="/About" onClick={() => props.setActiveNav(3)} style={{textDecoration: 'none'}}>
           <NavMenuItem isSelected={props.activeNav === 3 } name='About' />
         </Link> 
+        <LanguageToggle/>
       </div>
+      
     </div>
   );
 }
