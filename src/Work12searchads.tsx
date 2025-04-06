@@ -19,11 +19,11 @@ function Work12(props: {
         <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav} />
         <div className='fadeIn '>
           <WorkTitle 
-            title={'The design of a top search ad'} 
-            description={<div>The UX direction and specific design of Karrot's top search result ads.</div>} 
+            title={'Improving UI/UX of Top Search Ad Placement'} 
+            description={<div>Improving the design of top-position search ads to increase user engagement and click-through rate</div>} 
             team={'Karrot'} 
-            role={'UX Strategic Planning, UXUI Design'} 
-            period={'2024.06. - 2024.10.'}/>
+            role={'UXUI Design, Managing the Experiment'} 
+            period={'2024.10. - 2025.03.'}/>
         </div>
         <MainImage image={mainImage}/>
         <WorkTextSection title = ' '/>    
