@@ -92,8 +92,12 @@ function Work7(props: {
       <WorkFullImage image={design2}/>
       <WorkFullImage image={design3}/>
       <Divider/>
-      <WorkTextSection title={'First User Scenario'}/>
-      
+      <WorkTextSection title={'First User Scenario'}
+        description={
+          <div>
+            From small advertisers to large-scale shopping malls, we’ve designed the onboarding flow so that first-time users can easily understand the catalog and select the most suitable upload method.
+          </div>
+        }/>
       <WorkFullImage image={firstUserScenario}/>
       <WorkTextSection title={'Feed URL Upload'}
         description={<div>
