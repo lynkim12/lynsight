@@ -28,7 +28,9 @@ import design3 from './image/works/work7design3.png';
 import FeedURLUpload1 from './image/works/work7FeedURLUpload1.png';
 import FeedURLUpload2 from './image/works/work7FeedURLUpload2.png';
 import firstUserScenario from './image/works/work7firstUserScenario.png';
-import UploadHistory from './image/works/work7UploadHistory.png';
+import UploadHistory1 from './image/works/work7UploadHistory1.png';
+import UploadHistory2 from './image/works/work7UploadHistory2.png';
+import UploadHistory3 from './image/works/work7UploadHistory3.png';
 import { WorkFullImage } from './workDetailPage/WorkFullImage';
 import { Divider } from '@mui/material';
 //CatalogManager
@@ -93,15 +95,29 @@ function Work7(props: {
       <WorkTextSection title={'First User Scenario'}/>
       
       <WorkFullImage image={firstUserScenario}/>
-      <WorkTextSection title={'Feed URL Upload'}/>
-      <WorkFullImage image={FeedURLUpload1} isBottomMargin={true}/>
+      <WorkTextSection title={'Feed URL Upload'}
+        description={<div>
+          We designed a new product upload method called <b>"Feed URL Upload"</b> specifically for large-sized shopping malls that handle a high volume of products.
+          <br/>
+          Unlike the previous method, which required sellers to manually input product attributes one by one, this new method eliminates the need for manual entry. Instead, sellers can simply provide a URL to a product feed table they already manage—typically in formats used by other advertising platforms such as Naver EP or Meta product feeds.
+          <br/>
+          This allows for efficient bulk uploads and enables automatic product data updates according to the mall's preferred schedule, greatly reducing manual workload and improving data freshness.
+      </div>}/>
+      <WorkFullImage image={FeedURLUpload1} />
       <div style={{background: 'linear-gradient(180deg, rgba(242, 243, 246, 0.00) 0%, #F2F3F6 100%)'}}>
-        <WorkTextSection description={'When the upload is complete, system check for any issues with the Feed URL. And then, we provide a guide for users to pre-check and correct any errors.'}/>
+        <WorkTextSection description={<div>When the upload is complete, system check for any issues with the Feed URL. <br/>And then, we provide a guide for users to pre-check and correct any errors.</div>}/>
         <WorkFullImage image={FeedURLUpload2}  />
       </div>
       <div style={{background: 'linear-gradient(180deg, #F2F3F6  0%, rgba(242, 243, 246, 0.00) 100%)'}}>
-        <WorkTextSection title={'Upload History & Error report'}/>
-        <WorkFullImage image={UploadHistory}/>  
+        <WorkTextSection title={'Upload History & Error report'} 
+          description={<div>
+            With the newly introduced Feed URL Upload method, advertisers can now automatically update a large volume of products with minimal manual effort.
+            <br/>To support this, we’ve made it easy to check whether all product data updates were successfully applied without errors. 
+            <br/>In case any issues occur, advertisers can review detailed error information and download the full set of error data for further inspection and resolution.
+          </div>}/>
+        <WorkFullImage image={UploadHistory1}/> 
+        <WorkFullImage image={UploadHistory2}/> 
+        <WorkFullImage image={UploadHistory3}/> 
       </div>
       <Divider/>
       <WorkTextSection title={'Product Set'} description={'Product Set Description'}/>
