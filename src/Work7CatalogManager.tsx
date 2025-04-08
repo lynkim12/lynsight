@@ -34,6 +34,7 @@ import UploadHistory3 from './image/works/work7UploadHistory3.png';
 import productset1 from './image/works/work7productset1.png';
 import productset2 from './image/works/work7productset2.png';
 import productset3 from './image/works/work7productset3.png';
+import productset4 from './image/works/work7productset4.png';
 import { WorkFullImage } from './workDetailPage/WorkFullImage';
 import { Divider } from '@mui/material';
 //CatalogManager
@@ -136,7 +137,8 @@ function Work7(props: {
       }/>
       <WorkFullImage image={productset1} isBottomMargin={true}/>
       <WorkFullImage image={productset2} isBottomMargin={true}/>
-      <WorkFullImage image={productset3} isRoundedCorner={true} isShadow={true} isMargin={true} isBorder={true}/>
+      <WorkFullImage image={productset3} isBottomMargin={true} isRoundedCorner={true} isShadow={true} isMargin={true} isBorder={true}/>
+      <WorkFullImage image={productset4} isBottomMargin={true}/>
       <Waiting/>
       <BackButton/>
       <NextItem to='/Work6' thumbnail={thumbnail6} nextProjectTitle='New Outlink-Type Ads'/>
