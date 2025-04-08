@@ -37,7 +37,7 @@ function Work2(props: {
       <MainImage image={mainImage}/>
       {/* <Waiting/> */}
       <BackButton/>
-      <WorkTextSection title=''/>
+      
       <NextItem to='/Work3' thumbnail={thumbnail3} nextProjectTitle='Store UX/UI Design'/>
       </>
     )

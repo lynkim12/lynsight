@@ -36,7 +36,7 @@ function Filter2021(props: {
           {/* <div style={{flex:'1'}}/> */}
          </div>
          <div className='contents zoomIn'>
-            <Content projectPage={"Work11"} thumbnail={thumbnail11} projectTitle={'Improvement the mission contents UX'} projectDescription={'Improving content UX to increase mission completion rate.'} projectSubtitle={'Minding'} period={'2019.01. - 2019.06.'}/>
+            <Content projectPage={"/Work11"} thumbnail={thumbnail11} projectTitle={'Improvement the mission contents UX'} projectDescription={'Improving content UX to increase mission completion rate.'} projectSubtitle={'Minding'} period={'2019.01. - 2019.06.'}/>
             <div style={{flex:'1'}}/>
             <div style={{flex:'1'}}/>
           </div>

@@ -31,6 +31,9 @@ import firstUserScenario from './image/works/work7firstUserScenario.png';
 import UploadHistory1 from './image/works/work7UploadHistory1.png';
 import UploadHistory2 from './image/works/work7UploadHistory2.png';
 import UploadHistory3 from './image/works/work7UploadHistory3.png';
+import productset1 from './image/works/work7productset1.png';
+import productset2 from './image/works/work7productset2.png';
+import productset3 from './image/works/work7productset3.png';
 import { WorkFullImage } from './workDetailPage/WorkFullImage';
 import { Divider } from '@mui/material';
 //CatalogManager
@@ -120,11 +123,20 @@ function Work7(props: {
             <br/>In case any issues occur, advertisers can review detailed error information and download the full set of error data for further inspection and resolution.
           </div>}/>
         <WorkFullImage image={UploadHistory1}/> 
-        <WorkFullImage image={UploadHistory2}/> 
+        <WorkFullImage image={UploadHistory2} isBottomMargin={true}/> 
         <WorkFullImage image={UploadHistory3}/> 
       </div>
       <Divider/>
-      <WorkTextSection title={'Product Set'} description={'Product Set Description'}/>
+      <WorkTextSection title={'Product Set'} description={
+        <div>
+          To advertise products registered in the catalog, users must first create a product set and then select that set to create their ad.
+          <br/>
+          Product sets can be created either by <b>manually selecting individual products</b> or <b>by applying filters to automatically include products that meet certain conditions.</b>
+        </div>
+      }/>
+      <WorkFullImage image={productset1} isBottomMargin={true}/>
+      <WorkFullImage image={productset2} isBottomMargin={true}/>
+      <WorkFullImage image={productset3} isRoundedCorner={true} isShadow={true} isMargin={true} isBorder={true}/>
       <Waiting/>
       <BackButton/>
       <NextItem to='/Work6' thumbnail={thumbnail6} nextProjectTitle='New Outlink-Type Ads'/>

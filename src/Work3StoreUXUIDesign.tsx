@@ -40,7 +40,7 @@ function Work3(props: {
       <NextItem to='/Work11' thumbnail={thumbnail11} nextProjectTitle='Improvement the mission contents UX'/>
       {/* <Waiting/> */}
       {/* <WorkTextSection description={<div>Please click <b>"View Project"</b> button to read contents</div>}/> */}
-      <WorkTextSection title=''/>
+      
       <BackButton/>
       
       </>
