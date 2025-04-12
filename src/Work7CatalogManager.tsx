@@ -26,6 +26,7 @@ import design1 from './image/works/work7design1.png';
 import design2 from './image/works/work7design2.png';
 import design3 from './image/works/work7design3.png';
 import FeedURLUpload1 from './image/works/work7FeedURLUpload1.png';
+import FeedURLUpload11 from './image/works/work7FeedURLUpload11.png';
 import FeedURLUpload2 from './image/works/work7FeedURLUpload2.png';
 import firstUserScenario from './image/works/work7firstUserScenario.png';
 import UploadHistory1 from './image/works/work7UploadHistory1.png';
@@ -35,6 +36,7 @@ import productset1 from './image/works/work7productset1.png';
 import productset2 from './image/works/work7productset2.png';
 import productset3 from './image/works/work7productset3.png';
 import productset4 from './image/works/work7productset4.png';
+import work7productsetmanaging1 from './image/works/work7productsetmanaging1.png';
 import { WorkFullImage } from './workDetailPage/WorkFullImage';
 import { Divider } from '@mui/material';
 //CatalogManager
@@ -103,7 +105,8 @@ function Work7(props: {
           </div>
         }/>
       <WorkFullImage image={firstUserScenario}/>
-      <WorkTextSection title={'Feed URL Upload'}
+      <Divider/>
+     <WorkTextSection title={'Feed URL Upload'}
         description={<div>
           We designed a new product upload method called <b>"Feed URL Upload"</b> specifically for large-sized shopping malls that handle a high volume of products.
           <br/>
@@ -111,9 +114,13 @@ function Work7(props: {
           <br/>
           This allows for efficient bulk uploads and enables automatic product data updates according to the mall's preferred schedule, greatly reducing manual workload and improving data freshness.
       </div>}/>
+      
       <WorkFullImage image={FeedURLUpload1} />
+      <WorkFullImage image={FeedURLUpload11} isBackgroundColor={true}/>
+      <Divider/>
       <div style={{background: 'linear-gradient(180deg, rgba(242, 243, 246, 0.00) 0%, #F2F3F6 100%)'}}>
-        <WorkTextSection description={<div>When the upload is complete, system check for any issues with the Feed URL. <br/>And then, we provide a guide for users to pre-check and correct any errors.</div>}/>
+        <WorkTextSection title='Upload validation process'
+          description={<div>When the upload is complete, system check for any issues with the Feed URL. <br/>And then, we provide a guide for users to pre-check and correct any errors.</div>}/>
         <WorkFullImage image={FeedURLUpload2}  />
       </div>
       <div style={{background: 'linear-gradient(180deg, #F2F3F6  0%, rgba(242, 243, 246, 0.00) 100%)'}}>
@@ -135,10 +142,22 @@ function Work7(props: {
           Product sets can be created either by <b>manually selecting individual products</b> or <b>by applying filters to automatically include products that meet certain conditions.</b>
         </div>
       }/>
-      <WorkFullImage image={productset1} isBottomMargin={true}/>
+      <WorkFullImage image={productset1} />
       <WorkFullImage image={productset2} isBottomMargin={true}/>
-      <WorkFullImage image={productset3} isBottomMargin={true} isRoundedCorner={true} isShadow={true} isMargin={true} isBorder={true}/>
+      
+      <WorkFullImage image={productset3} isBottomMargin={true} isBackgroundColor={true}
+      // isRoundedCorner={true} isShadow={true} isMargin={true} isBorder={true}
+      />
+      
       <WorkFullImage image={productset4} isBottomMargin={true}/>
+      <Divider/>
+      <WorkTextSection title='Linking a product set to an ad group'
+        description={
+          <div>
+            When creating an ad campaign, linking a catalog set to an ad group allows users to see how many ad groups are connected to that product set. It also makes it easier to find and manage the associated ad groups.
+          </div>
+        }/>
+      <WorkFullImage image={work7productsetmanaging1}/>
       <Waiting/>
       <BackButton/>
       <NextItem to='/Work6' thumbnail={thumbnail6} nextProjectTitle='New Outlink-Type Ads'/>
