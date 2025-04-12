@@ -25,6 +25,9 @@ import structure from './image/works/work7structure.png';
 import design1 from './image/works/work7design1.png';
 import design2 from './image/works/work7design2.png';
 import design3 from './image/works/work7design3.png';
+import design4 from './image/works/work7design4.png';
+import design5 from './image/works/work7design5.png';
+import design6 from './image/works/work7design6.png';
 import FeedURLUpload1 from './image/works/work7FeedURLUpload1.png';
 import FeedURLUpload11 from './image/works/work7FeedURLUpload11.png';
 import FeedURLUpload2 from './image/works/work7FeedURLUpload2.png';
@@ -39,7 +42,14 @@ import productset4 from './image/works/work7productset4.png';
 import work7productsetmanaging1 from './image/works/work7productsetmanaging1.png';
 import { WorkFullImage } from './workDetailPage/WorkFullImage';
 import { Divider } from '@mui/material';
+import ImageTabs, { ImageTab } from './components/ImageTabs';
 //CatalogManager
+
+const imageTabData: ImageTab[] = [
+  { id: 'Catalog Manager', label: 'Catalog Manager', imageUrl: design4 },
+  { id: 'Product Set', label: 'Product Set', imageUrl: design5 },
+  { id: 'Upload History', label: 'Upload History', imageUrl: design6 },
+];
 
 function Work7(props: {
   activeNav: number, 
@@ -97,6 +107,7 @@ function Work7(props: {
       <WorkFullImage image={design1}/>
       <WorkFullImage image={design2}/>
       <WorkFullImage image={design3}/>
+      {/* <ImageTabs tabs={imageTabData} defaultTabId='Catalog Manager' /> */}
       <Divider/>
       <WorkTextSection title={'First User Scenario'}
         description={
@@ -157,8 +168,8 @@ function Work7(props: {
             When creating an ad campaign, linking a catalog set to an ad group allows users to see how many ad groups are connected to that product set. It also makes it easier to find and manage the associated ad groups.
           </div>
         }/>
-      <WorkFullImage image={work7productsetmanaging1}/>
-      <Waiting/>
+      <WorkFullImage image={work7productsetmanaging1} isBottomMargin={true}/>
+      {/* <Waiting/> */}
       <BackButton/>
       <NextItem to='/Work6' thumbnail={thumbnail6} nextProjectTitle='New Outlink-Type Ads'/>
       </>
