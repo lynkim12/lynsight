@@ -107,7 +107,7 @@ function Work7(props: {
       <WorkFullImage image={design1}/>
       <WorkFullImage image={design2}/>
       <WorkFullImage image={design3}/>
-      {/* <ImageTabs tabs={imageTabData} defaultTabId='Catalog Manager' /> */}
+       <ImageTabs tabs={imageTabData} defaultTabId='Catalog Manager' />
       <Divider/>
       <WorkTextSection title={'First User Scenario'}
         description={

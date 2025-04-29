@@ -90,6 +90,12 @@
     gap: 28px;
 }
 
+.textsection-sub {
+    display: flex; 
+    flex-direction: column; 
+    gap: 12px;
+}
+
 .contentsalign {
     margin: auto; 
     max-width: 1600px; 

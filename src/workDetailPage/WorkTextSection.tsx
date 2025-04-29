@@ -9,6 +9,7 @@ export function WorkTextSection(props: {
     bigTitle? : boolean;
     description? : React.ReactNode;
     isWhiteText? : boolean;
+    subDescription? : React.ReactNode;
     }) {
     return (
         <>
@@ -21,14 +22,24 @@ export function WorkTextSection(props: {
                         fontWeight: "700",
                         lineHeight: "140%"
                     }}>{props.title}</div>}
-                {props.description && <div style={{
-                    color: props.isWhiteText ? '#E6E9ED' : '#3A3E44',
-                    fontSize: "20px",
-                    fontStyle: "normal",
-                    fontWeight: "400",
-                    lineHeight: "151.8%",
-                    // margin:"0px 0px 60px 0px"
-                }}>{props.description}</div>}
+                <div className='textsection-sub'>
+                    {props.description && <div style={{
+                        color: props.isWhiteText ? '#E6E9ED' : '#3A3E44',
+                        fontSize: "20px",
+                        fontStyle: "normal",
+                        fontWeight: "400",
+                        lineHeight: "151.8%",
+                        // margin:"0px 0px 60px 0px"
+                    }}>{props.description}</div>}
+                    {props.subDescription && <div style={{
+                        color: '#9AA0A7',
+                        fontSize: "13px",
+                        fontStyle: "normal",
+                        fontWeight: "400",
+                        lineHeight: "151.8%",
+                        // margin:"0px 0px 60px 0px"
+                    }}>{props.subDescription}</div>}
+                </div>
             </div>
         </AnimationOnScroll>
         </>

@@ -60,7 +60,8 @@ function Work1(props: {
         < WorkTextSection 
           title='Overview'
           description='As the karrot advertisement platform grews continuously, various advertisers began to use it. As a result, the need to develop the platform suited to a variety of advertisers.'
-          isWhiteText={true} />
+          isWhiteText={true}
+          subDescription='당근 광고 플랫폼이 지속적으로 성장하며, 다양한 광고주가 플랫폼을 이용하기 시작했습니다. 그에 따라 점차 플랫폼이 다양한 광고주의 니즈를 포괄할 수 있도록 개선될 필요성이 높아졌습니다.' />
         <div style={{ margin:"auto", maxWidth:"1600px", alignContent: "center", padding: "100px 48px", display: "flex", flexDirection: "column", gap:"150px" }}>   
             <div style={{ display: "flex", flexDirection: "row", gap:"40px"}}>
                 <div style={{ display: "flex", flexDirection: "column", gap:"18px" }}>
@@ -85,7 +86,12 @@ function Work1(props: {
             <WorkImage image={work1chart1} isMaxheight={true} isbottomPadding={false}/>
           </div>
         </div>
-        < WorkTextSection title={'Goal'} description={'As our product grew, various advertisers began to use it. As a result, the need to develop a platform suited to a variety of advertisers.'} />
+        < WorkTextSection 
+          title={'Goal'} 
+          description={'As our product grew, various advertisers began to use it. As a result, the need to develop a platform suited to a variety of advertisers.'} 
+          subDescription='당근 광고 플랫폼이 지속적으로 성장하며, 다양한 광고주가 플랫폼을 이용하기 시작했습니다. 그에 따라 점차 플랫폼이 다양한 광고주의 니즈를 포괄할 수 있도록 개선될 필요성이 높아졌습니다.'
+          />
+        
         <WorkFullImage image={goal} isBottomMargin={true}/>
         
                         
