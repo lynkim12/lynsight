@@ -29,6 +29,7 @@ export function WorkTextSection(props: {
                         fontStyle: "normal",
                         fontWeight: "400",
                         lineHeight: "151.8%",
+                        // display: "inline-block"
                         // margin:"0px 0px 60px 0px"
                     }}>{props.description}</div>}
                     {props.subDescription && <div style={{
@@ -37,6 +38,7 @@ export function WorkTextSection(props: {
                         fontStyle: "normal",
                         fontWeight: "400",
                         lineHeight: "151.8%",
+                        maxWidth: "800px"
                         // margin:"0px 0px 60px 0px"
                     }}>{props.subDescription}</div>}
                 </div>
