@@ -71,8 +71,14 @@ function Work13(props: {
                 />    
          <WorkImage image={work13goal2} isMaxheight={true} isbottomPadding={false} description={'An example of the ATT consent screen on Facebook.'}/>
         <WorkTextSection title = 'Goal' 
-            description={<div>Our goal is to get personalized advertising consent from users who newly sign up for the service. By obtaining personalized advertising consent from users, we can display tailored ads, which are likely to result in higher click-through rates compared to randomly served ads, helping to prevent a decline in revenue. <br/><br/>The average ATT (App Tracking Transparency) opt-in rate for vertical apps is below 35%, making it a highly ambitious goal to obtain consent from the majority of new users.</div>
-            }/>    
+            description={<div>Our goal is to get personalized advertising consent from users who newly sign up for the service. By obtaining personalized advertising consent from users, we can display tailored ads, which are likely to result in higher click-through rates compared to randomly served ads, helping to prevent a decline in revenue. 
+                <br/>The average ATT (App Tracking Transparency) opt-in rate for vertical apps is below 35%, making it a highly ambitious goal to obtain consent from the majority of new users.</div>
+            }
+            subDescription={<div>
+               우리의 목표는 서비스에 새로 가입하는 대부분의 사용자에게서 맞춤형 광고에 대한 수신 동의를 받는 것입니다. 맞춤형 광고에 수신 동의하면, 개인에게 관련없는 광고가 아닌 개인화된 광고를 보여줄 수 있어, 높은 광고 클릭률을 얻을 수 있고, 매출 감소를 효과적으로 방지할 수 있습니다.
+                <br/>
+                하지만 Vertical service app의 평균 ATT(App Tracking Transparency) 동의율은 35% 미만으로, 신규 가입자에게서 높은 동의율을 확보하는 것은 매우 도전적인 목표였습니다. 
+            </div>}/>    
         <WorkImage image={work13goal1} isMaxheight={true} isbottomPadding={false}/>
         <WorkTextSection title={'Strategy'} 
             description={
@@ -82,19 +88,35 @@ function Work13(props: {
                     <br/>Second, we ensure that the request is made at a natural point where it minimizes negative user experience while effectively persuading them to opt in. 
                     <br/>Lastly, we design the UI by leveraging psychological principles to maximize the opt-in rate.
                 </div>
+            }
+            subDescription={
+                <div>
+                    가장 많은 사용자로부터 동의를 얻을 수 있는 전략을 세웠습니다.
+                    <br/>첫째, 서비스 이용 도중 가장 많은 사용자에게 가입을 요구할 수 있는 시점에 동의를 위한 액션을 합니다.
+                    <br/>둘째, 부정적인 경험을 최소화하면서 효과적으로 동의를 유도할 수 있는 자연스러운 시점에 동의를 구합니다.
+                    <br/>마지막으로, 세심한 심리학 원칙을 활용하여 동의율을 극대화하기 위해 효과적인 UI를 설계합니다.
+                </div>
             }/>
         <WorkTextSection title={'Research'}
             description={
                 <div>
                      To encourage users to opt in for consent, we researched proven cases from other companies and psychological principles. Through this research, we gathered various insights that can be applied to screen design.
-
-                    <br/><br/><br/><b>1. Optimal timing</b>
+                </div>
+            
+                }
+            subDescription={
+                <div>
+                    사용자들이 더 많이 동의하도록 유도하기 위해, 다른 기업들의 검증된 사례들과 심리학적 원칙들을 리서치했습니다. 이러한 리서치를 통해 적용할 수 있는 다양한 인사이트를 도출할 수 있었습니다.
+                </div>
+            }/>
+        <WorkTextSection description={
+            <div>
+                <b>1. Optimal timing</b>
                     <br/>If the consent request is placed at the final stage of onboarding, right after a conversion action within the app (when the user has experienced the highest value), or following a positive engagement action, the likelihood of users opting in increases.
                     This is because people tend to perceive subsequent situations more positively after having a positive experience or after responding positively to a previous question. 
                     <a style={{color:'#6A27F9'}} href='https://www.psychologistworld.com/behavior/compliance/strategies/foot-in-door-technique' target="_blank" rel="noreferrer">(foot-in-the-door technique)</a>
-                    </div>
-                } 
-        />
+            </div>
+        }/>
         <WorkImage image={research1} isMaxheight={true} isbottomPadding={false}/>
         <WorkTextSection 
             description={
