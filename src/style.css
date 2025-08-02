@@ -627,6 +627,85 @@
     left: 14px;
   }
 
+  .articleTitleSection {
+    margin: auto; 
+    max-width: 1000px;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    padding: 60px 48px;
+    justify-content: space-between;
+  }
+  
+  .articleTitleSectionGap {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .articleTitleSectionTitleGap {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .articleTitleSectionTag {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .articlePageTitle {
+    color: #131517;
+    font-size: 52px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -1px;
+  }
+
+  .articlePageDescription {
+    color: #51575E;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.5px;
+  }
+
+  .articlePageCategory{
+    color: #131517;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .articlePageDate{
+    color: #51575E;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .articleTitle {
+    color: #131517;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  .articleDescription {
+    color: #3A3E44;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 151.8%;
+  }
+
+  .articleSubdescription {
+    color: #9AA0A7;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 151.8%;
+  }
+
   .aboutContents {
     padding: 120px 48px;
     gap: 28px;
@@ -716,7 +795,7 @@
   }
 
   .divider2 {
-    color : #F4F5F8;
+    color : #E6E9ED;
     stroke-width: 1px;
     height: 0px;
     align-self: stretch;
@@ -841,7 +920,7 @@
   .fadeIn {
     animation-name: fadeIn;
     animation-duration: 1s;
-    offset: 1;
+    offset: 10;
   }
 
 
@@ -987,6 +1066,51 @@
       padding: 40px 20px;
       gap: 28px;
     }
+
+
+  .articleTitleSection {
+    padding: 60px 20px;
+  }
+  
+  .articleTitleSectionGap {
+    gap: 24px;
+  }
+
+  .articleTitleSectionTitleGap {
+    gap: 12px;
+  }
+
+  .articleTitleSectionTag {
+    gap: 6px;
+  }
+    .articleTitle {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .articleDescription {
+    font-size: 16px;
+  }
+  .articleSubdescription {
+    font-size: 12px;
+  }
+
+  .articlePageTitle {
+    font-size: 28px;
+  }
+
+  .articlePageDescription {
+    font-size: 16px;
+  }
+
+  .articlePageCategory{
+    font-size: 14px;
+  }
+
+  .articlePageDate{
+    font-size: 14px;
+  }
+
     .contents {
       flex-direction: column;
       gap: 60px;

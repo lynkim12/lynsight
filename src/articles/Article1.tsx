@@ -8,13 +8,11 @@ import { WorkFullImage } from "../workDetailPage/WorkFullImage";
 import work13goal1 from "../image/works/Work13goal1.png";
 import work13goal2 from "../image/works/work13goal2.png";
 import { WorkImage } from "../workDetailPage/WorkImage";
-import thumbnail9 from '../image/thumbnails/thumbnail9.png';
+import thumbnail8 from '../image/thumbnails/thumbnail8.png';
 import { ArticleTextSection } from "../articleDetailPage/ArticleTextSection"
 import { ArticleTitle } from "../articleDetailPage/ArticleTitle";
-// import mainImage from './image/works/work13main';
-
-//Personalized Ads consent
-
+import { ArticleMainImage } from "../components/ArticleMainImage";
+import image1 from '../image/resources/article1.jpg';
 
 function Article1(props: {
     activeNav: number, 
@@ -28,7 +26,8 @@ function Article1(props: {
             title={'7월 첫 글_작성중'} 
             description={<div>디스크립션을 작성중</div>} 
             category={'essay'} 
-            date={'2025.08.01.'}/>
+            date={'2025.08.01.'}
+            thumbnail={image1}/>
         </div>    
         <ArticleTextSection title = '첫번째 섹션' 
             description=
@@ -44,8 +43,6 @@ function Article1(props: {
 
             }
                 />    
-         <WorkImage image={work13goal2} isMaxheight={true} isbottomPadding={false} description={'An example of the ATT consent screen on Facebook.'}/>
-        
         <ArticleTextSection title=''/>
         <ArticleTextSection title=''/>
         {/* <NextItem to='/Work9' thumbnail={thumbnail9} nextProjectTitle='New Video Ads'/> */}

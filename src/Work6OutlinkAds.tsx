@@ -32,7 +32,7 @@ import result2 from './image/works/work6result2.png';
 import NextItem from './components/NextItem';
 import thumbnail10 from './image/thumbnails/thumbnail10.png';
 
-//New Outlink-Type Ads
+//OutlinkAds
 
 function Work6(props: {
   activeNav: number, 
