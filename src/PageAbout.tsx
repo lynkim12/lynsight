@@ -14,6 +14,7 @@ import image2 from './image/*.png';
 import image3 from './image/shooting.png';
 import './animation.css';
 import { Wavedivider } from './components/Wavedivider';
+import Typewriter from './components/Typewriter';
 
 function About(props: {
   activeNav: number, 
@@ -41,8 +42,17 @@ function About(props: {
               <img src={image3} className='shooting'/>
             </div>
             <div className='aboutIntroDescription'>
-              Currently, I joined Karrot(Daangn) as a product designer contributing to the development of an advertising platform for small-sized business. I am responsible for advertiser's experience of creating ads and analyzing performance. We also have a goal to help for small-sized businesses to achieve the success through Karrot advertising.
-            </div>
+              <Typewriter 
+                text={<div>
+                  Recently, I wrapped up 3 years and 7 months of designing ad products at Karrot(Daangn) 
+                  <br/> and transitioned to the Local Business team, where I’m now designing <b className='textGradient'> Karrot QR Order.</b> 
+                  <br/> I enjoy survival reality shows 📺 and board games♟️, 
+                  <br/> and I love planning fun experience-based programs 🤹🏻‍♀️. 
+                  <br/> I’m still part of the ADBLOCK band 🎹, 
+                  <br/> and these days, I’ve been getting into billiards 🎱 and frisbee 🪃. 
+                  </div>}
+                speed={25} />
+              </div>
           </div>
         </div>
         <Wavedivider/>

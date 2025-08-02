@@ -6,6 +6,27 @@
   color: #8B3E66;
 }
   
+.typewriter-container {
+  position: relative;
+}
+
+.typewriter-placeholder {
+  visibility: hidden;     /* 공간은 차지하되 보이지 않음 */
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.typewriter-animated {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+
 .video-responsive {
   position: relative;
   width: 100%;
