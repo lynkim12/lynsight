@@ -7,6 +7,8 @@ import { Footer } from './components/Footer';
 import NextItem from './components/NextItem';
 import ActivitiyCard from './components/ActivitiesCard';
 import thumbnail9 from './image/thumbnails/thumbnail9.png';
+import BlogContent from './components/BlogContent';
+import { Divider } from '@mui/material';
 
 function Activities(props: {
   activeNav: number, 
@@ -16,12 +18,12 @@ function Activities(props: {
     <div>
     <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav}/>
     <div className='pageTitle'>Activities</div>  
-  {/* <div className='workContentslist'> */}
-      {/* <div className='contents zoomIn' > */}
-        {/* <ActivitiyCard thumbnail={thumbnail9} projectTitle={'title'} projectDescription={'description'} projectSubtitle={'subtitle'} period={'2024'} activityPage={''} /> */}
-      {/* </div> */}
-    {/* </div> */}
-    <Waiting/>
+    <div className='blogContentslist'>
+        <div className='contents zoomIn' >
+            <BlogContent blogPage={"/Article1"} title={'첫 번째 글 작성 중'} description={'7월 일기 작성 중'} category={'essay'} date={'2025.08.01.'}/>
+        </div>
+      <Divider className = 'divider2'/>
+    </div>
     <Footer/>
   </div>
   )

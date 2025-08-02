@@ -472,6 +472,16 @@
     align-content: center;
   }
 
+  .blogContentslist {
+    margin : auto;
+    padding: 48px 48px 80px 48px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    justify-content: center;
+    align-content: center;
+  }
 
   .contents {
     width: 100%;
@@ -524,6 +534,14 @@
  }
 
   .projectContents { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  }
+
+  .blogContents { 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -697,6 +715,13 @@
     align-self: stretch;
   }
 
+  .divider2 {
+    color : #F4F5F8;
+    stroke-width: 1px;
+    height: 0px;
+    align-self: stretch;
+  }
+
   .dividerWave {
     height: 100%;
     width:100%;
@@ -816,7 +841,7 @@
   .fadeIn {
     animation-name: fadeIn;
     animation-duration: 1s;
-    offset: 10;
+    offset: 1;
   }
 
 
@@ -958,6 +983,10 @@
       padding: 40px 20px;
       gap: 60px;
     }
+    .blogContentslist {
+      padding: 40px 20px;
+      gap: 28px;
+    }
     .contents {
       flex-direction: column;
       gap: 60px;
@@ -1033,6 +1062,9 @@
       font-size: 15px;
     }
     .projectContents {
+      gap: 12px;
+    }
+    .blogContents {
       gap: 12px;
     }
     .flow {
