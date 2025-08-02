@@ -20,9 +20,10 @@ const Typewriter: React.FC<TypewriterProps> = ({ text, speed = 100 }) => {
   useEffect(() => {
     let currentIndex = 0;
     const interval = setInterval(() => {
-      setTyped((prev) => prev + fullText[currentIndex]);
-      currentIndex++;
-      if (currentIndex === fullText.length) {
+      if (currentIndex < fullText.length) {
+        setTyped(fullText.slice(0, currentIndex + 1));
+        currentIndex++;
+      } else {
         clearInterval(interval);
       }
     }, speed);
@@ -47,23 +48,34 @@ const renderWithTypedText = (
   node: React.ReactNode,
   typedText: string
 ): React.ReactNode => {
-  if (typeof node === "string" || typeof node === "number") {
-    return typedText.slice(0, node.toString().length);
-  }
-  if (Array.isArray(node)) {
-    let remaining = typedText;
-    return node.map((child, i) => {
-      const childText = flattenText(child);
-      const subText = remaining.slice(0, childText.length);
-      remaining = remaining.slice(childText.length);
-      return renderWithTypedText(child, subText);
-    });
-  }
-  if (React.isValidElement(node)) {
-    const child = renderWithTypedText(node.props.children, typedText);
-    return React.cloneElement(node, { ...node.props, children: child });
-  }
-  return null;
+  let currentIndex = 0;
+
+  const traverse = (currentNode: React.ReactNode): React.ReactNode => {
+    if (typeof currentNode === "string" || typeof currentNode === "number") {
+      const nodeText = currentNode.toString();
+      const availableText = typedText.slice(currentIndex, currentIndex + nodeText.length);
+      currentIndex += nodeText.length;
+      return availableText;
+    }
+
+    if (Array.isArray(currentNode)) {
+      return currentNode.map((child, i) => (
+        <React.Fragment key={i}>{traverse(child)}</React.Fragment>
+      ));
+    }
+
+    if (React.isValidElement(currentNode)) {
+      const processedChildren = traverse(currentNode.props.children);
+      return React.cloneElement(currentNode, { 
+        ...currentNode.props, 
+        children: processedChildren 
+      });
+    }
+
+    return null;
+  };
+
+  return traverse(node);
 };
 
 export default Typewriter;

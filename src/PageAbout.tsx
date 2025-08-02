@@ -45,7 +45,7 @@ function About(props: {
               <Typewriter 
                 text={<div>
                   Recently, I wrapped up 3 years and 7 months of designing ad products at Karrot(Daangn) 
-                  <br/> and transitioned to the Local Business team, where I’m now designing <b className='textGradient'> Karrot QR Order.</b> 
+                  <br/> and transitioned to the Local Business team, where I’m now designing <b className='textGradient'>Karrot QR Order.</b>
                   <br/> I enjoy survival reality shows 📺 and board games♟️, 
                   <br/> and I love planning fun experience-based programs 🤹🏻‍♀️. 
                   <br/> I’m still part of the ADBLOCK band 🎹, 
