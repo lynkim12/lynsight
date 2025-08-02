@@ -42,7 +42,7 @@ function Navigator(props: {
         <Link to="/About" onClick={() => props.setActiveNav(3)} style={{textDecoration: 'none'}}>
           <NavMenuItem isSelected={props.activeNav === 3 } name='About' />
         </Link> 
-        <LanguageToggle/>
+       
       </div>
       
     </div>
