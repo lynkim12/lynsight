@@ -694,14 +694,14 @@
 
   .articleDescription {
     color: #3A3E44;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 400;
     line-height: 151.8%;
   }
 
   .articleSubdescription {
     color: #9AA0A7;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 151.8%;
   }
@@ -1084,12 +1084,12 @@
     gap: 6px;
   }
     .articleTitle {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
   }
 
   .articleDescription {
-    font-size: 16px;
+    font-size: 18px;
   }
   .articleSubdescription {
     font-size: 12px;

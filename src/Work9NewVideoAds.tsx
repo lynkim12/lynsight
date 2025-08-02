@@ -28,7 +28,7 @@ function Work9(props: {
       <div className='fadeIn '>
         <WorkTitle 
           title={'New Video Ads'} 
-          description={'Introducing new vertical video ads in the home feed.'} 
+          description={'Introducing new vertical video ads on Karrot.'} 
           team={'Karrot(Daangn)'} 
           role={'UXUI Design, Data Experiment'} 
           period={'2024.01. - 2024.06.'}/>

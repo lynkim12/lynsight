@@ -5,7 +5,6 @@ import BackButton from "./components/BackButton";
 import { WorkTextSection } from "./workDetailPage/WorkTextSection";
 import { MainImage } from "./workDetailPage/WorkMainImage";
 import Navigator from './components/Navigation';
-
 import mainImage from './image/works/work11MainImage.png';
 
 //search ads

@@ -31,9 +31,9 @@ function Article1(props: {
         </div>    
         <ArticleTextSection title = '첫번째 섹션' 
             description=
-                {<div>Karrot has not explicitly obtain users consent for receiving personalized ads until now. However, to comply with regulations, we plan to request consent for personalized ads from new users upon signup.
-                If a user declines consent for personalized ads, we will be unable to serve tailored advertisements, which could significantly decrease CTR and lead to a revenue drop of over 30%.
-                To mitigate the impact, it is crucial to maximize the opt-in rate for personalized ads. Therefore, we aim to develop effective way to get users consent who initially opted out during signup.
+                {<div>하루하루를 살아가다 보면 때로는 지치고 흔들릴 때가 있지만, 그 속에서도 분명히 작은 기쁨과 따뜻함은 존재합니다. 당신은 지금까지 잘 해왔고, 앞으로도 그렇게 해나갈 수 있을 거예요. 모든 순간이 완벽할 수는 없지만, 불완전함 속에서도 우리는 성장하고 있습니다. 아무리 작은 발걸음이라도 앞으로 나아가고 있다면 그 자체로 충분히 가치 있는 일입니다. 스스로에게 너무 많은 기대를 걸거나, 타인의 기준에 자신을 맞추려 하지 않아도 괜찮아요. 당신만의 속도, 당신만의 방식으로 천천히 걸어가면 됩니다.
+                <br/><br/>
+                때로는 멈춰서 하늘을 바라보는 것도 좋은 일이에요. 구름은 항상 같은 모양으로 머무르지 않듯, 우리의 감정도 머물지 않고 흘러갑니다. 오늘이 힘들었다면 내일은 조금 더 나을 수 있고, 그다음 날은 미소 지을 일이 생길지도 몰라요. 무엇보다 중요한 건, 당신은 혼자가 아니라는 사실입니다. 당신을 응원하는 마음들이 분명히 존재하고, 누군가에게는 당신의 존재만으로도 큰 위안이 됩니다. 그러니 자신을 소중히 여기고, 가끔은 다정한 시선으로 스스로를 바라보세요. 그 무엇보다 당신은 소중한 사람입니다.
                 </div>}
             subDescription={<div>
                 당근은 지금까지 사용자로부터 개인 맞춤형 광고 수신에 대한 명시적인 동의를 받지 않았습니다. 그러나 관련 규제를 준수하기 위해, 신규 사용자부터는 회원가입 시 명시적으로 개인 맞춤형 광고에 대한 수신 동의를 받아야 합니다.
