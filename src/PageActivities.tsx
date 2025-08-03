@@ -20,7 +20,7 @@ function Activities(props: {
     <div className='pageTitle'>Activities</div>  
     <div className='blogContentslist'>
         <div className='contents zoomIn' >
-            <BlogContent blogPage={"/Article1"} title={'첫 번째 글 작성 중'} description={'7월 일기 작성 중'} category={'essay'} date={'2025.08.01.'}/>
+            <BlogContent blogPage={"/Article1"} title={'첫 번째 글 작성 중'} description={'7월 일기 작성 중'} category={'essay'} date={'2025.08.01.'} locked={true}/>
         </div>
       <Divider className = 'divider2'/>
     </div>

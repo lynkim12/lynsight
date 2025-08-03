@@ -345,7 +345,7 @@
     top: 0;
     z-index: 3;
     /* background: linear-gradient(180deg, #FFF 0% , rgba(255, 255, 255, 0.00) 100%); */
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(6px);
     transition: transform 0.3s ease;
   }
 
@@ -1089,10 +1089,10 @@
   }
 
   .articleDescription {
-    font-size: 18px;
+    font-size: 17px;
   }
   .articleSubdescription {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .articlePageTitle {
@@ -1195,4 +1195,263 @@
       max-width: 300px;
       padding: 0 24px;
     }
+  }
+
+  /* Password Modal Styles */
+  .password-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
+
+  .password-modal-overlay.modal-open {
+    opacity: 1;
+  }
+
+  .password-modal-overlay.modal-closing {
+    opacity: 0;
+  }
+
+  .password-modal-container {
+    background-color: white;
+    border-radius: 18px;
+    padding: 28px;
+    max-width: 360px;
+    width: 100%;
+    margin: 0 24px;
+    box-sizing: border-box;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.8s ease-out, transform 0.5s ease-out;
+  }
+
+  .password-modal-container.modal-open {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .password-modal-container.modal-closing {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  .password-modal-title {
+    font-size: 24px;
+    padding-top: 8px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .password-modal-description {
+    color: #3A3E44;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 135%;  
+  }
+
+  .password-modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .password-modal-input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 135%;  
+    color: #131517;
+    box-sizing: border-box;
+  }
+
+  .password-modal-input-error {
+    border-color: #ef4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+  }
+
+  .password-modal-error {
+    color: #ef4444;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .password-modal-error-message {
+    color: #ef4444;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.4;
+  }
+
+  .password-modal-buttons {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .password-modal-button {
+    flex: 1;
+    position: relative;
+    background: #6A27F9;
+    color: white;
+    overflow: hidden;
+    z-index: 1;
+    transition: padding 0.3s, gap 0.3s, background-color 0.3s ease;
+    display: inline-flex;
+    padding: 16px ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: transparent;
+    background: #EB5757;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .password-modal-button-primary {
+    background-color: #6A27F9;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+  }
+
+  .password-modal-button-primary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #EB5757 0%, #6A27F9 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+  }
+
+  .password-modal-button-primary:hover::before {
+    opacity: 1;
+  }
+
+  .password-modal-button-primary span,
+  .password-modal-button-primary div {
+    position: relative;
+    z-index: 2;
+  }
+
+  .password-modal-button-secondary {
+    background-color: #E6E9ED;
+    color: #51575E;
+    transition: background-color 0.3s ease;
+  }
+
+  .password-modal-button-secondary:hover {
+    background-color: #CED3D8;
+  }
+
+  /* Project Locked Styles */
+  .projectLocked {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F5F8;
+    height: auto;
+    border-radius: 6px;
+    padding: 7px 8px;
+    text-align: center;
+    gap: 6px;
+    white-space: nowrap;
+  }
+
+  .projectLockedText {
+    color: #767D85;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  /* Protected Page Styles */
+  .protected-page-container {
+    width: 100%;
+  }
+
+  /* Image Tabs Styles */
+  .image-tabs-container {
+    width: 100%;
+    max-width: 448px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+
+  .image-tabs-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .image-tabs-button {
+    padding: 8px 24px;
+    border-radius: 9999px;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+  }
+
+  .image-tabs-button-selected {
+    background-color: #000;
+    color: white;
+  }
+
+  .image-tabs-button-unselected {
+    border: 2px solid #d1d5db;
+    color: #374151;
+    background-color: transparent;
+  }
+
+  .image-tabs-button-unselected:hover {
+    border-color: #9ca3af;
+  }
+
+  .image-tabs-content {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .image-tabs-image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-tabs-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
