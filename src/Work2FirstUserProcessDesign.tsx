@@ -13,7 +13,7 @@ import wavedivider from './image/wavedivider.png'
 import { MainImage } from './workDetailPage/WorkMainImage';
 import BackButton from './components/BackButton';
 import NextItem from './components/NextItem';
-import thumbnail3 from './image/thumbnails/thumbnail3.png';
+import thumbnail3 from './image/workThumbnails/thumbnail3.png';
 //FirstUserProcessDesign
 
 function Work2(props: {

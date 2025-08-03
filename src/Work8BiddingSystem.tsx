@@ -32,7 +32,7 @@ import result1 from './image/works/work8result1.png';
 import result2 from './image/works/work8result2.png';
 import BackButton from './components/BackButton';
 import NextItem from './components/NextItem';
-import thumbnail7 from './image/thumbnails/thumbnail7.png';
+import thumbnail7 from './image/workThumbnails/thumbnail7.png';
 
 
 

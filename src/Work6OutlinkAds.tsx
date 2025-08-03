@@ -30,7 +30,7 @@ import { Wavedivider } from './components/Wavedivider';
 import result1 from './image/works/work6result1.png';
 import result2 from './image/works/work6result2.png';
 import NextItem from './components/NextItem';
-import thumbnail10 from './image/thumbnails/thumbnail10.png';
+import thumbnail10 from './image/workThumbnails/thumbnail10.png';
 
 //OutlinkAds
 

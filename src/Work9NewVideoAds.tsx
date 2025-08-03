@@ -14,7 +14,7 @@ import { MainImage } from './workDetailPage/WorkMainImage';
 import YouTubeEmbed from './components/YouTubeEmbed';
 import BackButton from './components/BackButton';
 import NextItem from './components/NextItem';
-import thumbnail8 from './image/thumbnails/thumbnail8.png';
+import thumbnail8 from './image/workThumbnails/thumbnail8.png';
 import { Hidden } from '@mui/material';
 //NewVideoAds
 

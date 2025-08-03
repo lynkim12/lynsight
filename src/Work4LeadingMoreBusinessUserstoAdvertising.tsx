@@ -12,7 +12,7 @@ import { Dispatch, SetStateAction, useEffect } from 'react';
 import wavedivider from './image/wavedivider.png'
 import {MainImage} from './workDetailPage/WorkMainImage';
 import BackButton from './components/BackButton';
-import thumbnail5 from './image/thumbnails/thumbnail5.png';
+import thumbnail5 from './image/workThumbnails/thumbnail5.png';
 import NextItem from './components/NextItem';
 
 //LeadingMoreBusinessUserstoAdvertising

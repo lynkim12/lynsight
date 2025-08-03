@@ -22,7 +22,7 @@ import { Divider } from '@mui/material';
 import liteIA from './image/works/work1liteIA.png';
 import ExpertIA from './image/works/work1exportIA.png';
 import NextItem from './components/NextItem';
-import thumbnail4 from './image/thumbnails/thumbnail4.png';
+import thumbnail4 from './image/workThumbnails/thumbnail4.png';
 import feature1 from './image/works/work1feature1.png';
 import feature2 from './image/works/work1feature2.png';
 import feature3 from './image/works/work1feature3.png';

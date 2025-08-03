@@ -22,7 +22,7 @@ import wireframe from './image/works/work5wireframe.png';
 import system from './image/works/work5system.png';
 import system2 from './image/works/work5system2.png';
 import NextItem from './components/NextItem';
-import thumbnail2 from './image/thumbnails/thumbnail2.png';
+import thumbnail2 from './image/workThumbnails/thumbnail2.png';
 import design1 from './image/works/work5design1.png';
 import design2 from './image/works/work5design2.png';
 import design3 from './image/works/work5design3.png';

@@ -1,19 +1,19 @@
 import Navigator from '../components/Navigation';
 import Content from '../components/workContent';
 import ChipFilter from '../components/ChipFilter';
-import thumbnail1 from '../image/thumbnails/thumbnail1.png';
-import thumbnail2 from '../image/thumbnails/thumbnail2.png';
-import thumbnail3 from '../image/thumbnails/thumbnail3.png';
-import thumbnail4 from '../image/thumbnails/thumbnail4.png';
-import thumbnail5 from '../image/thumbnails/thumbnail5.png';
-import thumbnail6 from '../image/thumbnails/thumbnail6.png';
-import thumbnail7 from '../image/thumbnails/thumbnail7.png';
-import thumbnail8 from '../image/thumbnails/thumbnail8.png';
-import thumbnail9 from '../image/thumbnails/thumbnail9.png';
-import thumbnail10 from '../image/thumbnails/thumbnail10.png';
-import thumbnail11 from '../image/thumbnails/thumbnail11.png';
-import thumbnail13 from '../image/thumbnails/thumbnail13.png';
-import wavedivider from './image/wavedivider.png'
+import thumbnail1 from '../image/workThumbnails/thumbnail1.png';
+import thumbnail2 from '../image/workThumbnails/thumbnail2.png';
+import thumbnail3 from '../image/workThumbnails/thumbnail3.png';
+import thumbnail4 from '../image/workThumbnails/thumbnail4.png';
+import thumbnail5 from '../image/workThumbnails/thumbnail5.png';
+import thumbnail6 from '../image/workThumbnails/thumbnail6.png';
+import thumbnail7 from '../image/workThumbnails/thumbnail7.png';
+import thumbnail8 from '../image/workThumbnails/thumbnail8.png';
+import thumbnail9 from '../image/workThumbnails/thumbnail9.png';
+import thumbnail10 from '../image/workThumbnails/thumbnail10.png';
+import thumbnail11 from '../image/workThumbnails/thumbnail11.png';
+import thumbnail13 from '../image/workThumbnails/thumbnail13.png';
+import wavedivider from '../image/wavedivider.png'
 import "animate.css/animate.min.css";
 import { Dispatch, SetStateAction } from 'react';
 import { Footer } from '../components/Footer';

@@ -13,7 +13,7 @@ import wavedivider from './image/wavedivider.png'
 import { MainImage } from './workDetailPage/WorkMainImage';
 import BackButton from './components/BackButton';
 import NextItem from './components/NextItem';
-import thumbnail1 from './image/thumbnails/thumbnail1.png';
+import thumbnail1 from './image/workThumbnails/thumbnail1.png';
 import { WorkImage } from './workDetailPage/WorkImage';
 import background from './image/works/work10background.png';
 import { WorkFullImage } from './workDetailPage/WorkFullImage';

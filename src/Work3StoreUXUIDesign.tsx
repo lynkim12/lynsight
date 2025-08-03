@@ -13,7 +13,7 @@ import wavedivider from './image/wavedivider.png'
 import { MainImage } from './workDetailPage/WorkMainImage';
 import BackButton from './components/BackButton';
 import NextItem from './components/NextItem';
-import thumbnail11 from './image/thumbnails/thumbnail11.png';
+import thumbnail11 from './image/workThumbnails/thumbnail11.png';
 import OpenButton from './components/OpenButton';
 
 //StoreUXUIDesign

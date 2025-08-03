@@ -29,7 +29,7 @@ import result2 from "./image/works/work13result2.png"
 import result4 from "./image/works/work13result4.png"
 import result5 from "./image/works/work13result5.png"
 import { Divider, Hidden } from "@mui/material";
-import thumbnail9 from './image/thumbnails/thumbnail9.png';
+import thumbnail9 from './image/workThumbnails/thumbnail9.png';
 import { Wavedivider } from "./components/Wavedivider";
 // import mainImage from './image/works/work13main';
 

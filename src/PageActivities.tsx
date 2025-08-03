@@ -6,7 +6,7 @@ import './style.css';
 import { Footer } from './components/Footer';
 import NextItem from './components/NextItem';
 import ActivitiyCard from './components/ActivitiesCard';
-import thumbnail9 from './image/thumbnails/thumbnail9.png';
+import thumbnail9 from './image/workThumbnails/thumbnail9.png';
 import BlogContent from './components/BlogContent';
 import { Divider } from '@mui/material';
 
