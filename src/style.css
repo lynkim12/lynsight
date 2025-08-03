@@ -626,14 +626,20 @@
     top: -8px;
     left: 14px;
   }
-
+  .articleLayout {
+    margin: auto; 
+    padding-bottom: 200px;
+    margin-bottom: 200px;
+    max-width: 1000px;
+    padding: 0px 48px; 
+  }
   .articleTitleSection {
     margin: auto; 
     max-width: 1000px;
     display: flex;
     align-content: center;
     flex-direction: row;
-    padding: 40px 48px 40px 48px;
+    padding: 40px 48px;
     justify-content: space-between;
   }
   
@@ -1067,12 +1073,14 @@
       padding: 40px 20px;
       gap: 28px;
     }
-
+  
 
   .articleTitleSection {
     padding: 40px 20px;
   }
-  
+  .articleLayout {
+    padding: 0px 20px; 
+  }
   .articleTitleSectionGap {
     gap: 24px;
   }
