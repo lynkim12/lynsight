@@ -14,13 +14,17 @@ import { ArticleTitle } from "../articleDetailPage/ArticleTitle";
 import { ArticleMainImage } from "../components/ArticleMainImage";
 import image1 from '../image/resources/article1.jpg';
 import ProtectedPage from "../components/ProtectedPage";
+import { hashPassword } from "../utils/passwordUtils";
 
 function Article1(props: {
     activeNav: number, 
     setActiveNav: Dispatch<SetStateAction<number>>,
   }) {
+      // 비밀번호 암호화
+      const hashedPassword = hashPassword("rlafls1004");
+      
       return (
-        <ProtectedPage password="0114">
+        <ProtectedPage password={hashedPassword}>
           <Navigator activeNav={props.activeNav} setActiveNav={props.setActiveNav} />
           <div className='fadeIn '>
             <ArticleTitle

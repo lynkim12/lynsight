@@ -7,12 +7,14 @@ interface PasswordModalProps {
   isOpen: boolean;
   onSuccess: () => void;
   correctPassword: string;
+  verifyPassword?: (inputPassword: string) => boolean;
 }
 
 const PasswordModal: React.FC<PasswordModalProps> = ({ 
   isOpen, 
   onSuccess, 
-  correctPassword 
+  correctPassword,
+  verifyPassword 
 }) => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -32,7 +34,13 @@ const PasswordModal: React.FC<PasswordModalProps> = ({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === correctPassword) {
+    
+    // 암호화된 비밀번호 검증 또는 일반 검증
+    const isValid = verifyPassword 
+      ? verifyPassword(password)
+      : password === correctPassword;
+    
+    if (isValid) {
       setError('');
       setHasError(false);
       onSuccess();

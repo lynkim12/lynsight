@@ -1,8 +1,6 @@
 import React, { useState, useEffect, ReactNode } from 'react';
 import PasswordModal from './PasswordModal';
-import '../App.css';
-import '../style.css';
-import '../font.css';
+import { verifyPassword } from '../utils/passwordUtils';
 
 interface ProtectedPageProps {
   children: ReactNode;
@@ -28,12 +26,18 @@ const ProtectedPage: React.FC<ProtectedPageProps> = ({
     setShowPasswordModal(isOpen);
   }, [isOpen]);
 
+  // 암호화된 비밀번호 검증
+  const handlePasswordVerification = (inputPassword: string): boolean => {
+    return verifyPassword(inputPassword, password);
+  };
+
   if (!isAuthenticated) {
     return (
       <PasswordModal
         isOpen={showPasswordModal}
         onSuccess={handlePasswordSuccess}
         correctPassword={password}
+        verifyPassword={handlePasswordVerification}
       />
     );
   }
